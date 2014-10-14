@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  14 OCT 2014 14:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  14 OCT 2014 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,7 +278,11 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 [3
 
 
-] (./Resumen.tex [4
+] (./Resumen.tex
+Package acronym Info: Label `acro:QIEA' newly defined as it shall be overridden
+
+although it is yet undefined on input line 2.
+ [4
 
 
 ]) (./Abstract.tex [5
@@ -287,6 +291,9 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 ]) (./Tesis.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+
+Underfull \vbox (badness 2573) has occurred while \output is active []
+
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
@@ -404,10 +411,10 @@ LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
  (./abreviaturas.aux)) ) 
 Here is how much of TeX's memory you used:
- 3535 strings out of 493304
- 46892 string characters out of 6139871
- 117082 words of memory out of 5000000
- 6867 multiletter control sequences out of 15000+600000
+ 3540 strings out of 493304
+ 46939 string characters out of 6139871
+ 118147 words of memory out of 5000000
+ 6872 multiletter control sequences out of 15000+600000
  32304 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,12n,42p,771b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -418,7 +425,7 @@ nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Tesis.pdf (19 pages, 205002 bytes).
+Output written on Tesis.pdf (19 pages, 206906 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
