@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  14 OCT 2014 14:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  14 OCT 2014 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,9 +288,6 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
@@ -362,42 +359,54 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 [5]
 Cap\'{\i }tulo 3.
-) (./Cap_4.tex
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
 [6
 
-]
-Cap\'{\i }tulo 4.
-) (./conclusiones.tex
+]) (./Cap_4.tex
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[7
-
-]
-Cap\'{\i }tulo 5.
-) (./Tesis.bbl
+[7]
+Cap\'{\i }tulo 4.
+) (./Cap_5.tex
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
 [8
 
-])
+]
+Cap\'{\i }tulo 5.
+) (./conclusiones.tex
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
 [9
+
+]
+Cap\'{\i }tulo 6.
+) (./Tesis.bbl
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[10
+
+])
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[11
 
 ] (./Tesis.aux
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
  (./abreviaturas.aux)) ) 
 Here is how much of TeX's memory you used:
- 3532 strings out of 493304
- 46867 string characters out of 6139871
- 117091 words of memory out of 5000000
+ 3535 strings out of 493304
+ 46892 string characters out of 6139871
+ 117082 words of memory out of 5000000
  6867 multiletter control sequences out of 15000+600000
  32304 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -409,10 +418,10 @@ nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Tesis.pdf (17 pages, 202283 bytes).
+Output written on Tesis.pdf (19 pages, 205002 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
