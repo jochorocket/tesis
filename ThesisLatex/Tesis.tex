@@ -1,0 +1,69 @@
+\documentclass[a4paper,openany,12pt]{book}
+\usepackage{graphicx}
+\usepackage[spanish,mexico]{babel}
+\usepackage{fancyhdr}
+\usepackage{ae}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=2cm]{geometry}
+\usepackage[printonlyused]{acronym}
+\usepackage{xspace}
+\usepackage{hlundef}
+\usepackage{tesis}
+\usepackage{setspace}
+
+\title{Título de la Tesis}
+
+\author{José Carlos Delgado Ramos}
+
+\advisor{Prof Dr. Yván Jesús Túpac Valdivia}
+
+\examinerone{Prof. Dr. Alex Jesús Cuadros Vargas}{Presidente}%
+\examinertwo{Prof. Dr. Juan Carlos Gutiérrez Cáceres}{Secretario}%
+\examinerthree{Prof. Dr. José Eduardo Ochoa Luna}{Integrante}%
+%\examinerfour{Prof. Dr. Yván Jesús Túpac Valdivia}{Externo}{Universidad del ABC} % of being the case
+\date{14 de Octubre del 2014}
+\date{\today}
+
+\dedicado{Esto lo pondré cuadsfadsfasando lo  termine.}
+
+\begin{document}
+\pagestyle{fancy}
+
+\maketitle %Compone la carátula y la dedicatoria
+\newpage
+
+%Compone la hoja de firmas de los asesores
+%\approved{\tres}%  {\tres} or {\cuatro}
+
+\include{abreviaturas}
+
+%\input{Agradecimientos} %Inserta los agradecimientos
+\input{Resumen} %Inserta el resumen
+\input{Abstract} %Inserta el abstract
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\pagestyle{plain}
+
+\tableofcontents %Inserta el índice general
+\listoftables %Inserta el índice de cuadros
+\listoffigures %Inserta el índice de figuras
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%   En esta parte deberas incluir los archivos de tu tesis   %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{Cap_1} %Inserta el capítulo 1
+\input{Cap_2} %Inserta el capítulo 2
+\input{Cap_3} %Inserta el capítulo 3
+\input{Cap_4} %Inserta el capítulo 4
+\input{conclusiones} %Inserta el capítulo 5
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{apalike}
+\bibliography{Bibliog}
+\addcontentsline{toc}{chapter}{Bibliografía}
+\end{document}
