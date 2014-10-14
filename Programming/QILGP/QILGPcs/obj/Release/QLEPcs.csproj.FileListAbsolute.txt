@@ -1,0 +1,6 @@
+C:\Users\Douglas\Documents\My Dropbox\QLEP_Develop_Final\QLEPcs\bin\Release\QLEPcs.exe.config
+C:\Users\Douglas\Documents\My Dropbox\QLEP_Develop_Final\QLEPcs\bin\Release\QLEPcs.exe
+C:\Users\Douglas\Documents\My Dropbox\QLEP_Develop_Final\QLEPcs\bin\Release\QLEPcs.pdb
+C:\Users\Douglas\Documents\My Dropbox\QLEP_Develop_Final\QLEPcs\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Douglas\Documents\My Dropbox\QLEP_Develop_Final\QLEPcs\obj\Release\QLEPcs.exe
+C:\Users\Douglas\Documents\My Dropbox\QLEP_Develop_Final\QLEPcs\obj\Release\QLEPcs.pdb

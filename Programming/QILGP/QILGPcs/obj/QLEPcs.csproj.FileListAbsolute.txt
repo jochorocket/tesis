@@ -1,0 +1,100 @@
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+G:\IC\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+G:\IC\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+G:\IC\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+G:\IC\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+G:\IC\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+G:\IC\QLEP_Develop2\QLEPcs\bin\x86\Release\QLEPcs.exe
+G:\IC\QLEP_Develop2\QLEPcs\bin\x86\Release\QLEPcs.pdb
+G:\IC\QLEP_Develop2\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+G:\IC\QLEP_Develop2\QLEPcs\obj\x86\Release\QLEPcs.exe
+G:\IC\QLEP_Develop2\QLEPcs\obj\x86\Release\QLEPcs.pdb
+D:\usr\douglasm\Develop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+D:\usr\douglasm\Develop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+D:\usr\douglasm\Develop\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+D:\usr\douglasm\Develop\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+D:\usr\douglasm\Develop\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\bin\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\bin\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\x86\Debug\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\x86\Debug\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\bin\x86\Debug\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\bin\x86\Debug\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\My Codes\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+H:\usr\Douglas\Develop\Code\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+H:\usr\Douglas\Develop\Code\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+H:\usr\Douglas\Develop\Code\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+H:\usr\Douglas\Develop\Code\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+H:\usr\Douglas\Develop\Code\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+H:\usr\Douglas\Develop\Code\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+D:\usr\Douglas\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+D:\usr\Douglas\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+D:\usr\Douglas\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+D:\usr\Douglas\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+D:\usr\Douglas\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+D:\usr\Douglas\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+D:\usr\cpoppe\Auxiliar\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+D:\usr\cpoppe\Auxiliar\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+D:\usr\cpoppe\Auxiliar\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+D:\usr\cpoppe\Auxiliar\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+D:\usr\cpoppe\Auxiliar\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+D:\usr\cpoppe\Auxiliar\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\TEMP.ICA.001\Desktop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+C:\Documents and Settings\TEMP.ICA.001\Desktop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+C:\Documents and Settings\TEMP.ICA.001\Desktop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\TEMP.ICA.001\Desktop\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\TEMP.ICA.001\Desktop\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+C:\Documents and Settings\TEMP.ICA.001\Desktop\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+H:\usr\Douglas\QLEP_Develop_Eval\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+H:\usr\Douglas\QLEP_Develop_Eval\QLEPcs\bin\x86\Release\QLEPcs.exe
+H:\usr\Douglas\QLEP_Develop_Eval\QLEPcs\bin\x86\Release\QLEPcs.pdb
+H:\usr\Douglas\QLEP_Develop_Eval\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+H:\usr\Douglas\QLEP_Develop_Eval\QLEPcs\obj\x86\Release\QLEPcs.exe
+H:\usr\Douglas\QLEP_Develop_Eval\QLEPcs\obj\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\bin\Debug\QLEPcs.exe.config
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\bin\Debug\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\bin\Debug\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\obj\Debug\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\obj\Debug\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\My Documents\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\Desktop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+C:\Documents and Settings\Administrator\Desktop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\Desktop\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+C:\Documents and Settings\Administrator\Desktop\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+C:\Documents and Settings\Administrator\Desktop\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\bin\Release\QLEPcs.exe.config
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\Release\QLEPcs.exe
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\Release\QLEPcs.pdb
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\bin\Release\QLEPcs.exe
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\bin\Release\QLEPcs.pdb
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\Release\ResolveAssemblyReference.cache
+D:\usr\douglasm-remoto\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe.config
+D:\usr\douglasm-remoto\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.exe
+D:\usr\douglasm-remoto\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Release\QLEPcs.pdb
+D:\usr\douglasm-remoto\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\ResolveAssemblyReference.cache
+D:\usr\douglasm-remoto\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.exe
+D:\usr\douglasm-remoto\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Release\QLEPcs.pdb
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\bin\x86\Debug\QLEPcs.exe.config
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Debug\QLEPcs.exe
+H:\usr\Douglas\My Dropbox\QLEP_Develop\QLEPcs\obj\x86\Debug\QLEPcs.pdb

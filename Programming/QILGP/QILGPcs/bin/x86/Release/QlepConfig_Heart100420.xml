@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<config>
+  
+  <inputData classifProblem = "true"
+             trainingFile   = "Heart_training_Q.txt"
+             validatingFile = "Heart_validating_Q.txt"
+             testingFile    = "Heart_testing_Q.txt"
+             constants      = "1 2 3 4 5 6 7 8 9"/>
+  
+  <qIndividual length       = "128" 
+               qNopProb     = "0.9"
+               typedTerms   = "true"
+               effObserving = "false"/>
+
+  <individual>
+    <header mCode = "d9 ee d9 ee d9 ee d9 ee d9 ee d9 ee d9 ee d9 ee db f0"/>
+    <footer mCode = 
+            "90 90 90 d9 10 9b db e3 c3"/>
+  </individual>
+  
+  <sintaticTable>
+    
+    <function mnemonic = "QNOP" terminalType = "none" destReg0 = "false">
+    </function>
+    
+    <function mnemonic = "fadd m" terminalType = "memory">
+      <mCode value = "d8 40 00"/>
+      <mCode value = "d8 40 04"/>
+      <mCode value = "d8 40 08"/>
+      <mCode value = "d8 40 0c"/>
+      <mCode value = "d8 40 10"/>
+      <mCode value = "d8 40 14"/>
+      <mCode value = "d8 40 18"/>
+      <mCode value = "d8 40 1c"/>
+      <mCode value = "d8 40 20"/>
+      <mCode value = "d8 40 24"/>
+      <mCode value = "d8 40 28"/>
+      <mCode value = "d8 40 2c"/>
+      <mCode value = "d8 40 30"/>
+      <mCode value = "d8 40 34"/>
+      <mCode value = "d8 40 38"/>
+      <mCode value = "d8 40 3c"/>
+      <mCode value = "d8 40 40"/>
+      <mCode value = "d8 40 44"/>
+      <mCode value = "d8 40 48"/>
+      <mCode value = "d8 40 4c"/>
+      <mCode value = "d8 40 50"/>
+      <mCode value = "d8 40 54"/>
+    </function>
+    
+    <function mnemonic = "fadd st(0) st(i)" terminalType = "register" destReg0 = "true">
+      <mCode value = "d8 c0 90"/>
+      <mCode value = "d8 c1 90"/>
+      <mCode value = "d8 c2 90"/>
+      <mCode value = "d8 c3 90"/>
+      <mCode value = "d8 c4 90"/>
+      <mCode value = "d8 c5 90"/>
+      <mCode value = "d8 c6 90"/>
+      <mCode value = "d8 c7 90"/>
+    </function>
+    
+    <function mnemonic = "fadd st(i) st(0)" terminalType = "register" destReg0 = "false">
+      <mCode value = "dc c0 90"/>
+      <mCode value = "dc c1 90"/>
+      <mCode value = "dc c2 90"/>
+      <mCode value = "dc c3 90"/>
+      <mCode value = "dc c4 90"/>
+      <mCode value = "dc c5 90"/>
+      <mCode value = "dc c6 90"/>
+      <mCode value = "dc c7 90"/>
+    </function>
+    
+    <function mnemonic = "fsub m" terminalType = "memory">
+      <mCode value = "d8 60 00"/>
+      <mCode value = "d8 60 04"/>
+      <mCode value = "d8 60 08"/>
+      <mCode value = "d8 60 0c"/>
+      <mCode value = "d8 60 10"/>
+      <mCode value = "d8 60 14"/>
+      <mCode value = "d8 60 18"/>
+      <mCode value = "d8 60 1c"/>
+      <mCode value = "d8 60 20"/>
+      <mCode value = "d8 60 24"/>
+      <mCode value = "d8 60 28"/>
+      <mCode value = "d8 60 2c"/>
+      <mCode value = "d8 60 30"/>
+      <mCode value = "d8 60 34"/>
+      <mCode value = "d8 60 38"/>
+      <mCode value = "d8 60 3c"/>
+      <mCode value = "d8 60 40"/>
+      <mCode value = "d8 60 44"/>
+      <mCode value = "d8 60 48"/>
+      <mCode value = "d8 60 4c"/>
+      <mCode value = "d8 60 50"/>
+      <mCode value = "d8 60 54"/>
+    </function>
+    
+    <function mnemonic = "fsub st(0) st(i)" terminalType = "register" destReg0 = "true">
+      <mCode value = "d8 e0 90"/>
+      <mCode value = "d8 e1 90"/>
+      <mCode value = "d8 e2 90"/>
+      <mCode value = "d8 e3 90"/>
+      <mCode value = "d8 e4 90"/>
+      <mCode value = "d8 e5 90"/>
+      <mCode value = "d8 e6 90"/>
+      <mCode value = "d8 e7 90"/>
+    </function>
+    
+    <function mnemonic = "fsub st(i) st(0)" terminalType = "register" destReg0 = "false">
+      <mCode value = "dc e8 90"/>
+      <mCode value = "dc e9 90"/>
+      <mCode value = "dc ea 90"/>
+      <mCode value = "dc eb 90"/>
+      <mCode value = "dc ec 90"/>
+      <mCode value = "dc ed 90"/>
+      <mCode value = "dc ee 90"/>
+      <mCode value = "dc ef 90"/>
+    </function>
+    
+    <function mnemonic = "fmul m" terminalType = "memory">
+      <mCode value = "d8 48 00"/>
+      <mCode value = "d8 48 04"/>
+      <mCode value = "d8 48 08"/>
+      <mCode value = "d8 48 0c"/>
+      <mCode value = "d8 48 10"/>
+      <mCode value = "d8 48 14"/>
+      <mCode value = "d8 48 18"/>
+      <mCode value = "d8 48 1c"/>
+      <mCode value = "d8 48 20"/>
+      <mCode value = "d8 48 24"/>
+      <mCode value = "d8 48 28"/>
+      <mCode value = "d8 48 2c"/>
+      <mCode value = "d8 48 30"/>
+      <mCode value = "d8 48 34"/>
+      <mCode value = "d8 48 38"/>
+      <mCode value = "d8 48 3c"/>
+      <mCode value = "d8 48 40"/>
+      <mCode value = "d8 48 44"/>
+      <mCode value = "d8 48 48"/>
+      <mCode value = "d8 48 4c"/>
+      <mCode value = "d8 48 50"/>
+      <mCode value = "d8 48 54"/>
+    </function>
+    
+    <function mnemonic = "fmul st(0) st(i)" terminalType = "register" destReg0 = "true">
+      <mCode value = "d8 c8 90"/>
+      <mCode value = "d8 c9 90"/>
+      <mCode value = "d8 ca 90"/>
+      <mCode value = "d8 cb 90"/>
+      <mCode value = "d8 cc 90"/>
+      <mCode value = "d8 cd 90"/>
+      <mCode value = "d8 ce 90"/>
+      <mCode value = "d8 cf 90"/>
+    </function>
+    
+    <function mnemonic = "fmul st(i) st(0)" terminalType = "register" destReg0 = "false">
+      <mCode value = "dc c8 90"/>
+      <mCode value = "dc c9 90"/>
+      <mCode value = "dc ca 90"/>
+      <mCode value = "dc cb 90"/>
+      <mCode value = "dc cc 90"/>
+      <mCode value = "dc cd 90"/>
+      <mCode value = "dc ce 90"/>
+      <mCode value = "dc cf 90"/>
+    </function>
+    
+    <function mnemonic = "fdiv m" terminalType = "memory">
+      <mCode value = "d8 70 00"/>
+      <mCode value = "d8 70 04"/>
+      <mCode value = "d8 70 08"/>
+      <mCode value = "d8 70 0c"/>
+      <mCode value = "d8 70 10"/>
+      <mCode value = "d8 70 14"/>
+      <mCode value = "d8 70 18"/>
+      <mCode value = "d8 70 1c"/>
+      <mCode value = "d8 70 20"/>
+      <mCode value = "d8 70 24"/>
+      <mCode value = "d8 70 28"/>
+      <mCode value = "d8 70 2c"/>
+      <mCode value = "d8 70 30"/>
+      <mCode value = "d8 70 34"/>
+      <mCode value = "d8 70 38"/>
+      <mCode value = "d8 70 3c"/>
+      <mCode value = "d8 70 40"/>
+      <mCode value = "d8 70 44"/>
+      <mCode value = "d8 70 48"/>
+      <mCode value = "d8 70 4c"/>
+      <mCode value = "d8 70 50"/>
+      <mCode value = "d8 70 54"/>
+    </function>
+
+    <function mnemonic = "fdiv st(0) st(i)" terminalType = "register" destReg0 = "true">
+      <mCode value = "d8 f0 90"/>
+      <mCode value = "d8 f1 90"/>
+      <mCode value = "d8 f2 90"/>
+      <mCode value = "d8 f3 90"/>
+      <mCode value = "d8 f4 90"/>
+      <mCode value = "d8 f5 90"/>
+      <mCode value = "d8 f6 90"/>
+      <mCode value = "d8 f7 90"/>
+    </function>
+
+    <function mnemonic = "fdiv st(i) st(0)" terminalType = "register" destReg0 = "false">
+      <mCode value = "dc f8 90"/>
+      <mCode value = "dc f9 90"/>
+      <mCode value = "dc fa 90"/>
+      <mCode value = "dc fb 90"/>
+      <mCode value = "dc fc 90"/>
+      <mCode value = "dc fd 90"/>
+      <mCode value = "dc fe 90"/>
+      <mCode value = "dc ff 90"/>
+    </function>
+    
+    <function mnemonic = "fxch st(i)" terminalType = "register" destReg0 = "true">
+      <mCode value = "d9 c8 90"/>
+      <mCode value = "d9 c9 90"/>
+      <mCode value = "d9 ca 90"/>
+      <mCode value = "d9 cb 90"/>
+      <mCode value = "d9 cc 90"/>
+      <mCode value = "d9 cd 90"/>
+      <mCode value = "d9 ce 90"/>
+      <mCode value = "d9 cf 90"/>
+    </function>
+
+    <function mnemonic = "fcomi st(i)" terminalType = "register" destReg0 = "true">
+      <mCode value = "db f0 90"/>
+      <mCode value = "db f1 90"/>
+      <mCode value = "db f2 90"/>
+      <mCode value = "db f3 90"/>
+      <mCode value = "db f4 90"/>
+      <mCode value = "db f5 90"/>
+      <mCode value = "db f6 90"/>
+      <mCode value = "db f7 90"/>
+    </function>
+
+    <function mnemonic = "fabs" terminalType = "none" destReg0 = "true">
+      <mCode value = "d9 e1 90"/>
+    </function>
+
+    <function mnemonic = "fsqrt" terminalType = "none" destReg0 = "true">
+      <mCode value = "d9 fa 90"/>
+    </function>
+
+    <function mnemonic = "fsin" terminalType = "none" destReg0 = "true">
+      <mCode value = "d9 fe 90"/>
+    </function>
+
+    <function mnemonic = "fcos" terminalType = "none" destReg0 = "true">
+      <mCode value = "d9 ff 90"/>
+    </function>
+
+    <function mnemonic = "jb" terminalType = "none" destReg0 = "true">
+      <mCode value = "72 04 90"/>
+    </function>
+
+    <function mnemonic = "jnb" terminalType = "none" destReg0 = "true">
+      <mCode value = "73 04 90"/>
+    </function>
+
+  </sintaticTable>
+
+  <settings>
+    <lGateStep value = "0.004" />
+    <popSize value = "4"/>
+    <numDemes value = "4"/>
+    <numCycles value = "1"/>
+    <numGenerations value = "250000"/>
+    <generationsFreq value = "10" />
+    <numExperiments value = "100"/>
+  </settings>
+  
+</config>

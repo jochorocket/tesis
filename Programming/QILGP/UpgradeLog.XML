@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="QILGP_Develop">
+</Property><Property Name="Solution File" Value="F:\usr\Dropbox\QILGP_Develop\QILGP_Develop.sln">
+</Property><Property Name="User Options File" Value="F:\usr\Dropbox\QILGP_Develop\QILGP_Develop.suo">
+</Property><Property Name="Date" Value="segunda-feira, 17 de janeiro de 2011">
+</Property><Property Name="Time" Value="18:33">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="QILGP_Develop.sln" Description="File successfully backed up as F:\usr\Dropbox\QILGP_Develop\QILGP_Develop.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="QILGP_Develop.suo" Description="File successfully backed up as F:\usr\Dropbox\QILGP_Develop\QILGP_Develop.suo.old">
+</Event><Event ErrorLevel="0" Project="QILGPcs" Source="QILGPcs\QILGPcs.csproj" Description="Project file successfully backed up as F:\usr\Dropbox\QILGP_Develop\QILGPcs\QILGPcs.csproj.old">
+</Event><Event ErrorLevel="0" Project="QILGPcs" Source="QILGPcs\QILGPcs.csproj.user" Description="Project user file successfully backed up as F:\usr\Dropbox\QILGP_Develop\QILGPcs\QILGPcs.csproj.user.old">
+</Event><Event ErrorLevel="1" Project="QILGPcs" Source="QILGPcs\QILGPcs.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="QILGPcs" Source="QILGPcs\QILGPcs.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="QILGPcs" Source="QILGPcs\QILGPcs.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Converting project file 'F:\usr\Dropbox\QILGP_Develop\QILGP\QLEP.vcproj'.">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Attribute 'OptimizeForWindows98' of 'VCLinkerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="MSB8012: $(TargetName) ('QILGP') does not match the Linker's OutputFile property value '..\QLEPcs\bin\Debug\qlep.dll' ('qlep') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="MSB8012: $(TargetPath) ('F:\usr\Dropbox\QILGP_Develop\QILGP\..\QLEPcs\bin\Debug\QILGP.dll') does not match the Linker's OutputFile property value '..\QLEPcs\bin\Debug\qlep.dll' ('F:\usr\Dropbox\QLEPcs\bin\Debug\qlep.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="MSB8012: $(TargetName) ('QILGP') does not match the Linker's OutputFile property value 'x64\Debug\qlep.dll' ('qlep') in project configuration 'Debug|x64'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="MSB8012: $(TargetPath) ('F:\usr\Dropbox\QILGP_Develop\QILGP\x64\Debug\QILGP.dll') does not match the Linker's OutputFile property value 'x64\Debug\qlep.dll' ('F:\usr\Dropbox\QILGP_Develop\x64\Debug\qlep.dll') in project configuration 'Debug|x64'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Done converting to new project file 'F:\usr\Dropbox\QILGP_Develop\QILGP\QLEP.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="QLEP" Source="QILGP\QLEP.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="QILGP_Develop.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="QILGP_Develop.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="QILGPcs" Source="QILGPcs\QILGPcs.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

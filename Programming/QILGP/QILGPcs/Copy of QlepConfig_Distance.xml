@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<config>
+  
+  <inputData filePathName = "..\\..\\..\\distance.txt"
+             constants = "1 2"/>
+  
+  <qIndividual length = "200" qNopProb = "0.2"/>
+
+  <individual>
+    
+    <!--FINIT (9b db e3), FLDZ (d9 ee); mov	 eax, DWORD PTR [esp+4] (8b 44 24 04)-->
+    <!--<header mCode = "9b db e3 d9 ee d9 ee 8b 44 24 04"/>-->
+    <header mCode = 
+            "9b db e3 dd 40 00 dd 40 08 dd 40 10 dd 40 18 dd 40 20 dd 40 28 d9 ee d9 ee"/>
+    
+    <!--<footer mCode = "dc c9 c3"/>-->
+    <footer mCode = "dd 10 c3"/>
+    <!--<footer mCode = "c3"/>-->
+    
+  </individual>
+  
+  <sintaticTable>
+    
+    <function mnemonic = "QNOP">
+    </function>
+    
+    <function mnemonic = "fadd m">
+      <mCode value = "dc 00"/>
+      <mCode value = "dc 40 08"/>
+      <mCode value = "dc 40 10"/>
+      <mCode value = "dc 40 18"/>
+      <mCode value = "dc 40 20"/>
+      <mCode value = "dc 40 28"/>
+      <mCode value = "dc 40 30"/>
+      <mCode value = "dc 40 38"/>
+    </function>
+    
+    <function mnemonic = "fadd st(0) st(i)">
+      <mCode value = "d8 c0"/>
+      <mCode value = "d8 c1"/>
+      <mCode value = "d8 c2"/>
+      <mCode value = "d8 c3"/>
+      <mCode value = "d8 c4"/>
+      <mCode value = "d8 c5"/>
+      <mCode value = "d8 c6"/>
+      <mCode value = "d8 c7"/>
+    </function>
+    
+    <function mnemonic = "fadd st(i) st(0)">
+      <mCode value = "dc c1"/>
+      <mCode value = "dc c2"/>
+      <mCode value = "dc c3"/>
+      <mCode value = "dc c4"/>
+      <mCode value = "dc c5"/>
+      <mCode value = "dc c6"/>
+      <mCode value = "dc c7"/>
+    </function>
+    
+    <function mnemonic = "fsub m">
+      <mCode value = "dc 20"/>
+      <mCode value = "dc 60 08"/>
+      <mCode value = "dc 60 10"/>
+      <mCode value = "dc 60 18"/>
+      <mCode value = "dc 60 20"/>
+      <mCode value = "dc 60 28"/>
+      <mCode value = "dc 60 30"/>
+      <mCode value = "dc 60 38"/>
+    </function>
+    
+    <function mnemonic = "fsub st(0) st(i)">
+      <mCode value = "d8 e0"/>
+      <mCode value = "d8 e1"/>
+      <mCode value = "d8 e2"/>
+      <mCode value = "d8 e3"/>
+      <mCode value = "d8 e4"/>
+      <mCode value = "d8 e5"/>
+      <mCode value = "d8 e6"/>
+      <mCode value = "d8 e7"/>
+    </function>
+    
+    <function mnemonic = "fsub st(i) st(0)">
+      <mCode value = "dc e9"/>
+      <mCode value = "dc ea"/>
+      <mCode value = "dc eb"/>
+      <mCode value = "dc ec"/>
+      <mCode value = "dc ed"/>
+      <mCode value = "dc ee"/>
+      <mCode value = "dc ef"/>
+    </function>
+    
+    <function mnemonic = "fmul m">
+      <mCode value = "dc 08"/>
+      <mCode value = "dc 48 08"/>
+      <mCode value = "dc 48 10"/>
+      <mCode value = "dc 48 18"/>
+      <mCode value = "dc 48 20"/>
+      <mCode value = "dc 48 28"/>
+      <mCode value = "dc 48 30"/>
+      <mCode value = "dc 48 38"/>
+    </function>
+    
+    <function mnemonic = "fmul st(0) st(i)">
+      <mCode value = "d8 c8"/>
+      <mCode value = "d8 c9"/>
+      <mCode value = "d8 ca"/>
+      <mCode value = "d8 cb"/>
+      <mCode value = "d8 cc"/>
+      <mCode value = "d8 cd"/>
+      <mCode value = "d8 ce"/>
+      <mCode value = "d8 cf"/>
+    </function>
+    
+    <function mnemonic = "fmul st(i) st(0)">
+      <mCode value = "dc c9"/>
+      <mCode value = "dc ca"/>
+      <mCode value = "dc cb"/>
+      <mCode value = "dc cc"/>
+      <mCode value = "dc cd"/>
+      <mCode value = "dc ce"/>
+      <mCode value = "dc cf"/>
+    </function>
+    
+    <function mnemonic = "fxch st(i)">
+      <mCode value = "d9 c9"/>
+      <mCode value = "d9 ca"/>
+      <mCode value = "d9 cb"/>
+      <mCode value = "d9 cc"/>
+      <mCode value = "d9 cd"/>
+      <mCode value = "d9 ce"/>
+      <mCode value = "d9 cf"/>
+    </function>
+
+    <function mnemonic = "fabs | fsqrt st(0) st(0)">
+      <mCode value = "d9 e1 d9 fa"/>
+    </function>
+
+    <!--<function mnemonic = "fchs">
+      <mCode value = "d9 e0"/>
+    </function>-->
+    <!--<function mnemonic = "fst">
+      <mCode value = "dd 10"/>
+      <mCode value = "dd 50 08"/>
+    </function>-->
+    
+  </sintaticTable>
+
+  <settings>
+    <popSize value = "1"/>
+    <numDemes value = "1"/>
+    <numCycles value = "250000"/>
+    <numExperiments value = "100"/>
+  </settings>
+  
+</config>

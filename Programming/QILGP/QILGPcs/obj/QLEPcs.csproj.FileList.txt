@@ -1,0 +1,17 @@
+bin\x86\Debug\QLEPcs.exe
+bin\x86\Debug\QLEPcs.pdb
+obj\x86\Debug\ResolveAssemblyReference.cache
+obj\x86\Debug\QLEPcs.exe
+obj\x86\Debug\QLEPcs.pdb
+bin\x86\Debug\QLEPcs.exe.config
+bin\Debug\QLEPcs.exe
+bin\Debug\QLEPcs.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\QLEPcs.exe
+obj\Debug\QLEPcs.pdb
+bin\x86\Release\QLEPcs.exe
+bin\x86\Release\QLEPcs.pdb
+obj\x86\Release\ResolveAssemblyReference.cache
+obj\x86\Release\QLEPcs.exe
+obj\x86\Release\QLEPcs.pdb
+bin\x86\Release\QLEPcs.exe.config
