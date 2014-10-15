@@ -3,7 +3,7 @@
 Cada capítulo deberá contener una breve introducción que describe en forma rápida el contenido del
 mismo. En este capítulo va el marco teórico. (pueden ser dos capítulos de marco teórico)
 
-\section{Computación Cuántica}
+\section{Computación Cuántica}https://hootsuite.com/dashboard
 
 Un capítulo puede contener n secciones. La referencia bibliográfica se hace de la siguiente manera:
 
@@ -17,7 +17,7 @@ Una sub sección puede contener n sub sub secciones.
 
 \section{Computación Evolutiva}
 
-La computación evolutiva es una rama dependiente de la inteligencia artificial, y a su vez, una metodología de optimización inspirada en la evolución biológica y el comportamiento de organismos vivientes \cite{zhang2011evolutionary}, y comprende en sí a los algoritmos evolutivos. La computación evolutiva incluye metodologías y variantes tales como: algoritmos genéticos, estrategias evolutivas, programación genética, sistemas de clasificación mediante aprendizaje, evolución diferencial, algoritmo para la estimación de la distribución, inteligencia de enjambre, optimización por colonia de hormigas, entre otros.
+La computación evolutiva es una rama dependiente de la inteligencia artificial, y a su vez, una metodología de optimización inspirada en la evolución biológica y el comportamiento de organismos vivientes \cite{zhang2011evolutionary}, y comprende en sí a los algoritmos evolutivos. La computación evolutiva incluye metodologías y variantes tales como: algoritmos genéticos, estrategias evolutivas, programación genética, sistemas de clasificación mediante aprendizaje, evolución diferencial, algoritmo para la estimación de la distribución, inteligencia de enjambre, optimización por colonia de hormigas, entre otros. 
 
 Un algoritmo evolutivo por lo general comprende las siguientes ideas: dada una población de individuos, distintas circunstancias en el ambiente ejercen presión sobre los mismos provocando el fenómeno conocido como selección natural (supervivencia del más apto), causando un incremento en las aptitudes de dichos individuos. Estas circunstancias ambientales son las encargadas de realizar la medición de la aptitud de los individuos.
 
@@ -43,10 +43,18 @@ INITIALIZE \textit{population} with random candidate solutions;
 \begin{figure}
  \centering
  \includegraphics[scale=0.8,keepaspectratio=true]{./Figure1.png}
- \caption{Proceso de un algoritmo evolutivo.} 
+ \caption{Proceso de un algoritmo evolutivo. \cite{eiben2003introduction}} 
 \end{figure}
 
-Debido a que todas las variedades de algoritmos evolutivos siguen los lineamientos formulados tanto en el algoritmo estándar como en la Figura 3.1, las diferencias entre ellas se reducen a detalles técnicos, como el uso de cadenas de alfabetos finitos como en los algoritmos genéticos, el de árboles en la programación evolutiva, o de vectores con valores reales en las estrategias evolutivas, entre otros. Lo ideal es utilizar la representación de datos más adecuada según la naturaleza del problema a resolver.
+Debido a que todas las variedades de algoritmos evolutivos siguen los lineamientos formulados tanto en el algoritmo estándar como en la Figura 3.1, las diferencias entre ellas se reducen a detalles técnicos, como el uso de cadenas de alfabetos finitos como en los algoritmos genéticos, el de árboles en la programación evolutiva, o de vectores con valores reales en las estrategias evolutivas, entre otros. Lo ideal es utilizar la representación de datos más adecuada según la naturaleza del problema a resolver. Si bien son varios los paradigmas desarrollados a partir de la computación evolutiva, son tres los más importantes: Estrategias de Evolución, Programación Evolutiva y Algoritmos Genéticos, las cuales evolucionan soluciones para problemas parametrizados. A ellas se les sumaría un cuarto paradigma: Programación Genética, el cual evoluciona los programas computacionales en sí con el fin de solucionar problemas computacionales \cite{kicinger2005evolutionary}.
+
+Algunos inconvenientes que conlleva el enfoque tradicional de la computación evolutiva son: \cite{hinterding1997adaptation}
+\begin{itemize}
+ \item Los errores del usuario al momento de ajustar los parámetros, los cuales pueden resultar en errores o en un desempeño subóptimo.
+ \item El ajuste de los parámetros puede tomar tiempo.
+ \item El valor óptimo de los parámetros pueden variar durante la evolución.
+\end{itemize}
+
 
 
 

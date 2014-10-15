@@ -20,9 +20,4 @@
 \contentsline {section}{\numberline {3.3}Algoritmos Evolutivos de Inspiración Cuántica}{8}
 \contentsline {section}{\numberline {3.4}Consideraciones Finales}{8}
 \contentsline {chapter}{\numberline {4}Propuesta}{9}
-\contentsline {chapter}{\numberline {5}Pruebas y Resultados}{10}
-\contentsline {chapter}{\numberline {6}Conclusiones y Trabajos Futuros}{11}
-\contentsline {section}{\numberline {6.1}Problemas encontrados}{11}
-\contentsline {section}{\numberline {6.2}Recomendaciones}{11}
-\contentsline {section}{\numberline {6.3}Trabajos futuros}{11}
-\contentsline {chapter}{Bibliografía}{12}
+\contentsline {chapter}{Bibliografía}{10}

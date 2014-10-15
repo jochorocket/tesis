@@ -11,6 +11,18 @@ Galante, R. d.~M. (2001).
   o emprego de versões}.
 \newblock PhD thesis, Instituto de Informática-UFRGS.
 
+\bibitem[Hinterding et~al., 1997]{hinterding1997adaptation}
+Hinterding, R., Michalewicz, Z., and Eiben, A.~E. (1997).
+\newblock Adaptation in evolutionary computation: A survey.
+\newblock In {\em Evolutionary Computation, 1997., IEEE International
+  Conference on}, pages 65--69. IEEE.
+
+\bibitem[Kicinger et~al., 2005]{kicinger2005evolutionary}
+Kicinger, R., Arciszewski, T., and Jong, K.~D. (2005).
+\newblock Evolutionary computation and structural design: A survey of the
+  state-of-the-art.
+\newblock {\em Computers \& Structures}, 83(23):1943--1978.
+
 \bibitem[Mateos et~al., 2000]{Mateos00}
 Mateos, G., García~M., J., and Ortín~I., M. (2000).
 \newblock Inclusión de vistas en \textsc{ODMG}.
