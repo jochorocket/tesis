@@ -46,9 +46,7 @@ INITIALIZE \textit{population} with random candidate solutions;
  \caption{Proceso de un algoritmo evolutivo.} 
 \end{figure}
 
-Debido a que todas las variedades de algoritmos evolutivos siguen los lineamientos formulados tanto en el algoritmo estándar como en la Figura 3.1, las diferencias entre ellas se reducen a detalles técnicos, como el uso de cadenas de alfabetos finitos como en los algoritmos genéticos, el de árboles en la programación evolutiva, o de vectores con valores reales en las estrategias evolutivas, entre otros. Lo ideal es utilizar la representación de datos más adecuada según la naturaleza del problema a resolver.
-
-
+Debido a que todas las variedades de algoritmos evolutivos siguen los lineamientos formulados tanto en el algoritmo estándar como en la Figura 3.1, las diferencias entre ellas se reducen a detalles técnicos, como el uso de cadenas de alfabetos finitos como en los algoritmos genéticos, el de árboles en la programación evolutiva, o de vectores con valores reales en las estrategias evolutivas, entre otros. Lo ideal es utilizar la representación de datos más adecuada según la naturaleza del problema a resolver
 
 
 

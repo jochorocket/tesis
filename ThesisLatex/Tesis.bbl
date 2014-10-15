@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Eiben and Smith, 2003]{eiben2003introduction}
+Eiben, A.~E. and Smith, J.~E. (2003).
+\newblock {\em Introduction to evolutionary computing}.
+\newblock springer.
+
 \bibitem[Galante, 2001]{Galante01}
 Galante, R. d.~M. (2001).
 \newblock {\em Evolução de Esquemas em Bancos de Dados Orientados a Objetos com
@@ -11,5 +16,11 @@ Mateos, G., García~M., J., and Ortín~I., M. (2000).
 \newblock Inclusión de vistas en \textsc{ODMG}.
 \newblock {\em Jornadas de Ingeniería del Software y Bases de Datos {(JISBD
   2000)}}, pages 383--395.
+
+\bibitem[Zhang et~al., 2011]{zhang2011evolutionary}
+Zhang, J., Zhan, Z.-h., Lin, Y., Chen, N., Gong, Y.-j., Zhong, J.-h., Chung,
+  H.~S., Li, Y., and Shi, Y.-h. (2011).
+\newblock Evolutionary computation meets machine learning: A survey.
+\newblock {\em Computational Intelligence Magazine, IEEE}, 6(4):68--75.
 
 \end{thebibliography}
