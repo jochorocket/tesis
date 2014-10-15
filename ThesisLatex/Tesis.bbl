@@ -1,15 +1,59 @@
 \begin{thebibliography}{}
 
+\bibitem[Alegr{\i}a and T{\'u}pac, 2014]{alegria2014generalized}
+Alegr{\i}a, J.~M. and T{\'u}pac, Y.~J. (2014).
+\newblock A generalized quantum-inspired evolutionary algorithm for
+  combinatorial optimization problems.
+
+\bibitem[Benioff, 1980]{benioff1980}
+Benioff, P. (1980).
+\newblock The computer as a physical system: A microscopic quantum mechanical
+  hamiltonian model of computers as represented by turing machines.
+\newblock {\em Journal of Statistical Physics}, 22(5):563--591.
+
+\bibitem[Benioff, 1982]{benioff1982quantum}
+Benioff, P. (1982).
+\newblock Quantum mechanical models of turing machines that dissipate no
+  energy.
+\newblock {\em Physical Review Letters}, 48(23):1581.
+
 \bibitem[Coello, 1999]{coello1999comprehensive}
 Coello, C. A.~C. (1999).
 \newblock A comprehensive survey of evolutionary-based multiobjective
   optimization techniques.
 \newblock {\em Knowledge and Information systems}, 1(3):269--308.
 
+\bibitem[Dias and Pacheco, 2013]{dias2013quantum}
+Dias, D.~M. and Pacheco, M. A.~C. (2013).
+\newblock Quantum-inspired linear genetic programming as a knowledge management
+  system.
+\newblock {\em The Computer Journal}, 56(9):1043--1062.
+
+\bibitem[Dias et~al., 2011]{dias2011self}
+Dias, D.~M., Singulani, A.~P., Pacheco, M. A.~C., de~Souza, P.~L., Pires,
+  M.~P., and Neto, O. P.~V. (2011).
+\newblock Self-assembly quantum dots growth prediction by quantum-inspired
+  linear genetic programming.
+\newblock In {\em Evolutionary Computation (CEC), 2011 IEEE Congress on}, pages
+  2075--2082. IEEE.
+
 \bibitem[Eiben and Smith, 2003]{eiben2003introduction}
 Eiben, A.~E. and Smith, J.~E. (2003).
 \newblock {\em Introduction to evolutionary computing}.
 \newblock springer.
+
+\bibitem[Fan et~al., 2007]{fan2007option}
+Fan, K., Brabazon, A., O'Sullivan, C., and O'Neill, M. (2007).
+\newblock Option pricing model calibration using a real-valued quantum-inspired
+  evolutionary algorithm.
+\newblock In {\em Proceedings of the 9th annual conference on Genetic and
+  evolutionary computation}, pages 1983--1990. ACM.
+
+\bibitem[Fan et~al., 2008]{fan2008quantum}
+Fan, K., Brabazon, A., O'Sullivan, C., and O'Neill, M. (2008).
+\newblock Quantum-inspired evolutionary algorithms for financial data analysis.
+\newblock In {\em Applications of Evolutionary Computing}, pages 133--143.
+  Springer.
 
 \bibitem[Galante, 2001]{Galante01}
 Galante, R. d.~M. (2001).
@@ -17,11 +61,37 @@ Galante, R. d.~M. (2001).
   o emprego de versões}.
 \newblock PhD thesis, Instituto de Informática-UFRGS.
 
+\bibitem[Grover, 1996]{grover1996fast}
+Grover, L.~K. (1996).
+\newblock A fast quantum mechanical algorithm for database search.
+\newblock In {\em Proceedings of the twenty-eighth annual ACM symposium on
+  Theory of computing}, pages 212--219. ACM.
+
+\bibitem[Han and Kim, 2000]{han2000genetic}
+Han, K.-H. and Kim, J.-H. (2000).
+\newblock Genetic quantum algorithm and its application to combinatorial
+  optimization problem.
+\newblock In {\em Evolutionary Computation, 2000. Proceedings of the 2000
+  Congress on}, volume~2, pages 1354--1360. IEEE.
+
 \bibitem[Hinterding et~al., 1997]{hinterding1997adaptation}
 Hinterding, R., Michalewicz, Z., and Eiben, A.~E. (1997).
 \newblock Adaptation in evolutionary computation: A survey.
 \newblock In {\em Evolutionary Computation, 1997., IEEE International
   Conference on}, pages 65--69. IEEE.
+
+\bibitem[Hota and Pat, 2010]{hota2010adaptive}
+Hota, A.~R. and Pat, A. (2010).
+\newblock An adaptive quantum-inspired differential evolution algorithm for
+  0--1 knapsack problem.
+\newblock In {\em Nature and Biologically Inspired Computing (NaBIC), 2010
+  Second World Congress on}, pages 703--708. IEEE.
+
+\bibitem[Jeong et~al., 2010]{jeong2010new}
+Jeong, Y.-W., Park, J.-B., Jang, S.-H., and Lee, K.~Y. (2010).
+\newblock A new quantum-inspired binary pso: application to unit commitment
+  problems for power systems.
+\newblock {\em Power Systems, IEEE Transactions on}, 25(3):1486--1495.
 
 \bibitem[Kicinger et~al., 2005]{kicinger2005evolutionary}
 Kicinger, R., Arciszewski, T., and Jong, K.~D. (2005).
@@ -29,11 +99,53 @@ Kicinger, R., Arciszewski, T., and Jong, K.~D. (2005).
   state-of-the-art.
 \newblock {\em Computers \& Structures}, 83(23):1943--1978.
 
-\bibitem[Mateos et~al., 2000]{Mateos00}
-Mateos, G., García~M., J., and Ortín~I., M. (2000).
-\newblock Inclusión de vistas en \textsc{ODMG}.
-\newblock {\em Jornadas de Ingeniería del Software y Bases de Datos {(JISBD
-  2000)}}, pages 383--395.
+\bibitem[Li and Wang, 2007]{li2007hybrid}
+Li, B.-B. and Wang, L. (2007).
+\newblock A hybrid quantum-inspired genetic algorithm for multiobjective flow
+  shop scheduling.
+\newblock {\em Systems, Man, and Cybernetics, Part B: Cybernetics, IEEE
+  Transactions on}, 37(3):576--591.
+
+\bibitem[Malossini et~al., 2008]{Malossini2008}
+Malossini, A., Blanzieri, E., and Calarco, T. (2008).
+\newblock Quantum genetic optimization.
+\newblock {\em Trans. Evol. Comp}, 12(2):231--241.
+
+\bibitem[Mani and Patvardhan, 2010]{mani2010solving}
+Mani, A. and Patvardhan, C. (2010).
+\newblock Solving ceramic grinding optimization problem by adaptive quantum
+  evolutionary algorithm.
+\newblock In {\em Intelligent Systems, Modelling and Simulation (ISMS), 2010
+  International Conference on}, pages 43--48. IEEE.
+
+\bibitem[Miao et~al., 2009]{miao2009quantum}
+Miao, H., Wang, H., and Deng, Z. (2009).
+\newblock Quantum genetic algorithm and its application in power system
+  reactive power optimization.
+\newblock In {\em Computational Intelligence and Security, 2009. CIS'09.
+  International Conference on}, volume~1, pages 107--111. IEEE.
+
+\bibitem[Narayanan and Moore, 1996]{narayanan1996quantum}
+Narayanan, A. and Moore, M. (1996).
+\newblock Quantum-inspired genetic algorithms.
+\newblock In {\em Evolutionary Computation, 1996., Proceedings of IEEE
+  International Conference on}, pages 61--66. IEEE.
+
+\bibitem[Nowotniak, 2010]{nowotniaksurvey}
+Nowotniak, R. (2010).
+\newblock Survey of quantum-inspired evolutionary algorithms.
+
+\bibitem[Nowotniak and Kucharski, 2014]{nowotniak2014higher}
+Nowotniak, R. and Kucharski, J. (2014).
+\newblock Higher-order quantum-inspired genetic algorithms.
+\newblock {\em arXiv preprint arXiv:1407.0977}.
+
+\bibitem[Qin et~al., 2008]{qin2008real}
+Qin, C., Liu, Y., and Zheng, J. (2008).
+\newblock A real-coded quantum-inspired evolutionary algorithm for global
+  numerical optimization.
+\newblock In {\em Cybernetics and Intelligent Systems, 2008 IEEE Conference
+  on}, pages 1160--1164. IEEE.
 
 \bibitem[Romero and Machado, 2008]{romero2008art}
 Romero, J.~J. and Machado, P. (2008).
@@ -41,17 +153,68 @@ Romero, J.~J. and Machado, P. (2008).
   and music}.
 \newblock Springer.
 
+\bibitem[Shor, 1994]{shor1994algorithms}
+Shor, P.~W. (1994).
+\newblock Algorithms for quantum computation: discrete logarithms and
+  factoring.
+\newblock In {\em Foundations of Computer Science, 1994 Proceedings., 35th
+  Annual Symposium on}, pages 124--134. IEEE.
+
 \bibitem[Singulani et~al., 2008]{singulani2008computational}
 Singulani, A.~P., Vilela~Neto, O.~P., Aur{\'e}lio~Pacheco, M.~C., Vellasco,
   M.~B., Pires, M.~P., and Souza, P.~L. (2008).
 \newblock Computational intelligence applied to the growth of quantum dots.
 \newblock {\em Journal of Crystal Growth}, 310(23):5063--5065.
 
+\bibitem[Talbi et~al., 2007]{talbi2007quantum}
+Talbi, H., Batouche, M., and Draa, A. (2007).
+\newblock A quantum-inspired evolutionary algorithm for multiobjective image
+  segmentation.
+\newblock {\em International Journal of Mathematical, Physical and Engineering
+  Sciences}, 1(2):109--114.
+
+\bibitem[Teng et~al., 2010]{Hao2010}
+Teng, H., Zhao, B., and Cao, A. (2010).
+\newblock Chaos quantum genetic algorithm based on henon map.
+\newblock {\em Intelligent Computation Technology and Automation (ICICTA), 2010
+  International Conference on}, 1:922--925.
+
+\bibitem[Tsai et~al., 2012]{tsai2012improved}
+Tsai, J.-T., Chou, J.-H., and Ho, W.-H. (2012).
+\newblock Improved quantum-inspired evolutionary algorithm for engineering
+  design optimization.
+\newblock {\em Mathematical Problems in Engineering}, 2012.
+
+\bibitem[Venayagamoorthy and Singhal, 2005]{venayagamoorthy2005quantum}
+Venayagamoorthy, G.~K. and Singhal, G. (2005).
+\newblock Quantum-inspired evolutionary algorithms and binary particle swarm
+  optimization for training mlp and srn neural networks.
+\newblock {\em Journal of Computational and Theoretical Nanoscience},
+  2(4):561--568.
+
+\bibitem[Xing et~al., 2009]{xing2009multi}
+Xing, H., Liu, X., Jin, X., Bai, L., and Ji, Y. (2009).
+\newblock A multi-granularity evolution based quantum genetic algorithm for qos
+  multicast routing problem in wdm networks.
+\newblock {\em Computer Communications}, 32(2):386--393.
+
+\bibitem[Zhang et~al., 2006]{Zhang2006}
+Zhang, G.-x., Li, N., Jin, W.-d., and Hu, L.-z. (2006).
+\newblock Novel quantum genetic algorithm and its applications.
+\newblock {\em Frontiers of Electrical and Electronic Engineering in China},
+  1(1):31--36.
+
 \bibitem[Zhang et~al., 2011]{zhang2011evolutionary}
 Zhang, J., Zhan, Z.-h., Lin, Y., Chen, N., Gong, Y.-j., Zhong, J.-h., Chung,
   H.~S., Li, Y., and Shi, Y.-h. (2011).
 \newblock Evolutionary computation meets machine learning: A survey.
 \newblock {\em Computational Intelligence Magazine, IEEE}, 6(4):68--75.
+
+\bibitem[Zhao et~al., 2009]{zhao2009real}
+Zhao, S., Xu, G., Tao, T., and Liang, L. (2009).
+\newblock Real-coded chaotic quantum-inspired genetic algorithm for training of
+  fuzzy neural networks.
+\newblock {\em Computers \& Mathematics with Applications}, 57(11).
 
 \bibitem[Zhou et~al., 2011]{zhou2011multiobjective}
 Zhou, A., Qu, B.-Y., Li, H., Zhao, S.-Z., Suganthan, P.~N., and Zhang, Q.

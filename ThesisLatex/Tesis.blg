@@ -4,44 +4,47 @@ The top-level auxiliary file: Tesis.aux
 A level-1 auxiliary file: abreviaturas.aux
 The style file: apalike.bst
 Database file #1: Bibliog.bib
-You've used 10 entries,
+Warning--empty journal in alegria2014generalized
+Warning--empty journal in nowotniaksurvey
+You've used 36 entries,
             1935 wiz_defined-function locations,
-            536 strings with 5670 characters,
-and the built_in function-call counts, 4400 in all, are:
-= -- 426
-> -- 208
-< -- 6
-+ -- 76
-- -- 72
-* -- 382
-:= -- 763
-add.period$ -- 31
-call.type$ -- 10
-change.case$ -- 83
-chr.to.int$ -- 10
-cite$ -- 10
-duplicate$ -- 158
-empty$ -- 288
-format.name$ -- 86
-if$ -- 856
+            690 strings with 11024 characters,
+and the built_in function-call counts, 16254 in all, are:
+= -- 1644
+> -- 626
+< -- 32
++ -- 232
+- -- 210
+* -- 1334
+:= -- 2679
+add.period$ -- 118
+call.type$ -- 36
+change.case$ -- 282
+chr.to.int$ -- 36
+cite$ -- 38
+duplicate$ -- 655
+empty$ -- 1152
+format.name$ -- 268
+if$ -- 3298
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 11
-newline$ -- 53
-num.names$ -- 30
-pop$ -- 80
+missing$ -- 37
+newline$ -- 181
+num.names$ -- 108
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 285
 quote$ -- 0
-skip$ -- 122
+skip$ -- 515
 stack$ -- 0
-substring$ -- 301
-swap$ -- 26
-text.length$ -- 2
+substring$ -- 1227
+swap$ -- 146
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 0
-while$ -- 35
+type$ -- 212
+warning$ -- 2
+while$ -- 136
 width$ -- 0
-write$ -- 131
+write$ -- 475
+(There were 2 warnings)
