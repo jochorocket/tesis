@@ -4,15 +4,18 @@ En este capítulo se examinará de forma más profunda las dos áreas de inspiración
 
 \section{Computación Cuántica}
 
-Un capítulo puede contener n secciones. La referencia bibliográfica se hace de la siguiente manera:
+La computación cuántica es un paradigma de computación que surge en contraposición a la computación clásica, la cual basa su existencia en transistores. En la computación cuántica, se aplican a la computación los principios presentes en la física cuántica, tales como la superposición de estados, entrelazamiento, entre otras \cite{hey1999quantum}. 
 
-\subsection{Sub Sección}
+La potencia disponible en la computación clásica está ligada directamente al tamaño de los transistores que componen sus chips. Actualmente, el tamaño de dichos transistores ya está aproximándose a la escala de nanómetros, lo cual limita el aumento de ciclos por reloj para los procesadores, motivo por el cual el foco en la computación clásica ha cambiado para concentrarse en campos como la paralelización \cite{censor1997parallel}.
 
-Una sección puede contener n sub secciones.\cite{Galante01}
+Es aquí donde la computación cuántica muestra sus posibilidades. A diferencia del paradigma tradicional donde la unidad básica es el bit, en la computación cuántica la unidad básica es el \textit{q-bit}. La diferencia entre el bit tradicional y el q-bit es que mientras el primero sólo puede almacenar un único valor (ya sea este 0 o 1), el segundo puede contener 0, 1 o una superposición de ambos valores, fenómeno al que se llama \textit{superposición de estados}. Es esta superposición de estados la que permite asumir una cantidad simultánea de valores a la vez, y por lo tanto desarrollar una cantidad fantástica de operaciones simultáneas en vez de la única simultánea que permite la computación clásica \cite{nielsen2010quantum}.
 
-\subsubsection{Sub sub sección}
+Esta diferencia (que se evidencia en la representación de un algoritmo cuántico mediante máquinas de Turing cuánticas en vez de las tradicionales) presenta posibilidades poco imaginables hasta hace poco. Si se lograra construir un computador cuántico y ejecutar en él algoritmos que aprovechen su poder, se podría llegar al extremo de ejecutar tareas de complejidad no-polinomial para un ordenador tradicional (problemas NP-completos). Sin embargo, los avances científicos en el campo todavía no han llegado al punto de poder generar un prototipo práctico de computador cuántico, por lo que sus propiedades continúan siendo más una posibilidad que un hecho \cite{han2001analysis}.
 
-Una sub sección puede contener n sub sub secciones.
+Además de ello, cabe resaltar que para aprovechar toda la potencia de procesamiento que un ordenador cuántico podría ofrecer, se deberá disponer de algoritmos cuánticos que empleen los conceptos relacionados a la computación cuántica. Por ahora se tienen algunos ejemplos como el algoritmo de Shor (para descomponer un número en factores polinomiales) \cite{shor1994algorithms} o el de Grover (para buscar una secuencia no ordenada de datos con N componentes) \cite{grover1996fast}, entre otros. Basta ver, por ejemplo, el algoritmo de Shor, que demuestra que el poder de la computación cuántica es tal que podría acabar con el campo de la criptografía tradicional al ser capaz de romper algoritmos de encriptación como RSA.
+
+Dado que los algoritmos cuánticos ``auténticos'' son por ahora inaplicables en la vida real, se ha buscado adaptar distintos conceptos de la computación cuántica a otras áreas para poder aprovechar algunas de sus ventajas en la computación tradicional. De esos intentos surge la computación evolutiva de inspiración cuántica, la cual se explica posteriormente en este capítulo.
+
 
 \section{Computación Evolutiva}
 
@@ -71,10 +74,6 @@ Por supuesto, los algoritmos evolutivos también presentan algunos inconvenientes
  \item El valor óptimo de los parámetros pueden variar durante la evolución.
  \item No existe una garantía para hallar soluciones óptimas en un periodo de tiempo determinado, aunque para evitar ello se pueden aplicar pruebas de convergencia asimptótica.
 \end{itemize}
-
-
-
-
 
 
 \section{Algoritmos Evolutivos de Inspiración Cuántica}

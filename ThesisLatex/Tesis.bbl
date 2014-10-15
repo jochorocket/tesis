@@ -17,6 +17,11 @@ Benioff, P. (1982).
   energy.
 \newblock {\em Physical Review Letters}, 48(23):1581.
 
+\bibitem[Censor, 1997]{censor1997parallel}
+Censor, Y. (1997).
+\newblock {\em Parallel optimization: Theory, algorithms, and applications}.
+\newblock Oxford University Press.
+
 \bibitem[Coello, 1999]{coello1999comprehensive}
 Coello, C. A.~C. (1999).
 \newblock A comprehensive survey of evolutionary-based multiobjective
@@ -55,12 +60,6 @@ Fan, K., Brabazon, A., O'Sullivan, C., and O'Neill, M. (2008).
 \newblock In {\em Applications of Evolutionary Computing}, pages 133--143.
   Springer.
 
-\bibitem[Galante, 2001]{Galante01}
-Galante, R. d.~M. (2001).
-\newblock {\em Evolução de Esquemas em Bancos de Dados Orientados a Objetos com
-  o emprego de versões}.
-\newblock PhD thesis, Instituto de Informática-UFRGS.
-
 \bibitem[Grover, 1996]{grover1996fast}
 Grover, L.~K. (1996).
 \newblock A fast quantum mechanical algorithm for database search.
@@ -73,6 +72,17 @@ Han, K.-H. and Kim, J.-H. (2000).
   optimization problem.
 \newblock In {\em Evolutionary Computation, 2000. Proceedings of the 2000
   Congress on}, volume~2, pages 1354--1360. IEEE.
+
+\bibitem[Han et~al., 2001]{han2001analysis}
+Han, K.-H., Kim, J.-H., et~al. (2001).
+\newblock Analysis of quantum-inspired evolutionary algorithm.
+\newblock In {\em Proceedings of the 2001 International Conference on
+  Artificial Intelligence}, pages 727--730. Citeseer.
+
+\bibitem[Hey, 1999]{hey1999quantum}
+Hey, T. (1999).
+\newblock Quantum computing: an introduction.
+\newblock {\em Computing \& Control Engineering Journal}, 10(3):105--112.
 
 \bibitem[Hinterding et~al., 1997]{hinterding1997adaptation}
 Hinterding, R., Michalewicz, Z., and Eiben, A.~E. (1997).
@@ -130,6 +140,11 @@ Narayanan, A. and Moore, M. (1996).
 \newblock Quantum-inspired genetic algorithms.
 \newblock In {\em Evolutionary Computation, 1996., Proceedings of IEEE
   International Conference on}, pages 61--66. IEEE.
+
+\bibitem[Nielsen and Chuang, 2010]{nielsen2010quantum}
+Nielsen, M.~A. and Chuang, I.~L. (2010).
+\newblock {\em Quantum computation and quantum information}.
+\newblock Cambridge university press.
 
 \bibitem[Nowotniak, 2010]{nowotniaksurvey}
 Nowotniak, R. (2010).
