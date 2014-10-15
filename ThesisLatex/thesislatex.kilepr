@@ -115,13 +115,13 @@ order=-1
 
 [item:Bibliog.bib]
 archive=true
-column=32
+column=30
 encoding=ISO-8859-15
 highlight=BibTeX
-line=90
+line=386
 mode=BibTeX
 open=true
-order=4
+order=3
 
 [item:Cap_1.tex]
 archive=true
@@ -135,23 +135,23 @@ order=3
 
 [item:Cap_2.tex]
 archive=true
-column=72
+column=541
 encoding=ISO-8859-15
 highlight=LaTeX
-line=18
+line=10
 mode=LaTeX
 open=false
 order=4
 
 [item:Cap_3.tex]
 archive=true
-column=168
+column=0
 encoding=ISO-8859-15
 highlight=LaTeX
-line=2
+line=23
 mode=LaTeX
 open=true
-order=1
+order=2
 
 [item:Cap_4.tex]
 archive=true
@@ -160,7 +160,7 @@ encoding=ISO-8859-15
 highlight=LaTeX
 line=5
 mode=LaTeX
-open=true
+open=false
 order=3
 
 [item:Figure1.png]
@@ -185,10 +185,10 @@ order=2
 
 [item:Tesis.tex]
 archive=true
-column=1
+column=20
 encoding=ISO-8859-15
 highlight=LaTeX
-line=63
+line=14
 mode=LaTeX
 open=true
 order=0
@@ -201,7 +201,7 @@ highlight=LaTeX
 line=8
 mode=LaTeX
 open=true
-order=2
+order=1
 
 [item:conclusiones.tex]
 archive=true
@@ -246,10 +246,10 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Bibliog.bib]
-CursorColumn=32
-CursorLine=90
+CursorColumn=30
+CursorLine=386
 JumpList=
-ViMarks=.,98,12,[,98,12,],98,12
+ViMarks=.,410,12,[,410,12,],410,12
 
 [view-settings,view=0,item:Cap_1.tex]
 CursorColumn=188
@@ -258,16 +258,16 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Cap_2.tex]
-CursorColumn=72
-CursorLine=18
+CursorColumn=541
+CursorLine=10
 JumpList=
-ViMarks=.,18,27,[,18,72,],18,71
+ViMarks=.,10,540,[,10,540,],10,540
 
 [view-settings,view=0,item:Cap_3.tex]
-CursorColumn=168
-CursorLine=2
+CursorColumn=0
+CursorLine=23
 JumpList=
-ViMarks=.,2,167,[,2,140,],2,167
+ViMarks=.,23,0,[,23,0,],23,0
 
 [view-settings,view=0,item:Cap_4.tex]
 CursorColumn=12
@@ -282,10 +282,10 @@ JumpList=
 ViMarks=.,1,308,[,1,308,],1,308
 
 [view-settings,view=0,item:Tesis.tex]
-CursorColumn=1
-CursorLine=63
+CursorColumn=20
+CursorLine=14
 JumpList=
-ViMarks=.,64,0,[,64,0,],64,0
+ViMarks=.,14,19,[,14,0,],14,19
 
 [view-settings,view=0,item:abreviaturas.tex]
 CursorColumn=56

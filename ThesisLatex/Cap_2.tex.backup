@@ -16,9 +16,9 @@ Si bien la mayoría de algoritmos evolutivos de inspiración cuántica están relaci
 
 \section{Aplicaciones de los Algoritmos Evolutivos de Inspiración Cuántica}
 
-Al ser derivados de los algoritmos evolutivos, los algoritmos cuántica de inspiración cuántica han sido aplicados en diversos problemas combinatorios y de optimización numérica \cite{nowotniaksurvey}. Entre algunas de las áreas en las que se han aplicado satisfactoriamente este tipo de problemas, tenemos: procesamiento de imágenes [CITACION], problemas de diseño de redes [CITACION], problemas de calendarización de flujo de tienda, optimización de sistemas de energía, generación de instrumentos a escala nanométrica \cite{dias2011self}, entre otros.
+Al ser derivados de los algoritmos evolutivos, los algoritmos cuántica de inspiración cuántica han sido aplicados en diversos problemas combinatorios y de optimización numérica \cite{nowotniaksurvey}. Entre algunas de las áreas en las que se han aplicado satisfactoriamente este tipo de problemas, tenemos: procesamiento de imágenes \cite{talbi2007quantum}, problemas de diseño de redes \cite{xing2009multi}, problemas de calendarización de flujo de tienda \cite{li2007hybrid}, optimización de sistemas de energía \cite{miao2009quantum}, generación de instrumentos a escala nanométrica \cite{dias2011self}, entre otros.
 
-Además, los algoritmos representados con números reales han sido exitosamente aplicados a problemas de optimización en ingenería [CITACION], modelamiento de opciones de facturación [CITACION], optimización de sistemas de energía [CITACION], análisis de datos financieros [CITACION], entrenamiento de redes neuronales difusas [CITACION], entre otras aplicaciones adicionales.
+Además, los algoritmos representados con números reales han sido exitosamente aplicados a problemas de optimización en ingenería \cite{mani2010solving}, modelamiento de opciones de facturación \cite{fan2007option}, optimización de sistemas de energía \cite{jeong2010new}, análisis de datos financieros \cite{fan2008quantum}, entrenamiento de redes neuronales \cite{zhao2009real} \cite{venayagamoorthy2005quantum}, entre otras aplicaciones adicionales.
 
 \section{Consideraciones Finales}
 
