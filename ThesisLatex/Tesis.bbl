@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Coello, 1999]{coello1999comprehensive}
+Coello, C. A.~C. (1999).
+\newblock A comprehensive survey of evolutionary-based multiobjective
+  optimization techniques.
+\newblock {\em Knowledge and Information systems}, 1(3):269--308.
+
 \bibitem[Eiben and Smith, 2003]{eiben2003introduction}
 Eiben, A.~E. and Smith, J.~E. (2003).
 \newblock {\em Introduction to evolutionary computing}.
@@ -29,10 +35,29 @@ Mateos, G., García~M., J., and Ortín~I., M. (2000).
 \newblock {\em Jornadas de Ingeniería del Software y Bases de Datos {(JISBD
   2000)}}, pages 383--395.
 
+\bibitem[Romero and Machado, 2008]{romero2008art}
+Romero, J.~J. and Machado, P. (2008).
+\newblock {\em The art of artificial evolution: a handbook on evolutionary art
+  and music}.
+\newblock Springer.
+
+\bibitem[Singulani et~al., 2008]{singulani2008computational}
+Singulani, A.~P., Vilela~Neto, O.~P., Aur{\'e}lio~Pacheco, M.~C., Vellasco,
+  M.~B., Pires, M.~P., and Souza, P.~L. (2008).
+\newblock Computational intelligence applied to the growth of quantum dots.
+\newblock {\em Journal of Crystal Growth}, 310(23):5063--5065.
+
 \bibitem[Zhang et~al., 2011]{zhang2011evolutionary}
 Zhang, J., Zhan, Z.-h., Lin, Y., Chen, N., Gong, Y.-j., Zhong, J.-h., Chung,
   H.~S., Li, Y., and Shi, Y.-h. (2011).
 \newblock Evolutionary computation meets machine learning: A survey.
 \newblock {\em Computational Intelligence Magazine, IEEE}, 6(4):68--75.
+
+\bibitem[Zhou et~al., 2011]{zhou2011multiobjective}
+Zhou, A., Qu, B.-Y., Li, H., Zhao, S.-Z., Suganthan, P.~N., and Zhang, Q.
+  (2011).
+\newblock Multiobjective evolutionary algorithms: A survey of the state of the
+  art.
+\newblock {\em Swarm and Evolutionary Computation}, 1(1):32--49.
 
 \end{thebibliography}

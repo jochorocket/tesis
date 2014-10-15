@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Sub Sección}{6}
 \contentsline {subsubsection}{Sub sub sección}{6}
 \contentsline {section}{\numberline {3.2}Computación Evolutiva}{6}
-\contentsline {section}{\numberline {3.3}Algoritmos Evolutivos de Inspiración Cuántica}{8}
-\contentsline {section}{\numberline {3.4}Consideraciones Finales}{8}
-\contentsline {chapter}{\numberline {4}Propuesta}{9}
-\contentsline {chapter}{Bibliografía}{10}
+\contentsline {section}{\numberline {3.3}Algoritmos Evolutivos de Inspiración Cuántica}{9}
+\contentsline {section}{\numberline {3.4}Consideraciones Finales}{9}
+\contentsline {chapter}{\numberline {4}Propuesta}{10}
+\contentsline {chapter}{Bibliografía}{11}

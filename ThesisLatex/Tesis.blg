@@ -4,44 +4,44 @@ The top-level auxiliary file: Tesis.aux
 A level-1 auxiliary file: abreviaturas.aux
 The style file: apalike.bst
 Database file #1: Bibliog.bib
-You've used 6 entries,
+You've used 10 entries,
             1935 wiz_defined-function locations,
-            514 strings with 4829 characters,
-and the built_in function-call counts, 2669 in all, are:
-= -- 261
-> -- 122
-< -- 4
-+ -- 42
-- -- 42
-* -- 222
-:= -- 460
-add.period$ -- 19
-call.type$ -- 6
-change.case$ -- 49
-chr.to.int$ -- 6
-cite$ -- 6
-duplicate$ -- 102
-empty$ -- 175
-format.name$ -- 50
-if$ -- 529
+            536 strings with 5670 characters,
+and the built_in function-call counts, 4400 in all, are:
+= -- 426
+> -- 208
+< -- 6
++ -- 76
+- -- 72
+* -- 382
+:= -- 763
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 83
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 158
+empty$ -- 288
+format.name$ -- 86
+if$ -- 856
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 33
-num.names$ -- 18
-pop$ -- 50
+missing$ -- 11
+newline$ -- 53
+num.names$ -- 30
+pop$ -- 80
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 86
 quote$ -- 0
-skip$ -- 81
+skip$ -- 122
 stack$ -- 0
-substring$ -- 174
-swap$ -- 22
+substring$ -- 301
+swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 34
+type$ -- 56
 warning$ -- 0
-while$ -- 21
+while$ -- 35
 width$ -- 0
-write$ -- 80
+write$ -- 131
