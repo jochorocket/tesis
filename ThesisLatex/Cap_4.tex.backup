@@ -1,0 +1,4 @@
+\chapter{Propuesta}
+
+La propuesta que presenta esta tesis busca extender el algoritmo evolutivo de inspiración cuántica original, %tomando como base la generalización del mismo para más de dos estados como se muestra en \cite{alegria2014generalized}, 
+e introducir el concepto de \textit{entrelazamiento intergeneracional} como justificación para la implementación de un operador de recombinación. A partir de una iteración $u$ del algoritmo, se busca recombinar al Q-bit que hasta el momento ha demostrado el mejor comportamiento con las mejoras que se han implementado en el 

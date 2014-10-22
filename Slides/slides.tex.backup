@@ -1,0 +1,125 @@
+\documentclass{beamer}
+
+\usepackage[latin1]{inputenc}
+\usepackage{default}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Algoritmo Evolutivo Concurrente de Inspiración Cuántica en $\mathbb{R}$ para problemas de optimización de objetivo único}
+\author{José Carlos Delgado Ramos}
+\institute{Escuela Profesional de Ciencia de la Computación\\Universidad Católica San Pablo}
+
+\mode<presentation>
+{
+  \usetheme{Singapore}
+  \setbeamercovered{transparent}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+ \frametitle{Introducción}
+\begin{itemize}
+ \item Algoritmos Evolutivos de Inspiración Cuántica: campo relativamente novedoso.
+ \item Busca incorporar algunas de las ventajas de la Computación Cuántica a algoritmos de computación tradicional (basada en transistores y puertas lógica de dos valores).
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}  
+Emplean una representación denominada Q-bit -la cual equivale al qubit que puede representar a uno los valores $\{0,1\}$ o a la superposición de ambos-, el cual está definida por un par de número $[\alpha,\beta]$ tal que:
+
+\[
+  \begin{bmatrix}
+    \alpha \\        
+    \beta \\      
+  \end{bmatrix}
+\]
+
+donde $\arrowvert\alpha\arrowvert^2 + \arrowvert\beta\arrowvert^2 = 1 $, y que hacen referencia a las posibilidades de que el Q-bit colapse a uno de los dos valores posibles al momento de ser observado.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
+Se puede definir un vector de $m$ Q-bits de esta forma:
+
+\[
+  \begin{bmatrix}
+    \alpha_1 & \alpha_2 & ... & \alpha_m \\        
+    \beta_1 & \beta_2 & ... &  \beta_m \\      
+    \beta_1 & \beta_2 & ... &  \beta_m \\      
+  \end{bmatrix}
+\]
+
+donde $\arrowvert\alpha_i\arrowvert^2 + \arrowvert\beta_i\arrowvert^2 = 1 $ para cada $i = 0, 1, ..., m$.
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
+Para modificar los Q-bits se emplea un operador denominado Q-gate, el cual se encarga de rotar el ángulo y hacerlo inclinarse hacia un valor $\{0,1\}$, de tal manera que asegure el cumplimiento de la ecuación 3.2:
+
+\[
+U(\Delta\theta_i)=
+  \begin{bmatrix}
+    \cos(\Delta\theta_i) & -\sin(\Delta\theta_i) \\        
+    \sin(\Delta\theta_i) & \cos(\Delta\theta_i) \\      
+  \end{bmatrix}
+\]
+
+donde $\Delta\theta_i, i=0,1,...,m$ es el ángulo de rotación de cada Q-bit. La magnitud de este valor tiene efecto en la convergencia, pero de ser muy alto se corre el riesgo de diverger o de converger prematuramente hacia un óptimo local.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
+ \[
+   \begin{bmatrix}
+    \alpha'_i \\        
+    \beta'_i \\      
+  \end{bmatrix}=
+U(\Delta\theta_i)
+   \begin{bmatrix}
+    \alpha_i \\        
+    \beta_i \\      
+  \end{bmatrix}
+\]
+\end{frame}
+
+\begin{frame}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
+La estructura del algoritmo es la siguiente:
+ \centering
+ \includegraphics[scale=0.6,keepaspectratio=true]{./Figure3.png}
+ % Figure2.png: 446x471 pixel, 96dpi, 11.80x12.46 cm, bb=0 0 334 353
+\end{frame}
+
+
+
+\begin{frame}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica en $\mathbb{R}$}
+\begin{itemize}
+ \item Busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base. 
+ \item La inspiración de este modelo está en el uso de funciones de onda.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica en $\mathbb{R}$}
+\begin{itemize}
+ \item Los individuos cuánticos son reemplazados: en vez de valores que indican la probabilidad de selección de un valor, pasan a ser funciones aleatorias de probabilidad $\mathbb{U}_{ij} \in [l_{uj},u{ij}\rangle$ donde $l_{uj},u{ij}$ marcan los límites superiores e inferiores del intervalo respectivamente.
+\end{itemize}
+ 
+\end{frame}
+
+
+\end{document}

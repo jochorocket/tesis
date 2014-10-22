@@ -93,7 +93,7 @@ Por supuesto, los algoritmos evolutivos también presentan algunos inconvenientes
 
 El algoritmo evolutivo de inspiración cuántica original fue descrito originalmente en \cite{han2000genetic} y posteriormente analizado \cite{han2001analysis}. Como se puede ver en el capítulo anterior, han surgido buen número de variaciones y aplicaciones, todos basados en el original que se describe a continuación:
 
-\ac{QIEA} emplea una representación denominada Q-bit, el cual está definida por un par de número $[\alpha,\beta]$ tal que:
+\ac{QIEA} emplea una representación denominada Q-bit -la cual equivale al qubit que puede representar a uno los valores $\{0,1\}$ o a la superposición de ambos-, el cual está definida por un par de número $[\alpha,\beta]$ tal que:
 
 \[
   \begin{bmatrix}
@@ -102,7 +102,7 @@ El algoritmo evolutivo de inspiración cuántica original fue descrito originalmen
   \end{bmatrix}
 \]
 
-donde $\arrowvert\alpha\arrowvert^2 + \arrowvert\beta\arrowvert^2 = 1 $. De la misma forma se puede definir un vector de $m$ Q-bits de esta forma:
+donde $\arrowvert\alpha\arrowvert^2 + \arrowvert\beta\arrowvert^2 = 1 $, y que hacen referencia a las posibilidades de que el Q-bit colapse a uno de los dos valores posibles al momento de ser observado. De la misma forma se puede definir un vector de $m$ Q-bits de esta forma:
 
 \[
   \begin{bmatrix}
@@ -116,7 +116,7 @@ donde $\arrowvert\alpha_i\arrowvert^2 + \arrowvert\beta_i\arrowvert^2 = 1 $ para
 
 % AGREGAR DETALLE SOBRE COMO UN INDIVIDUO Q-BIT CON TRES PARES DE AMPLITUDES PUEDE ALMANCENAR TANTA INFORMACIÓN COMO 8 INDIVIDUOS NORMALES
 
-Para modificar los Q-bits se emplea un operador denominado Q-gate, el cual se encarga de rotar el ángulo y hacerlo inclinarse hacia un valor ('0' o '1'), de tal manera que asegure el cumplimiento de la ecuación 3.2:
+Para modificar los Q-bits se emplea un operador denominado Q-gate, el cual se encarga de rotar el ángulo y hacerlo inclinarse hacia un valor $\{0,1\}$, de tal manera que asegure el cumplimiento de la ecuación 3.2:
 
 \[
 U(\Delta\theta_i)=
@@ -127,6 +127,27 @@ U(\Delta\theta_i)=
 \]
 
 donde $\Delta\theta_i, i=0,1,...,m$ es el ángulo de rotación de cada Q-bit. La magnitud de este valor tiene efecto en la convergencia, pero de ser muy alto se corre el riesgo de diverger o de converger prematuramente hacia un óptimo local.
+
+
+\[
+   \begin{bmatrix}
+    \alpha'_i \\        
+    \beta'_i \\      
+  \end{bmatrix}=
+U(\Delta\theta_i)
+   \begin{bmatrix}
+    \alpha_i \\        
+    \beta_i \\      
+  \end{bmatrix}
+\]
+
+\begin{figure}
+ \centering
+ \includegraphics[scale=0.9,keepaspectratio=true]{./Figure2.png}
+ % Figure2.png: 446x471 pixel, 96dpi, 11.80x12.46 cm, bb=0 0 334 353
+ \caption{Rotación del ángulo al momento de la aplicación del operador Q-gate}
+\end{figure}
+
 
 La estructura del algoritmo \ac{QIEA} es la siguiente:
 
@@ -148,8 +169,41 @@ INITIALIZE $t \leftarrow 0$;
 \end{algorithm}
 \end{algorithmic}
 
+
+\section{Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb{R}$}
+
+La propuesta original de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base \cite{da2007algoritmos}. La inspiración de este modelo está en el uso de funciones de onda.
+
+Se calcula el momento de un fotón a partir de su masa al moverse a la velocidad de la luz $m=hv/c^2$ derivada de la ecuación fundamental de Einstein $E=mc^2$.
+
+\begin{equation}
+ p = mc = hv/c = h/\lambda
+\end{equation}
+
+donde $\lambda$ es la longitud de onda de la luz.
+
+Al reemplazar $\lambda = h/p$ en la ecuación utilizada en electromagnetismo donde una onda estacionaria con longitud de onda $\lambda$ se propaga hacia el lado positivo del eje $x$ definida como $\psi(x) = e^{}i2\pi x/\lambda$ donde $i = \sqrt{-1}$ se obtiene:
+
+\begin{equation}
+ \psi(x) = e^{ipx2\pi/h}
+\end{equation}
+
+Según \cite{gillespie1974}, la \ac{PDD} para la ubicación de una partícula con función de onda $\psi$ está definida por $\arrowvert\psi\arrowvert^2$, por lo que al integrar todo el espacio en el que la partícula podría ser encontrada, se obtiene la posibilidad de encontrarla en cualquier lugar del espacio:
+
+\begin{equation}
+ \int^\infty_{-\infty}{\arrowvert\psi\arrowvert^2d\tau}=1
+\end{equation}
+
+Debido a que a cada observación de una partícula, ésta asumirá diferentes valores de posición según la probabilidad de estar localizada en determinada región del espacio, se usa este concepto en el modelo AEIQ-$\mathbb{R}$ para representar los valores de los individuos cuánticos.
+
+De tal forma, se obtiene una población de individuos cuánticos $Q_t = {q_1 ,... , q_m }$, en la generación $t$, donde cada individuo cuántico $q_i$ está formado por $n$ genes, $q_{ij} = {q_{i1},...,q{in} }$, donde a su vez cada gen $q_{ij}$ está formado por funciones densidades de probabilidad (en vez de variables como en el algoritmo original).
+
+
+
+
+
 \section{Consideraciones Finales}
 
-Según se ha visto, el algoritmo evolutivo de inspiración cuántica original es sencillo y de implementación relativamente rápida. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual agrega conceptos de física cuántica para la introducción de un mecanismo de recombinación (\textit{fitness}).
+Según se ha visto, el algoritmo evolutivo de inspiración cuántica original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir un nuevo mecanismo de recombinación (\textit{crossover}) en un entorno concurrente de ejecución con más de una población cuántica generadora.
 
 

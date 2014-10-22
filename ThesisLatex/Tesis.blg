@@ -6,45 +6,45 @@ The style file: apalike.bst
 Database file #1: Bibliog.bib
 Warning--empty journal in alegria2014generalized
 Warning--empty journal in nowotniaksurvey
-You've used 39 entries,
+You've used 41 entries,
             1935 wiz_defined-function locations,
-            706 strings with 11417 characters,
-and the built_in function-call counts, 17499 in all, are:
-= -- 1769
-> -- 664
-< -- 35
-+ -- 244
-- -- 222
-* -- 1426
-:= -- 2879
-add.period$ -- 128
-call.type$ -- 39
-change.case$ -- 301
-chr.to.int$ -- 39
-cite$ -- 41
-duplicate$ -- 712
-empty$ -- 1253
-format.name$ -- 285
-if$ -- 3560
+            715 strings with 11876 characters,
+and the built_in function-call counts, 18041 in all, are:
+= -- 1821
+> -- 678
+< -- 37
++ -- 250
+- -- 226
+* -- 1461
+:= -- 2983
+add.period$ -- 134
+call.type$ -- 41
+change.case$ -- 311
+chr.to.int$ -- 41
+cite$ -- 43
+duplicate$ -- 738
+empty$ -- 1293
+format.name$ -- 291
+if$ -- 3662
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 43
-newline$ -- 196
-num.names$ -- 117
-pop$ -- 300
+missing$ -- 45
+newline$ -- 206
+num.names$ -- 123
+pop$ -- 312
 preamble$ -- 1
-purify$ -- 305
+purify$ -- 317
 quote$ -- 0
-skip$ -- 558
+skip$ -- 578
 stack$ -- 0
-substring$ -- 1320
-swap$ -- 158
+substring$ -- 1346
+swap$ -- 160
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 226
+type$ -- 236
 warning$ -- 2
-while$ -- 147
+while$ -- 151
 width$ -- 0
-write$ -- 513
+write$ -- 538
 (There were 2 warnings)
