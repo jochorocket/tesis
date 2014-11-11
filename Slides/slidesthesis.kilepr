@@ -30,7 +30,7 @@ encoding=ISO-8859-15
 highlight=LaTeX
 line=174
 mode=LaTeX
-open=true
+open=false
 order=0
 
 [item:slidesthesis.kilepr]

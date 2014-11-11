@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {3.1}Computación Cuántica}{6}
 \contentsline {section}{\numberline {3.2}Computación Evolutiva}{7}
 \contentsline {section}{\numberline {3.3}Algoritmo Evolutivo de Inspiración Cuántica}{10}
-\contentsline {section}{\numberline {3.4}Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb {R}$}{12}
+\contentsline {section}{\numberline {3.4}Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb {R}$}{11}
 \contentsline {section}{\numberline {3.5}Consideraciones Finales}{13}
 \contentsline {chapter}{\numberline {4}Propuesta}{14}
 \contentsline {chapter}{Bibliografía}{18}
