@@ -59,6 +59,7 @@ INITIALIZE \textit{population} with random candidate solutions;
  \centering
  \includegraphics[scale=0.8,keepaspectratio=true]{./Figure1.png}
  \caption{Proceso de un algoritmo evolutivo. \cite{eiben2003introduction}} 
+ \label{figure1}
 \end{figure}
 
 Debido a que todas las variedades de algoritmos evolutivos siguen los lineamientos formulados tanto en el algoritmo estándar como en la Figura 3.1, las diferencias entre ellas se reducen a detalles técnicos, como la forma de representar las soluciones. Lo ideal es utilizar la representación de datos más adecuada según la naturaleza del problema a resolver. Si bien son varios los paradigmas desarrollados a partir de la computación evolutiva, son tres los más importantes: Estrategias de Evolución, Programación Evolutiva y Algoritmos Genéticos, las cuales evolucionan soluciones para problemas parametrizados. A ellas se les sumaría un cuarto paradigma: Programación Genética, el cual evoluciona los programas computacionales en sí con el fin de solucionar problemas computacionales \cite{kicinger2005evolutionary}.
@@ -132,7 +133,7 @@ donde también se cumple $\arrowvert\alpha_j\arrowvert^2 + \arrowvert\beta_j\arro
 Para modificar los Q-bits se emplea un operador denominado Q-gate, el cual se encarga de rotar el ángulo y hacerlo inclinarse hacia un valor $\{0,1\}$, de tal manera que asegure el cumplimiento de la ecuación 3.2:
 
 \begin{equation}
- U(\Delta\theta_i)=
+ \text{U}(\Delta\theta_i)=
   \begin{bmatrix}
     \cos(\Delta\theta_i) & -\sin(\Delta\theta_i) \\        
     \sin(\Delta\theta_i) & \cos(\Delta\theta_i) \\      
@@ -146,37 +147,42 @@ donde $\Delta\theta_i, i=0,1,...,m$ es el ángulo de rotación de cada Q-bit. La m
     \alpha'_i \\        
     \beta'_i \\      
   \end{bmatrix}=
-U(\Delta\theta_i)
+\text{U}(\Delta\theta_i)
    \begin{bmatrix}
     \alpha_i \\        
     \beta_i \\      
   \end{bmatrix} 
 \end{equation}
 
+sin perder la característica $\textbar\alpha'_k\textbar^2 + \textbar\beta'_k\textbar^2 = 1$.
+
+En la figura \ref{figure2} se puede apreciar cómo las modificaciones en el operador Q-gate permiten que el las probabilidades $\alpha$ y $\beta$ varíen sin perjudicar la condición elemental expresada en la ecuación 3.2.
+
 \begin{figure}
  \centering
  \includegraphics[scale=0.7,keepaspectratio=true]{./Figure2.png}
  % Figure2.png: 446x471 pixel, 96dpi, 11.80x12.46 cm, bb=0 0 334 353
  \caption{Rotación del ángulo al momento de la aplicación del operador Q-gate}
+ \label{figure2}
 \end{figure}
-
-
-La estructura del algoritmo \ac{QIEA} es la siguiente:
 
 \begin{algorithmic}
 \begin{algorithm}[ht]
 \caption{Pseudocódigo para el algoritmo evolutivo de inspiración cuántica}
 INITIALIZE $t \leftarrow 0$;
-\State INITIALIZE $Q(t)$;
-\State MAKE $P(t)$ by observing the states of $Q(t)$;
-\State EVALUATE $P(t)$;
-\State STORE best solutions among $P(t)$ into {\bf b};
-\While {NOT termination-condition}
+\State INITIALIZE ${\bf Q}_t$;
+\State MAKE ${\bf P}_t$ by observing the states of ${\bf Q}_t$;
+\State STORE best solutions among ${\bf P}_t$ into ${\bf B}_t$;
+\While {EndCondition = false}
     \State $t \leftarrow t+1$;
-    \State MAKE $P(t)$ by observing states of $Q(t-1)$;
-    \State EVALUATE $P(t)$ ;
-    \State UPDATE $Q(t)$ using Q-gates;
-    \State STORE best solutions among $P(t)$ into {\bf b};
+    \State MAKE ${\bf P}_t$ by observing the states of ${\bf Q}_{t-1}$;
+    \State EVALUATE ${\bf P}_t$ ;
+    \State UPDATE ${\bf Q}_t$ using Q-gates;
+    \State STORE best solutions among ${\bf B}_{t-1}$ and ${\bf P}_t$; into ${\bf B}_t$;
+    \State STORE best solution ${\bf b} \in {\bf B}_t$;
+    \If{Migration Condition}
+	\State MIGRATE ${\bf b} \textbar {\bf b}'_j \leftarrow {\bf B}_t$, locally or globally;
+    \EndIf
 \EndWhile
 \end{algorithm}
 \end{algorithmic}
@@ -186,7 +192,7 @@ INITIALIZE $t \leftarrow 0$;
 
 La propuesta original de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base \cite{da2007algoritmos}. La inspiración de este modelo está en el uso de funciones de onda.
 
-Se calcula el momento de un fotón a partir de su masa al moverse a la velocidad de la luz $m=hv/c^2$ derivada de la ecuación fundamental de Einstein $E=mc^2$.
+Se calcula el momento de un fotón a partir de su masa al moverse a la velocidad de la luz $m=hv/c^2$ derivada de la ecuación de equivalencia entre masa y energía $E=mc^2$.
 
 \begin{equation}
  p = mc = hv/c = h/\lambda
@@ -194,11 +200,13 @@ Se calcula el momento de un fotón a partir de su masa al moverse a la velocidad 
 
 donde $\lambda$ es la longitud de onda de la luz.
 
-Al reemplazar $\lambda = h/p$ en la ecuación utilizada en electromagnetismo donde una onda estacionaria con longitud de onda $\lambda$ se propaga hacia el lado positivo del eje $x$ definida como $\psi(x) = e^{}i2\pi x/\lambda$ donde $i = \sqrt{-1}$ se obtiene:
+Al reemplazar $\lambda = h/p$ en la ecuación utilizada en electromagnetismo donde una onda estacionaria con longitud de onda $\lambda$ se propaga hacia el lado positivo del eje $x$ definida como $\psi(x) = e^{i2\pi x/\lambda}$ donde $i = \sqrt{-1}$ se obtiene:
 
 \begin{equation}
- \psi(x) = e^{ipx2\pi/h}
+ \psi(x) = e^{ipx/\hbar}
 \end{equation}
+
+donde $\hbar = h/2\pi$.
 
 Según \cite{gillespie1974}, la \ac{PDD} para la ubicación de una partícula con función de onda $\psi$ está definida por $\arrowvert\psi\arrowvert^2$, por lo que al integrar todo el espacio en el que la partícula podría ser encontrada, se obtiene la posibilidad de encontrarla en cualquier lugar del espacio:
 
@@ -206,17 +214,51 @@ Según \cite{gillespie1974}, la \ac{PDD} para la ubicación de una partícula con f
  \int^\infty_{-\infty}{\arrowvert\psi\arrowvert^2d\tau}=1
 \end{equation}
 
-Debido a que a cada observación de una partícula, ésta asumirá diferentes valores de posición según la probabilidad de estar localizada en determinada región del espacio, se usa este concepto en el modelo AEIQ-$\mathbb{R}$ para representar los valores de los individuos cuánticos.
+El concepto de función de onda relaciona probabilísticamente una onda con la localización de una partícula. Como en cada observación de una partícula, ésta asumirá diferentes valores de posición según la probabilidad que tiene de estar ubicada en una determinada región del espacio, se usa este concepto en los modelos de algoritmos evolutivos de inspiración cuántica para $\mathbb{R}$ al momento de representar los valores de los individuos cuánticos.
 
-De tal forma, se obtiene una población de individuos cuánticos $Q_t = {q_1 ,... , q_m }$, en la generación $t$, donde cada individuo cuántico $q_i$ está formado por $n$ genes, $q_{ij} = {q_{i1},...,q{in} }$, donde a su vez cada gen $q_{ij}$ está formado por funciones densidades de probabilidad (en vez de variables como en el algoritmo original).
+\begin{algorithmic}
+\begin{algorithm}[ht]
+\caption{Pseudocódigo para el algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$}
+INITIALIZE $t \leftarrow 0$;
+\State INITIALIZE ${\bf Q}_t$ with $m$ individuals of $n$ genes;
+\While {$t \leq T$}
+    \State GENERATE ${\bf E}_t$ by observing individuals ${\bf Q}_t$
+    \If{$t=1$}
+	\State ${\bf C}_t = {\bf E}_t$ 
+    \Else
+	\State RECOMBINE $({\bf E}_t,{\bf C}_t) \rightarrow {\bf E}_t$
+	\State EVALUATE ${\bf E}_t$
+	\State SELECT ${\bf C}_t \leftarrow k$ best individuals from ${\bf E}_t \cup {\bf C}_t$
+    \EndIf
+    \State UPDATE ${\bf Q}_{t+1}$ with $m$ best individuals from ${\bf C}_t$
+    \State $t = t+1$
+\EndWhile
+\end{algorithm}
+\end{algorithmic}
 
+De tal forma, se obtiene una población de individuos cuánticos $Q_t = \{q_1 ,... , q_m\}$, en la generación $t$, donde cada individuo cuántico $q_i$ está formado por $n$ genes, $q_{ij} = \{q_{i1},...,q_{in}\}$, donde a su vez cada gen $q_{ij}$ está formado por funciones densidades de probabilidad (en vez de variables como en el algoritmo original). Es por esto que se puede definir a cada gen cuántico $q_{ij}$ perteneciente a un individuo cuántico como una variable aleatoria con función de densidad probabilística $p_{ij}(x) = \psi*_{ij}(x)\psi(x)$ donde $\psi_{ij}(x)$ es la función de onda asociada a $q_{ij}$ del individuo $q_i$ de la población $Q_t$ y donde $\psi*_{ij}(x)$ es el conjugado completo de la función de onda $\psi_{ij}(x)$, donde la \ac{PDF} debe cumplir la propiedad de normalización $\int^\infty_{-\infty}\psi*_{ij}(x)\psi(x)dx = \int^\infty_{-\infty}p_{ij}(x)dx = 1$. No olvidar también que la \ac{PDF} ha de ser integrable en la región del domino de las variables a ser optimizadas para garantizar que se pueda buscar valores en todo el espacio de búsqueda $\mathbb{X}$:
 
+Por lo cual, un individuo cuántico puede ser representado de esta manera:
 
+\begin{equation}
+ q_i=\{q_{i1}=p_{i1}(x),q_{i2}=p_{i2}(x),...,q_{in}=p_{in}(x)\}
+\end{equation}
+
+Se puede utilizar una distribución uniforme $\text{U}_{ij}(x) \in [l_{ij},u_{ij}\rangle$ como \ac{PDF} al definirla como:
+
+\begin{equation}
+ p_{ij}(x)=\begin{cases}
+         \cfrac{1}{u_{ij}-l_{ij}} & \text{if } l_{ij} \leq x \leq u_{ij} \\
+         0 & \text{else }
+        \end{cases}
+\end{equation}
+
+donde $u_{ij}$ es el límite superior y $l_{ij}$ el límite inferior del intervalo para el gen cuántico $q_{ij}$ al colapsar su superposición de estados al ser observado. La definición $\text{U}_{ij}(x)$ respeta la normalización requerida para la \ac{PDF} y es fácilmente implementable con una función que genere número aleatorios escalada al intervalo $[l_{ij},u_{ij}\rangle$ tal como $\text{U}_{ij}(x)=l_{ij}+(u_{ij}-l_{ij})\text{U}(x)$ donde $\text{U}(x)$ es un generador de números aleatorios reales en $[0,1\rangle$.
+
+Cada individuo cuántico $q_i$ perteneciente a una población cuántica $\text{Q}_0$ poseería entonces $n$ genes cuántico $q_{ij}$, cada cual representado de dos formas posibles: ya sea por los valores $l_{ij},u_{ij}$ o por el centro $\mu_{ij}=\cfrac{l_{ij}+u_{ij}}{2}$ mas el ancho de pulso $\sigma_{ij}=u_{ij}-l_{ij}$. Ambas representaciones son equivalentes, por lo que un individuo cuántico $q_i=\{q_{i1},q_{i2}\}$ con pulsos de ancho $2$ y centros posicionados en $-0.5$ y $0.5$ sería representado por $q_i=\{\mu_{i1}=-0.5,\mu_{i2}=0.5,\sigma_{i1}=2,\sigma_{i2}=2\}$. 
 
 
 \section{Consideraciones Finales}
 
 Según se ha visto, el algoritmo evolutivo de inspiración cuántica original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir un nuevo mecanismo de recombinación (\textit{crossover}) en un entorno concurrente de ejecución con más de una población cuántica generadora.
-Según se ha visto, el algoritmo evolutivo de inspiración cuántica original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir un nuevo mecanismo de recombinación (\textit{crossover}) en un entorno concurrente de ejecución con más de una población cuántica generadora.
-
 

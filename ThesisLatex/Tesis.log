@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  10 NOV 2014 21:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  17 NOV 2014 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -398,10 +398,6 @@ although it is yet undefined on input line 2.
 ]) (./Tesis.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write4
-\openout4 = `Tesis.toc'.
-
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
@@ -409,7 +405,15 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 [1
 
 
-] (./Tesis.lot
+])
+\tf@toc=\write4
+\openout4 = `Tesis.toc'.
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[2] (./Tesis.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -420,7 +424,7 @@ LaTeX Info: Redefining \% on input line 1.
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[2
+[3
 
 ] (./Tesis.lof
 LaTeX Info: Redefining \. on input line 1.
@@ -500,7 +504,7 @@ put line 22.
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[7] <./Figure1.png, id=58, 423.08063pt x 280.79906pt>
+[7] <./Figure1.png, id=61, 423.08063pt x 280.79906pt>
 File: ./Figure1.png Graphic file (type png)
  <use ./Figure1.png>
 Package pdftex.def Info: ./Figure1.png used on input line 60.
@@ -510,7 +514,7 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
 [8]
-Overfull \hbox (47.01299pt too wide) in paragraph at lines 76--77
+Overfull \hbox (47.01299pt too wide) in paragraph at lines 77--78
 \T1/aer/m/n/12 evo-lu-ti-vo) [[]], op-ti-mi-za-ción de pro-ce-sos quí-mi-cos [[
 ]],
  []
@@ -523,33 +527,73 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[10] <./Figure2.png, id=70, 335.75438pt x 354.57469pt>
+[10]
+
+abreviaturas.tex:157: LaTeX Warning: Command \textbar invalid in math mode on i
+nput line 157.
+
+
+abreviaturas.tex:157: LaTeX Warning: Command \textbar invalid in math mode on i
+nput line 157.
+
+
+abreviaturas.tex:157: LaTeX Warning: Command \textbar invalid in math mode on i
+nput line 157.
+
+
+abreviaturas.tex:157: LaTeX Warning: Command \textbar invalid in math mode on i
+nput line 157.
+
+<./Figure2.png, id=73, 335.75438pt x 354.57469pt>
 File: ./Figure2.png Graphic file (type png)
  <use ./Figure2.png>
-Package pdftex.def Info: ./Figure2.png used on input line 158.
+Package pdftex.def Info: ./Figure2.png used on input line 163.
 (pdftex.def)             Requested size: 235.02646pt x 248.20059pt.
+
+
+abreviaturas.tex:184: LaTeX Warning: Command \textbar invalid in math mode on i
+nput line 184.
+
+
+Underfull \vbox (badness 3657) has occurred while \output is active []
+
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
 [11]
 Package acronym Info: Label `acro:PDD' newly defined as it shall be overridden
-although it is yet undefined on input line 203.
+although it is yet undefined on input line 211.
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[12 <./Figure2.png>]) (./Cap_4.tex
+[12 <./Figure2.png>]
+Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
+although it is yet undefined on input line 239.
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[13]
+[13]) (./Cap_4.tex
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[14]
 Cap\'{\i }tulo 4.
+) (./Cap_5.tex
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[15
+
+]
+Cap\'{\i }tulo 5.
 ) (./Tesis.bbl
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[14
+[16
 
 ]
 Underfull \hbox (badness 1472) in paragraph at lines 66--70
@@ -561,32 +605,32 @@ Underfull \hbox (badness 1472) in paragraph at lines 66--70
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[15
+[17
 
 ]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[16]
+[18]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[17])
+[19])
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[18] (./Tesis.aux
+[20] (./Tesis.aux
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
  (./abreviaturas.aux)) ) 
 Here is how much of TeX's memory you used:
- 5144 strings out of 493304
- 67502 string characters out of 6139871
- 143015 words of memory out of 5000000
- 8426 multiletter control sequences out of 15000+600000
- 36167 words of font info for 78 fonts, out of 8000000 for 9000
+ 5177 strings out of 493304
+ 67873 string characters out of 6139871
+ 145047 words of memory out of 5000000
+ 8451 multiletter control sequences out of 15000+600000
+ 40097 words of font info for 83 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,42p,1239b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,42p,1239b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
@@ -599,10 +643,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on Tesis.pdf (25 pages, 314132 bytes).
+Output written on Tesis.pdf (28 pages, 322631 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
