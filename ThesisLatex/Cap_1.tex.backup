@@ -1,14 +1,13 @@
 \chapter{Introducción}
 
-%Este es el primer capítulo de la tesis. Se inicia con el desarrollo de la introducción de la tesis. Es importante que el texto utilice la tabla de abreviaturas correctamente. En el archivo abreviaturas.tex contiene la tabla de abreviaturas. Para citar alguna de ellas debes usar los comandos $\backslash$ac\{tu-sigla-aqui\}. Si es la primera vez que utilizas la sigla ella se expandirá por completo. Por ejemplo, el comando $\backslash$ac\{CMM\} va a producir: \ac{CMM}. Si más adelante repites el mismo comando sólo aparecerá la sigla \ac{CMM}. Para explorar mucho más este comando es necesario leer su manual disponible en: $http://www.ctan.org/tex-archive/macros/latex/contrib/acronym/$
+Este es el primer capítulo de la tesis. Se inicia con el desarrollo de la introducción de la tesis. Es importante que el texto utilice la tabla de abreviaturas correctamente. En el archivo abreviaturas.tex contiene la tabla de abreviaturas. Para citar alguna de ellas debes usar los comandos $\backslash$ac\{tu-sigla-aqui\}. Si es la primera vez que utilizas la sigla ella se expandirá por completo. Por ejemplo, el comando $\backslash$ac\{CMM\} va a producir: \ac{CMM}. Si más adelante repites el mismo comando sólo aparecerá la sigla \ac{CMM}. Para explorar mucho más este comando es necesario leer su manual disponible en: $http://www.ctan.org/tex-archive/macros/latex/contrib/acronym/$
+
 
 \section{Motivación y Contexto}
 
-A pesar de su existencia aún restringida al campo teórico, la computación cuántica ofrece posibilidades que la computación tradicional no considera ni remotamente realizable, considerando en especial las limitaciones que comprende la Ley de Moore, la cual ha obligado a volcar la atención hacia la paralelización en búsqueda de un mayor aprovechamiento de los recursos de procesamiento. 
+En esta sección se va desde aspectos generales a  aspectos específicos (como un embudo). No se olvide que es la primera parte que tiene contacto con el lector y que hará que este se interese en el tema a investigar.
 
-Sin embargo, es precisamente la no existencia de ordenadores cuánticos funcionales un limitante en este campo. Aún son pocos los algoritmos cuánticos verdaderos que serían capaces de aprovechar las posibilidades de la computación cuántica. No obstante, se busca aprovechar desde ya algunas de las características que ofrece la computación cuántica. Es aquí donde entran en acción los diversos algoritmos de inspiración cuántica, que buscan traer al paradigma tradicional elementos y fenómenos propios del paradigma cuántico con la ya característica búsqueda de un incremento de la performance, calidad de resultados y disminución de tiempos.
-
-Dada la relativa novedad del campo, los algoritmos evolutivos de inspiración genética han sido todavía poco estudiados y explorados, por lo que es harto complicado no caer en cuenta de las grandes posibilidades y la libertad inherente a lo desconocido que conlleva la investigación en el área.
+El objetivo de esta sección es llevar al lector hacie el tema que se va a tratar en forma específica y dejar la puerta abierta a otras investigaciones
 
 \section{Planteamiento del Problema}
 

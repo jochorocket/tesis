@@ -115,40 +115,40 @@ order=-1
 
 [item:Bibliog.bib]
 archive=true
-column=28
+column=0
 encoding=ISO-8859-15
 highlight=BibTeX
-line=424
+line=419
 mode=BibTeX
 open=true
 order=0
 
 [item:Cap_1.tex]
 archive=true
-column=592
+column=189
 encoding=ISO-8859-15
 highlight=LaTeX
-line=2
+line=10
 mode=LaTeX
 open=true
-order=4
+order=3
 
 [item:Cap_2.tex]
 archive=true
-column=404
+column=184
 encoding=ISO-8859-15
 highlight=LaTeX
-line=2
+line=8
 mode=LaTeX
 open=true
 order=1
 
 [item:Cap_3.tex]
 archive=true
-column=569
+column=187
 encoding=ISO-8859-15
 highlight=LaTeX
-line=257
+line=192
 mode=LaTeX
 open=true
 order=2
@@ -201,7 +201,7 @@ highlight=LaTeX
 line=2
 mode=LaTeX
 open=true
-order=3
+order=4
 
 [item:abreviaturas.tex]
 archive=true
@@ -256,26 +256,26 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Bibliog.bib]
-CursorColumn=28
-CursorLine=424
+CursorColumn=0
+CursorLine=419
 JumpList=
 ViMarks=.,424,27,[,424,25,],424,27
 
 [view-settings,view=0,item:Cap_1.tex]
-CursorColumn=592
-CursorLine=2
+CursorColumn=189
+CursorLine=10
 JumpList=
-ViMarks=
+ViMarks=.,10,175,[,10,175,],10,175
 
 [view-settings,view=0,item:Cap_2.tex]
-CursorColumn=404
-CursorLine=2
+CursorColumn=184
+CursorLine=8
 JumpList=
 ViMarks=.,2,403,[,2,401,],2,403
 
 [view-settings,view=0,item:Cap_3.tex]
-CursorColumn=569
-CursorLine=257
+CursorColumn=187
+CursorLine=192
 JumpList=
 ViMarks=.,257,568,[,257,562,],257,568
 
