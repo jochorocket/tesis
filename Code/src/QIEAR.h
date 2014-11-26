@@ -9,6 +9,7 @@
 #define QIEAR_H_
 
 #include <vector>
+#include <map>
 #include "QIndividual.h"
 
 using namespace std;
@@ -19,31 +20,40 @@ using namespace std;
 class QIEAR
 {
 	/*	Attributes	*/
-	int						_dimension;
-	vector<QIndividual<D> >	_QPop;
+	const static int			_D	=	D;
+	const static int			_I	= 	I;
+	int							_dimension;
+	vector<QIndividual<_D> >	_QPop;
+
+	/* 	Pointer Methods	*/
+	/*	double	(EDAlgorithm::*_fitnessFunc)(VEDInd);	*/
+	double	(*_fitnessFunc)(vector<double>);
 
 	/*	Methods		*/
 public:
 	/*	Default Constructor	*/
 	QIEAR	()
-		: _dimension(2)
+		:	_dimension(2)
 	{
 	}
 
 	/*	One-partition domain Constructor	*/
 	QIEAR	(	int 	__dimension,
 				double	__centerVal,
-				double	__pulseWidth
+				double	__pulseWidth,
+				double	(*__fitnessFunc)(vector<double>)
 			)
-		: _dimension(__dimension)
+		:	_dimension(__dimension)
+		,	_fitnessFunc(__fitnessFunc)
 	{
-		for (	int _i = 0;
-					_i < I;
-					++_i	)
+		int	_i;
+		for (	_i = 0;
+				_i < _I;
+				++_i	)
 		{
-			QIndividual<D> _opdQInd (	__centerVal,
+			QIndividual<_D> _opdQInd (	__centerVal,
 										__pulseWidth	);
-			_QPop[_i] = _opQInd;
+			_QPop[_i] = _opdQInd;
 		}
 	}
 
@@ -51,25 +61,34 @@ public:
 	QIEAR	(	int 	__dimension,
 				double	__centerVal,
 				double	__pulseWidth,
+				double	(*__fitnessFunc)(vector<double>),
 				int		__noPartitions
 			)
-		: _dimension(__dimension)
+		: 	_dimension(__dimension)
+		,	_fitnessFunc(__fitnessFunc)
 	{
 		for (	int _i = 0;
-					_i < I;
+					_i < _I;
 					++_i	)
 		{
-			QIndividual<D> _opdQInd (	__centerVal,
+			QIndividual<_D> _opdQInd (	__centerVal,
 										__pulseWidth,
 										__noPartitions	);
-			_QPop[_i] = _opQInd;
+			_QPop[_i] = _opdQInd;
 		}
 	}
 
 	/*	Algorithm	*/
-	int _execQIEAR	()
+	int _execQIEAR	(	int	__T	)
 	{
+		map<double,vector<double> > _bestInd;
 
+		for (	int _t = 0;
+					_t < __T;
+					++_t)
+		{
+
+		}
 	}
 
 };

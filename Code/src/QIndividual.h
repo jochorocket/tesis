@@ -59,7 +59,8 @@ public:
 					++_i	)
 		{
 			QGene _QG (	__centerVal - __pulseWidth +
-						_i*2*__pulseWidth/__noPartitions);
+						_i*2*__pulseWidth/__noPartitions,
+						__pulseWidth/__noPartitions);
 			_QInd[_i] = _QG;
 		}
 	}
