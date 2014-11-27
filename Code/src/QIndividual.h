@@ -24,12 +24,13 @@ public:
 	/*	Default Constructor	*/
 	QIndividual	()
 	{
+		_QInd.resize(N);
 		for (	int _i = 0;
 					_i < N;
 					++_i	)
 		{
-			QGene _defaultQG ();
-			_QInd[_i] = _defaultQG;
+			QGene _QG (0.5,0.5);
+			_QInd[_i] = _QG;
 		}
 	}
 
@@ -40,6 +41,7 @@ public:
 	QIndividual	(	double 	__centerVal,
 					double 	__pulseWidth	)
 	{
+		_QInd.resize(N);
 		for (	int _i = 0;
 					_i < N;
 					++_i	)
@@ -54,6 +56,7 @@ public:
 					double 	__pulseWidth,
 					int		__noPartitions	)
 	{
+		_QInd.resize(N);
 		for (	int _i = 0;
 					_i < N;
 					++_i	)
@@ -100,6 +103,7 @@ public:
 	vector<double> _generateCInd ()
 	{
 		vector<double> _classicInd;
+		_classicInd.resize(N);
 		for (	int _i = 0;
 					_i < N;
 					++_i	)
@@ -108,6 +112,7 @@ public:
 		}
 		return _classicInd;
 	}
+
 };
 
 

@@ -51,7 +51,7 @@ public:
 								_i < _pulseWidth.size();
 								++_i	)
 		{
-			if (__cond)
+			if (!__cond)
 			{
 				_pulseWidth[_i] *= PWV;
 			}
@@ -113,6 +113,7 @@ public:
 	{
 		/*	Get boundaries	*/
 		vector<double> _boundedAreas;
+		_boundedAreas.resize(_pulseWidth.size());
 		int _boundedTotal = 0;
 		for (	unsigned int	_i = 0;
 								_i < _pulseWidth.size();
