@@ -18,28 +18,33 @@ class QIndividual
 {
 	/*	Attributes	*/
 	vector<QGene>	_QInd;
+	double			_acumGeneratedFitness;
+	int				_noGeneratedFitness;
 
 	/*	Methods		*/
 public:
 	/*	Default Constructor	*/
 	QIndividual	()
+		:	_acumGeneratedFitness(0)
+		,	_noGeneratedFitness(0)
 	{
 		_QInd.resize(N);
-		for (	int _i = 0;
-					_i < N;
-					++_i	)
+		for (int _i = 0;
+			_i < N;
+			++_i)
 		{
 			QGene _QG (0.5,0.5);
 			_QInd[_i] = _QG;
 		}
 	}
 
-	/*	Main Constructors
+	/*	Main Constructor
 	 * 	QIndividual(double,double) for a entire domain coverage per ind
-	 * 	QIndividual(double,double,int) to partition the domain
 	 */
 	QIndividual	(	double 	__centerVal,
-					double 	__pulseWidth	)
+					double 	__pulseWidth)
+		:	_acumGeneratedFitness(0)
+		,	_noGeneratedFitness(0)
 	{
 		_QInd.resize(N);
 		for (	int _i = 0;
@@ -51,21 +56,28 @@ public:
 			_QInd[_i] = _QG;
 		}
 	}
-
-	QIndividual	(	double 	__centerVal,
-					double 	__pulseWidth,
-					int		__noPartitions	)
+	
+	/*	Required operator
+	*/
+	QGene operator[]	(int _label)
 	{
-		_QInd.resize(N);
-		for (	int _i = 0;
-					_i < N;
-					++_i	)
-		{
-			QGene _QG (	__centerVal - __pulseWidth +
-						_i*2*__pulseWidth/__noPartitions,
-						__pulseWidth/__noPartitions);
-			_QInd[_i] = _QG;
-		}
+		return _QInd[_label];
+	}
+
+	/*	Method for calculating overall production of the qIndividual
+	*/
+	double _evalQInd()
+	{
+		return _acumGeneratedFitness / (double)_noGeneratedFitness;
+	}
+
+
+	/*	Method for clearing values of overall production
+	*/
+	void _clearQInd()
+	{
+		_acumGeneratedFitness = 0;
+		_noGeneratedFitness = 0;
 	}
 
 	/*	Methods for updating center(s) and pulse(s)
@@ -100,7 +112,7 @@ public:
 	}
 
 	/*	Generate classic individual	*/
-	vector<double> _generateCInd ()
+	vector<double> _generateCInd(	double(*__fitnessFunc)(vector<double>)	)
 	{
 		vector<double> _classicInd;
 		_classicInd.resize(N);
@@ -110,6 +122,10 @@ public:
 		{
 			_classicInd[_i] = _QInd[_i]._generateClassic();
 		}
+
+		//	Update values for acumulated fitnesss
+		_acumGeneratedFitness += (__fitnessFunc(_classicInd));
+		_noGeneratedFitness++;
 		return _classicInd;
 	}
 

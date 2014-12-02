@@ -13,8 +13,8 @@
 
 using namespace std;
 
-#define			CVV		0,3		//	variation of _centerVal values
-#define			PWV		0.4		//	variation of _pulseWidth values
+#define			CVV		0.03		//	variation of _centerVal values
+#define			PWV		0.04		//	variation of _pulseWidth values
 
 class QGene
 {
@@ -53,35 +53,23 @@ public:
 		{
 			if (!__cond)
 			{
-				_pulseWidth[_i] *= PWV;
+				_pulseWidth[_i] += _pulseWidth[_i]*PWV;
 			}
 			else
 			{
-				_pulseWidth[_i] /= PWV;
+				_pulseWidth[_i] -= _pulseWidth[_i]*PWV;
 			}
 		}
-		/*
-		vector<double>::iterator _it;
-		for ( 	_it = _pulseWidth.begin();
-				_it != _pulseWidth.end();
-				++_it	)
-		{
-			// (*_it) *= (__cond)?PWV:PWV*-1;
-			if (__cond)
-			{
-				(*_it) *= PWV;
-			}
-			else
-				(*_it) *= (PWV*-1);
-		}
-		*/
 	}
 
 	void _updateGene(	double __currVal )
 	{
 		int _bestLocation = 0;
-		/*	_closerPos with a default high value	*/
-		double _closerPos = _centerVal[_centerVal.size()];
+		/*	_closerPos with a default high value	
+			finds the center in _centerVal closest to __currVal
+			and then updates that center
+		*/
+		double _closerPos = _centerVal[_centerVal.size()-1];
 		for (	unsigned int 	_currLocation = 0;
 								_currLocation < _centerVal.size();
 								++_currLocation	)
@@ -111,6 +99,8 @@ public:
 	/*	Generate classic gene	*/
 	double _generateClassic()
 	{
+		if (_pulseWidth.size() > 1)
+			std::cout << _pulseWidth.size() << " ";
 		/*	Get boundaries	*/
 		vector<double> _boundedAreas;
 		_boundedAreas.resize(_pulseWidth.size());
@@ -118,7 +108,7 @@ public:
 		for (	unsigned int	_i = 0;
 								_i < _pulseWidth.size();
 								++_i	)
-			_boundedTotal += 2*_pulseWidth[_i];
+			_boundedTotal += (2*_pulseWidth[_i]);
 		for (	unsigned int 	_j = 0;
 								_j < _pulseWidth.size();
 								++_j)
@@ -137,7 +127,7 @@ public:
 								_k < _pulseWidth.size();
 								++_k	)
 		{
-			if (_boundedAreas[_k] > _U)
+			if (_boundedAreas[_k] < _U)
 			{
 				_boundaryNo = _k;
 				_boundedU -= _boundedAreas[_k];
@@ -146,8 +136,9 @@ public:
 		}
 
 		/*	Generate classic gene	*/
-		return (_centerVal[_boundaryNo] - _pulseWidth[_boundaryNo])
-				+ 2*_pulseWidth[_boundaryNo]*_boundedU;
+		double _generatedCG = (_centerVal[_boundaryNo] - _pulseWidth[_boundaryNo])
+			+ 2 * _pulseWidth[_boundaryNo] * _boundedU;
+		return _generatedCG;
 	}
 
 	/*	Return center values	*/

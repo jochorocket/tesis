@@ -13,7 +13,7 @@
 
 using namespace std;
 
-double _EFrand()
+void _EFinit()
 {
 	/*
 	Declare variable to hold seconds on clock.
@@ -28,7 +28,11 @@ double _EFrand()
 	Convert seconds to a unsigned
 	integer.
 	*/
-	srand((unsigned int) seconds);
+	srand((unsigned int)seconds);
+}
+
+double _EFrand()
+{
 	/*
 	Output random values.
 	*/
@@ -37,20 +41,6 @@ double _EFrand()
 
 int _EFrandBounded(int __upperBoundary)
 {
-	/*
-	Declare variable to hold seconds on clock.
-	*/
-	time_t seconds;
-	/*
-	Get value from system clock and
-	place in seconds variable.
-	*/
-	time(&seconds);
-	/*
-	Convert seconds to a unsigned
-	integer.
-	*/
-	srand((unsigned int) seconds);
 	/*
 	Output random values.
 	*/
