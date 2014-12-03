@@ -16,7 +16,7 @@
 
 using namespace std;
 
-#define		I		3;	//	Number of quantum individuals
+#define		I		4;	//	Number of quantum individuals
 #define		CI		5;	//	Number of classical individuals per generation
 #define		F		0.3	//	Constant for individual recombination
 
@@ -115,13 +115,16 @@ public:
 			for (	int _ci = 0;
 						_ci < _CI;
 						++_ci)
+			{
 				_cInds[_CI*_i + _ci] = _QPop[_i]._generateCInd(_fitnessFunc);
+			}
 		}
 		return _cInds;
 	}
 
 	void _execQIEAR	(	int	__genNumber
 					,	bool __maxMin
+					,	ostream& __oStream
 					,	int	__crossoverIndex)
 	{
 		vector<vector<double> > _cInds = _genIndQIEAR(), _bInds;
@@ -139,7 +142,8 @@ public:
 					_t < __genNumber;
 					++_t)
 		{
-			cout<<_t<<'\t';
+			//	Print number of iteration
+			//__oStream<<_t<<'\t';
 			//	Generate new generation of classical individuals
 			double _avgFitness = 0;
 			_cInds = _genIndQIEAR();
@@ -161,13 +165,14 @@ public:
 		
 			map<double, vector<double> >::iterator prueba
 				= _bestInds.begin();
-			for (int ww = 0; ww != 6 ; ++ww)
+			for (int ww = 0; ww != _I*2 ; ++ww)
 			{
-				cout << prueba->first << " ";
+				__oStream << prueba->first << " ";
 				++prueba;
 			}
-			cout << endl;
-			
+
+			__oStream << endl;
+
 
 			//	Copy the I best individuals to _bInds
 			//	Depends on __maxMin if the goal is to maximize or to minimize
@@ -179,7 +184,6 @@ public:
 									_k < _I*_CI;
 									++_k)
 				{
-					//cout<<_bestBInds->first<<" ";
 					_bInds[_k] = _bestBInds->second;
 					++_bestBInds;
 				}
@@ -192,13 +196,11 @@ public:
 									_k < _I*_CI;
 									++_k)
 				{
-					//cout << _bestBInds->first << " ";
 					_bInds[_k] = _bestBInds->second;
 					++_bestBInds;
 				}
 			}
 			_bestInds.clear();
-			//cout<<endl;
 
 			//	Update quantum individuals
 			int _totalImproved = 0;
@@ -242,15 +244,19 @@ public:
 			}
 
 			//	Apply entanglement crossover operator
-			//	This is only done every five iterations
+			//	This is only done until it reaches __crossoverIndex iterations
 			if (__crossoverIndex > 0)
 			{
-				if ((_t+1) % __crossoverIndex == 0) _entangledCrossover(__maxMin);
+				if (_t < __crossoverIndex)
+					_entangledCrossover(__maxMin);
+				//	Clear fitness indicators in qInds
+				for (int _m = 0; _m < _I; ++_m)
+					_QPop[_m]._clearQInd();
 			}
 		}
 	}
 
-	/*	Universe-compound algorithm	*/
+	/*	Universe-Compound Algorithm	*/
 	vector<vector<double> > _genIndUQIEAR( int __noQInd)
 	{
 		vector<vector<double> > _cInds;
@@ -266,6 +272,7 @@ public:
 
 	void _execUQIEAR(	int	__genNumber
 					,	bool __maxMin
+					,	ostream& __oStream
 					,	int	__crossoverIndex)
 	{
 		vector<vector<vector<double> > > _cInds, _bInds;
@@ -285,7 +292,8 @@ public:
 			_t < __genNumber;
 			++_t)
 		{
-			cout << _t << '\t';
+			//	Print number of iteration
+			//__oStream << _t << '\t';
 
 			vector<double> _avgFitness(_I,0);
 			for (int _i = 0; _i < _I; ++_i)
@@ -310,12 +318,6 @@ public:
 					_avgFitness[_i] /= _CI;
 				}
 
-				/*map<double, vector<double> >::iterator prueba
-					= _bestInds[_i].begin();
-				cout << prueba->first << " ";
-				++prueba;
-				cout << prueba->first << " ";*/
-
 				//	Copy the I best individuals to _bInds
 				//	Depends on __maxMin if the goal is to maximize or to minimize
 				if (__maxMin)
@@ -326,7 +328,7 @@ public:
 						_k < _CI;
 						++_k)
 					{
-						//cout<<_bestBInds->first<<" ";
+						//__oStream<<_bestBInds->first<<" ";
 						_bInds[_i][_k] = _bestBInds->second;
 						++_bestBInds;
 					}
@@ -339,7 +341,7 @@ public:
 						_k < _CI;
 						++_k)
 					{
-						//cout << _bestBInds->first << " ";
+						//__oStream << _bestBInds->first << " ";
 						_bInds[_i][_k] = _bestBInds->second;
 						++_bestBInds;
 					}
@@ -383,19 +385,21 @@ public:
 
 			map<double, vector<double> >::iterator prueba
 				= _allBestInds.begin();
-			for (int ww = 0; ww != 6; ++ww)
+			for (int ww = 0; ww != _I*2; ++ww)
 			{
-				cout << prueba->first << " ";
+				__oStream << prueba->first << " ";
 				++prueba;
 			}
-			cout << endl;
+			__oStream << endl;
 
 
 			//	Apply entanglement crossover operator
-			//	This is only done every __crossoverIndex iterations
+			//	This is only done until it reaches __crossoverIndex iterations
 			if (__crossoverIndex > 0)
 			{
-				if ((_t + 1) % __crossoverIndex == 0) _entangledCrossover(__maxMin);
+				if (_t < __crossoverIndex)
+					_entangledCrossover(__maxMin);
+				//	Clear fitness indicators in qInds
 				for (int _m = 0; _m < _I; ++_m)
 					_QPop[_m]._clearQInd();
 			}

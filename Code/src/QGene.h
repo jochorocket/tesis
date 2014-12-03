@@ -99,8 +99,6 @@ public:
 	/*	Generate classic gene	*/
 	double _generateClassic()
 	{
-		if (_pulseWidth.size() > 1)
-			std::cout << _pulseWidth.size() << " ";
 		/*	Get boundaries	*/
 		vector<double> _boundedAreas;
 		_boundedAreas.resize(_pulseWidth.size());
