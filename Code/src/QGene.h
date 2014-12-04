@@ -102,7 +102,9 @@ public:
 		/*	Get boundaries	*/
 		vector<double> _boundedAreas;
 		_boundedAreas.resize(_pulseWidth.size());
-		int _boundedTotal = 0;
+		if (_boundedAreas.size() > 1) 
+			int a = 0;
+		double _boundedTotal = 0;
 		for (	unsigned int	_i = 0;
 								_i < _pulseWidth.size();
 								++_i	)
@@ -127,7 +129,7 @@ public:
 		{
 			if (_boundedAreas[_k] < _U)
 			{
-				_boundaryNo = _k;
+				_boundaryNo++;
 				_boundedU -= _boundedAreas[_k];
 			}
 			else break;

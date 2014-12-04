@@ -1,0 +1,5 @@
+_noPartitions:		3
+_crossoverOccurence:	5
+_noQuantumInd:		3
+_noClassicalInd:	3
+_recombinationConstant:	0.3

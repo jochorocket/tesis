@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	double _centerVal = 0;
 	double _pulseWidth = 5;	//	modify for 10 when Booth, 5 when Arckley
 
-	int _noPartitions = 5;
+	int _noPartitions = 10;
 	//int _noPartitions = atoi(argv[1]);
 	int _crossoverOccurence = 5;
 	//int _noPartitions = atoi(argv[2]);
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
 	bool _maximize = false;
 
 
-	for (int _noIt = 0; _noIt < 20; ++_noIt)
+	for (int _noIt = 0; _noIt < 50; ++_noIt)
 	{
 		stringstream _ss;
 		_ss << _noIt;
@@ -89,6 +89,5 @@ int main(int argc, char *argv[]) {
 		_gofs.close();
 		_hofs.close();
 	}
-
 	return 1;
 }

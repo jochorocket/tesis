@@ -16,16 +16,17 @@
 
 using namespace std;
 
-#define		I		4;	//	Number of quantum individuals
-#define		CI		5;	//	Number of classical individuals per generation
+#define		I		10;	//	Number of quantum individuals by default
+						//	Overriden when the number of partitions is indicated
+#define		CI		10;	//	Number of classical individuals per generation
 #define		F		0.3	//	Constant for individual recombination
 
 template <int D>	//	Dimensionality of individuals
 class QIEAR
 {
 	/*	Attributes	*/
-	const static int		_I	= 	I;
-	const static int		_CI =	CI;
+	const int		_I	= 	I;
+	const int		_CI =	CI;
 	vector<QIndividual<D> >	_QPop;
 
 	/* 	Pointer Methods	*/
@@ -64,15 +65,16 @@ public:
 				int		__noPartitions
 			)
 		: 	_fitnessFunc(__fitnessFunc)
+		,	_I(__noPartitions)
 	{
 		_QPop.resize(_I);
 		for (	int _i = 0;
 					_i < _I;
 					++_i	)
 		{
-			QIndividual<D> _opdQInd(	__centerVal - __pulseWidth/2				// start
-											+ _i * __pulseWidth/__noPartitions		// minipulse width
-											+  __pulseWidth / (__noPartitions*2),	// half missing
+			QIndividual<D> _opdQInd(	__centerVal - __pulseWidth					// start
+											+ _i * 2 * __pulseWidth/__noPartitions		// minipulse width
+											+  __pulseWidth / __noPartitions,	// half missing
 										__pulseWidth/__noPartitions	);
 			_QPop[_i] = _opdQInd;
 		}
@@ -93,13 +95,26 @@ public:
 		//	Apply it
 		if (__maxMin)
 		{
-			_QPop[(_qIndEvaluation.begin())->second]._updateQInd
-				(_QPop[(_qIndEvaluation.rbegin())->second]);
+			map<double, int>::iterator _qIE = _qIndEvaluation.begin();
+			for (int _b = 0; _b < _I - 1; ++_b)
+			{
+				_QPop[_qIE->second]._updateQInd(_QPop[(_qIndEvaluation.rbegin())->second]);
+				++_qIE;
+			}
+
+			//_QPop[(_qIndEvaluation.begin())->second]._updateQInd
+			//	(_QPop[(_qIndEvaluation.rbegin())->second]);
 		}
 		else
 		{
-			_QPop[(_qIndEvaluation.rbegin())->second]._updateQInd
-				(_QPop[(_qIndEvaluation.begin())->second]);
+			map<double, int>::reverse_iterator _qIE = _qIndEvaluation.rbegin();
+			for (int _b = 0; _b < _I - 1; ++_b)
+			{
+				_QPop[_qIE->second]._updateQInd(_QPop[(_qIndEvaluation.begin())->second]);
+				++_qIE;
+			}
+			//_QPop[(_qIndEvaluation.rbegin())->second]._updateQInd
+			//	(_QPop[(_qIndEvaluation.begin())->second]);
 		}
 	}
 
@@ -136,6 +151,12 @@ public:
 					++_ci	)
 		{
 			_bInds[_ci] = _cInds[_ci];
+		}
+		for (	int _i = 0;
+					_i < _I;
+					++_i)
+		{
+			_QPop[_i]._clearQInd();
 		}
 		_cInds.clear();
 		for (	int _t = 0;
@@ -287,6 +308,7 @@ public:
 					++_ci)
 		{
 			_bInds[_ci] = _genIndUQIEAR(_ci);
+			_QPop[_ci]._clearQInd();
 		}
 		for (int _t = 0;
 			_t < __genNumber;
@@ -304,19 +326,17 @@ public:
 					_f < _CI;
 					++_f)
 				{
-					{
-						//	Recombine new and previous classical individuals
-						_cInds[_i][_f] = (_EFrand() < F)
-						? _bInds[_i][_f] : _cInds[_i][_f];
+					//	Recombine new and previous classical individuals
+					_cInds[_i][_f] = (_EFrand() < F)
+					? _bInds[_i][_f] : _cInds[_i][_f];
 
-						//	Evaluate both classical individual arrays
-						_avgFitness[_i] += _fitnessFunc(_bInds[_i][_f]);
-						_bestInds[_i][_fitnessFunc(_cInds[_i][_f])] = _cInds[_i][_f];
-						_bestInds[_i][_fitnessFunc(_bInds[_i][_f])] = _bInds[_i][_f];
-						_allBestInds[_fitnessFunc(_bInds[_i][_f])] = _bInds[_i][_f];
-					}
-					_avgFitness[_i] /= _CI;
+					//	Evaluate both classical individual arrays
+					_avgFitness[_i] += _fitnessFunc(_bInds[_i][_f]);
+					_bestInds[_i][_fitnessFunc(_cInds[_i][_f])] = _cInds[_i][_f];
+					_bestInds[_i][_fitnessFunc(_bInds[_i][_f])] = _bInds[_i][_f];
+					_allBestInds[_fitnessFunc(_bInds[_i][_f])] = _bInds[_i][_f];
 				}
+				_avgFitness[_i] /= _CI;
 
 				//	Copy the I best individuals to _bInds
 				//	Depends on __maxMin if the goal is to maximize or to minimize
