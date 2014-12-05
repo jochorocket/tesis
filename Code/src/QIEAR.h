@@ -16,17 +16,14 @@
 
 using namespace std;
 
-#define		I		10;	//	Number of quantum individuals by default
-						//	Overriden when the number of partitions is indicated
-#define		CI		10;	//	Number of classical individuals per generation
 #define		F		0.3	//	Constant for individual recombination
 
 template <int D>	//	Dimensionality of individuals
 class QIEAR
 {
 	/*	Attributes	*/
-	const int		_I	= 	I;
-	const int		_CI =	CI;
+	const int		_I;
+	const int		_CI;
 	vector<QIndividual<D> >	_QPop;
 
 	/* 	Pointer Methods	*/
@@ -42,9 +39,13 @@ public:
 	/*	One-partition domain Constructor	*/
 	QIEAR	(	double	__centerVal,
 				double	__pulseWidth,
-				double	(*__fitnessFunc)(vector<double>)
+				double	(*__fitnessFunc)(vector<double>),
+				int		__noClassicalIndGen,
+				int		__noPartitions
 			)
 		:	_fitnessFunc(__fitnessFunc)
+		,	_I(__noPartitions)
+		,	_CI(__noClassicalIndGen)
 	{
 		_QPop.resize(_I);
 		int	_i;
@@ -62,10 +63,13 @@ public:
 	QIEAR	(	double	__centerVal,
 				double	__pulseWidth,
 				double	(*__fitnessFunc)(vector<double>),
-				int		__noPartitions
+				int		__noClassicalIndGen,
+				int		__noPartitions,
+				bool	__partition
 			)
 		: 	_fitnessFunc(__fitnessFunc)
 		,	_I(__noPartitions)
+		,	_CI(__noClassicalIndGen)
 	{
 		_QPop.resize(_I);
 		for (	int _i = 0;
@@ -95,26 +99,30 @@ public:
 		//	Apply it
 		if (__maxMin)
 		{
+			/*
 			map<double, int>::iterator _qIE = _qIndEvaluation.begin();
 			for (int _b = 0; _b < _I - 1; ++_b)
 			{
 				_QPop[_qIE->second]._updateQInd(_QPop[(_qIndEvaluation.rbegin())->second]);
 				++_qIE;
 			}
+			*/
 
-			//_QPop[(_qIndEvaluation.begin())->second]._updateQInd
-			//	(_QPop[(_qIndEvaluation.rbegin())->second]);
+			_QPop[(_qIndEvaluation.begin())->second]._updateQInd
+				(_QPop[(_qIndEvaluation.rbegin())->second]);
 		}
 		else
 		{
+			/*
 			map<double, int>::reverse_iterator _qIE = _qIndEvaluation.rbegin();
 			for (int _b = 0; _b < _I - 1; ++_b)
 			{
 				_QPop[_qIE->second]._updateQInd(_QPop[(_qIndEvaluation.begin())->second]);
 				++_qIE;
 			}
-			//_QPop[(_qIndEvaluation.rbegin())->second]._updateQInd
-			//	(_QPop[(_qIndEvaluation.begin())->second]);
+			*/
+			_QPop[(_qIndEvaluation.rbegin())->second]._updateQInd
+				(_QPop[(_qIndEvaluation.begin())->second]);
 		}
 	}
 

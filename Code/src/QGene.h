@@ -102,8 +102,6 @@ public:
 		/*	Get boundaries	*/
 		vector<double> _boundedAreas;
 		_boundedAreas.resize(_pulseWidth.size());
-		if (_boundedAreas.size() > 1) 
-			int a = 0;
 		double _boundedTotal = 0;
 		for (	unsigned int	_i = 0;
 								_i < _pulseWidth.size();

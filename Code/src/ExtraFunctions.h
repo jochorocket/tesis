@@ -28,7 +28,9 @@ void _EFinit()
 	Convert seconds to a unsigned
 	integer.
 	*/
-	srand((unsigned int)seconds);
+	//srand((unsigned int)seconds);
+
+	srand(time(NULL));
 }
 
 double _EFrand()

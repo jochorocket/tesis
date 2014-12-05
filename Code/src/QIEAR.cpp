@@ -29,10 +29,12 @@ int main(int argc, char *argv[]) {
 	double _centerVal = 0;
 	double _pulseWidth = 5;	//	modify for 10 when Booth, 5 when Arckley
 
-	int _noPartitions = 10;
-	//int _noPartitions = atoi(argv[1]);
-	int _crossoverOccurence = 5;
+	int _classicalIndGen = 3;
+	//int _classicalIndGen = atoi(argv[1]);
+	int _noPartitions = 4;
 	//int _noPartitions = atoi(argv[2]);
+	int _crossoverOccurence = 5;
+	//int _crossoverOccurence = atoi(argv[3]);
 
 	int _noIterations = 100;
 	bool _maximize = false;
@@ -44,14 +46,14 @@ int main(int argc, char *argv[]) {
 		_ss << _noIt;
 		string _noVersion = _ss.str();
 
-		QIEAR<D> a(_centerVal, _pulseWidth, _benchFunc);
-		QIEAR<D> b(_centerVal, _pulseWidth, _benchFunc, _noPartitions);
-		QIEAR<D> c(_centerVal, _pulseWidth, _benchFunc);
-		QIEAR<D> d(_centerVal, _pulseWidth, _benchFunc, _noPartitions);
-		QIEAR<D> e(_centerVal, _pulseWidth, _benchFunc);
-		QIEAR<D> f(_centerVal, _pulseWidth, _benchFunc, _noPartitions);
-		QIEAR<D> g(_centerVal, _pulseWidth, _benchFunc);
-		QIEAR<D> h(_centerVal, _pulseWidth, _benchFunc, _noPartitions);
+		QIEAR<D> a(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen);
+		QIEAR<D> b(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen, true);
+		QIEAR<D> c(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen);
+		QIEAR<D> d(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen, true);
+		QIEAR<D> e(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen);
+		QIEAR<D> f(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen, true);
+		QIEAR<D> g(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen);
+		QIEAR<D> h(_centerVal, _pulseWidth, _benchFunc, _noPartitions, _classicalIndGen, true);
 
 		string _aFile = ("qiear" + _noVersion);
 		string _bFile = ("qiear_p" + _noVersion);

@@ -2,7 +2,7 @@ format shortG
 
 MAXIT = 49;
 
-S = '/home/usuario/tesis/Results/arckleyset14/';
+S = '/home/usuario/tesis/Code/';
 
 A = importdata(strcat(strcat(S,'qiear'),num2str(0)))
 for i=1:MAXIT
