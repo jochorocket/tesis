@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage[spanish,mexico]{babel}
+\pgfplotsset{compat=1.10}
+
+\begin{document}
+\pagestyle{empty}
+
+% Preamble:   
+\begin{tikzpicture}
+    \begin{loglogaxis}[scale only axis,
+	    title=Evolución por iteración de los mejores individuos ,
+	    xlabel={$x$ (mejor individuo)},
+	    ylabel={$y$ (iteración)},
+	    %xmin=1, xmax=4, ymax=9, 
+	    ymin=0,
+	    grid=major,
+	    legend cell align=left,
+	    /pgfplots/enlargelimits=false,
+	      legend style={legend pos=north east,font=\tiny},
+	    %small,
+    ]
+    \addplot[red] table{../Data/maytas_bestevol_cind10_1};
+    \addplot[violet] table{../Data/maytas_bestevol_cind10_2};
+    \addplot[yellow] table{../Data/maytas_bestevol_cind10_3};
+    \addplot[black] table{../Data/maytas_bestevol_cind10_4};
+    \addplot[blue] table{../Data/maytas_bestevol_cind10_5};
+    \addplot[cyan] table{../Data/maytas_bestevol_cind10_6};
+    \addplot[green] table{../Data/maytas_bestevol_cind10_7};
+    \addplot[teal] table{../Data/maytas_bestevol_cind10_8};
+    \addlegendentry{$QIEAR$};
+    \addlegendentry{$UQIEAR$};
+    \addlegendentry{$QIEAR-CO$};
+    \addlegendentry{$UQIEAR-CO$};
+    \addlegendentry{$QIEAR-p$};
+    \addlegendentry{$UQIEAR-p$};
+    \addlegendentry{$QIEAR-pCO$};
+    \addlegendentry{$UQIEAR-pCO$};
+    \end{loglogaxis}
+   \end{tikzpicture}
+\end{document}

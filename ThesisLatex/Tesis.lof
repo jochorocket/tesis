@@ -6,3 +6,24 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Rotación del ángulo al momento de la aplicación del operador Q-gate}}{12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Función Benchmark: Arckley}}{17}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=2$}}{18}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=4$}}{18}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=10$}}{19}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=3$}}{19}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=7$}}{20}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=9$}}{20}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Función Benchmark: Booth}}{21}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=3$}}{22}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=6$}}{22}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=9$}}{23}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=2$}}{23}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=4$}}{24}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=9$}}{24}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Función Benchmark: Maytas}}{25}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=2$}}{26}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=6$}}{26}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=10$}}{27}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=2$}}{27}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=4$}}{28}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Evolución de los valores de los mejores individuos para $ci=10$}}{28}

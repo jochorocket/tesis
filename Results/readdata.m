@@ -2,97 +2,128 @@ format shortG
 
 MAXIT = 49;
 
-S = '/home/usuario/tesis/Code/';
+S = '/home/usuario/tesis/Results/arckley_clas10qua10/';
 
-A = importdata(strcat(strcat(S,'qiear'),num2str(0)))
+qiear = importdata(strcat(strcat(S,'qiear'),num2str(0)))
 for i=1:MAXIT
-     A2 = importdata(strcat(strcat(S,'qiear'),num2str(1)));
-     A = A + A2;
+     qiear2 = importdata(strcat(strcat(S,'qiear'),num2str(i)));
+     qiear = qiear + qiear2;
 end
-A = A/(MAXIT+1);
+qiear = qiear/(MAXIT+1);
 
-
-B = importdata(strcat(strcat(S,'qiear_co'),num2str(0)))
+qiear_p = importdata(strcat(strcat(S,'qiear_p'),num2str(0)))
 for i=1:MAXIT
-     B2 = importdata(strcat(strcat(S,'qiear_co'),num2str(1)));
-     B = B + B2;
+     qiear_p2 = importdata(strcat(strcat(S,'qiear_p'),num2str(i)));
+     qiear_p = qiear_p + qiear_p2;
 end
-B = B/(MAXIT+1);
+qiear_p = qiear_p/(MAXIT+1);
 
-C = importdata(strcat(strcat(S,'qiear_p'),num2str(0)))
+uqiear = importdata(strcat(strcat(S,'uqiear'),num2str(0)))
 for i=1:MAXIT
-     C2 = importdata(strcat(strcat(S,'qiear_p'),num2str(1)));
-     C = C + C2;
+     uqiear2 = importdata(strcat(strcat(S,'uqiear'),num2str(i)));
+     uqiear = uqiear + uqiear2;
 end
-C = C/(MAXIT+1);
+uqiear = uqiear/(MAXIT+1);
 
-D = importdata(strcat(strcat(S,'qiear_pco'),num2str(0)))
+uqiear_p = importdata(strcat(strcat(S,'uqiear_p'),num2str(0)))
 for i=1:MAXIT
-     D2 = importdata(strcat(strcat(S,'qiear_pco'),num2str(1)));
-     D = D + D2;
+     uqiear_p2 = importdata(strcat(strcat(S,'uqiear_p'),num2str(i)));
+     uqiear_p = uqiear_p + uqiear_p2;
 end
-D = D/(MAXIT+1);
+uqiear_p = uqiear_p/(MAXIT+1);
 
-E = importdata(strcat(strcat(S,'uqiear'),num2str(0)))
+qiear_co = importdata(strcat(strcat(S,'qiear_co'),num2str(0)))
 for i=1:MAXIT
-     E2 = importdata(strcat(strcat(S,'uqiear'),num2str(1)));
-     E = E + E2;
+     qiear_co2 = importdata(strcat(strcat(S,'qiear_co'),num2str(i)));
+     qiear_co = qiear_co + qiear_co2;
 end
-E = E/(MAXIT+1);
+qiear_co = qiear_co/(MAXIT+1);
 
-F = importdata(strcat(strcat(S,'uqiear_co'),num2str(0)))
+qiear_pco = importdata(strcat(strcat(S,'qiear_pco'),num2str(0)))
 for i=1:MAXIT
-     F2 = importdata(strcat(strcat(S,'uqiear_co'),num2str(1)));
-     F = F + F2;
+     qiear_pco2 = importdata(strcat(strcat(S,'qiear_pco'),num2str(i)));
+     qiear_pco = qiear_pco + qiear_pco2;
 end
-F = F/(MAXIT+1);
+qiear_pco = qiear_pco/(MAXIT+1);
 
-G = importdata(strcat(strcat(S,'uqiear_p'),num2str(0)))
+uqiear_co = importdata(strcat(strcat(S,'uqiear_co'),num2str(0)))
 for i=1:MAXIT
-     G2 = importdata(strcat(strcat(S,'uqiear_p'),num2str(1)));
-     G = G + G2;
+     uqiear_co2 = importdata(strcat(strcat(S,'uqiear_co'),num2str(i)));
+     uqiear_co = uqiear_co + uqiear_co2;
 end
-G = G/(MAXIT+1);
+uqiear_co = uqiear_co/(MAXIT+1);
 
-H = importdata(strcat(strcat(S,'uqiear_pco'),num2str(0)))
+uqiear_pco = importdata(strcat(strcat(S,'uqiear_pco'),num2str(0)))
 for i=1:MAXIT
-     H2 = importdata(strcat(strcat(S,'uqiear_pco'),num2str(1)));
-     H = H + H2;
+     uqiear_pco2 = importdata(strcat(strcat(S,'uqiear_pco'),num2str(i)));
+     uqiear_pco = uqiear_pco + uqiear_pco2;
 end
-H = H/(MAXIT+1);
+uqiear_pco = uqiear_pco/(MAXIT+1);
 
-A0 = transpose(mean(A));
-B0 = transpose(mean(B));
-C0 = transpose(mean(C));
-D0 = transpose(mean(D));
-E0 = transpose(mean(E));
-F0 = transpose(mean(F));
-G0 = transpose(mean(G));
-H0 = transpose(mean(H));
+pavg = [qiear_p0,uqiear_p0];
+plot(pavg);
+legend('Partitioned QIEAR','Partitioned UQIEAR');
 
-PAVG = [A0,C0,E0,G0];
-NPAVG = [B0,D0,F0,H0];
-plot(PAVG);
+pbest = [qiear_p(:,1),uqiear_p(:,1)];
+plot(pbest);
+legend('Partitioned QIEAR','Partitioned UQIEAR');
+
+
+
+qiear0 = transpose(mean(qiear));
+qiear_p0 = transpose(mean(qiear_p));
+uqiear0 = transpose(mean(uqiear));
+uqiear_p0 = transpose(mean(uqiear_p));
+qiear_co0 = transpose(mean(qiear_co));
+qiear_pco0 = transpose(mean(qiear_pco));
+uqiear_co0 = transpose(mean(uqiear_co));
+uqiear_pco0 = transpose(mean(uqiear_pco));
+
+pavg = [qiear_p0,uqiear_p0];
+plot(pavg);
+legend('Partitioned QIEAR','Partitioned UQIEAR');
+
+pbest = [qiear_p(:,1),uqiear_p(:,1)];
+plot(pbest);
+legend('Partitioned QIEAR','Partitioned UQIEAR');
+
+
+pavg = [qiear0,uqiear0,qiear_co0,uqiear_co0];
+npavg = [qiear_p0,uqiear_p0,qiear_pco0,uqiear_pco0];
+avg = [qiear0,qiear_p0,uqiear0,uqiear_p0,qiear_co0,qiear_pco0,uqiear_co0,uqiear_pco0];
+subplot(2,2,1);
+plot(pavg);
 legend('QIEAR','UQIEAR','Crossover QIEAR','Crossover UQIEAR');
-plot(NPAVG);
+subplot(2,2,2);
+plot(npavg);
 legend('Partitioned QIEAR','Partitioned UQIEAR','Crossover Partitioned QIEAR','Crossover Partitioned UQIEAR');
+% subplot(1,2,1);
+% plot(avg);
+%legend('QIEAR','Partitioned QIEAR','UQIEAR','Partitioned UQIEAR','Crossover QIEAR','Crossover Partitioned QIEAR','Crossover UQIEAR','Crossover Partitioned UQIEAR')
+xlabel('x (nth best individual)');
+ylabel('y (average value)');
 
-
-AT = A(:,1);
-BT = B(:,1);
-CT = C(:,1);
-DT = D(:,1);
-ET = E(:,1);
-FT = F(:,1);
-GT = G(:,1);
-HT = H(:,1);
-
-XAXIS = linspace(0,99);
-XAXIS = transpose(XAXIS);
-
-PBEST = [AT,CT,ET,GT];
-NPBEST = [BT,DT,FT,HT];
-plot(XAXIS,PBEST);
+xaxis = linspace(0,99);
+xaxis = transpose(xaxis);
+qiearT = qiear(:,1);
+qiear_pT = qiear_p(:,1);
+uqiearT = uqiear(:,1);
+uqiear_pT = uqiear_p(:,1);
+quiear_coT = qiear_co(:,1);
+qiear_pcoT = qiear_pco(:,1);
+uqiear_coT = uqiear_co(:,1);
+uqiear_pcoT = uqiear_pco(:,1);
+pbest = [qiearT,uqiearT,quiear_coT,uqiear_coT];
+npbest = [qiear_pT,uqiear_pT,qiear_pcoT,uqiear_pcoT];
+best = [qiearT,qiear_pT,uqiearT,uqiear_pT,quiear_coT,qiear_pcoT,uqiear_coT,uqiear_pcoT];
+subplot(2,2,3)
+plot(xaxis,pbest);
 legend('QIEAR','UQIEAR','Crossover QIEAR','Crossover UQIEAR');
-plot(XAXIS,NPBEST);
+subplot(2,2,4)
+plot(xaxis,npbest);
 legend('Partitioned QIEAR','Partitioned UQIEAR','Crossover Partitioned QIEAR','Crossover Partitioned UQIEAR');
+%subplot(1,2,2)
+%plot(best);
+%legend('QIEAR','Partitioned QIEAR','UQIEAR','Partitioned UQIEAR','Crossover QIEAR','Crossover Partitioned QIEAR','Crossover UQIEAR','Crossover Partitioned UQIEAR')
+xlabel('x (number of iterations)');
+ylabel('y (value evolution average of best individuals)');

@@ -1,12 +1,12 @@
 #!/bin/bash
-for i in {1..20..1}
+for i in {1..7..1}
 do
-	for j in {2..20..1}
+	for j in {2..10..1}
 	do
-		mkdir arckley_clas$i\qua$j
-		cd arckley_clas$i\qua$j
+		mkdir holdertable_clas$i\qua$j
+		cd holdertable_clas$i\qua$j
 		cp ../QIEAR QIEAR
-		./QIEAR $i $j 5
+		./QIEAR $i $j
 		cd ..
 	done
 done

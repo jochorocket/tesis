@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage[spanish,mexico]{babel}
+\pgfplotsset{compat=1.10}
+
+\begin{document}
+\pagestyle{empty}
+
+% Preamble:
+\begin{tikzpicture}
+    \begin{axis}[scale only axis,
+	    title=Promedio de los $n$-\'esimos mejores individuos,
+	    xlabel={$x$ (nth mejor individuo)},
+	    ylabel={$y$ (valor promedio)},
+	    xmin=1, xmax=4, ymin=0, ymax=0.6,
+	    grid=major,
+	    legend cell align=left,
+	    /pgfplots/enlargelimits=false,
+	      legend style={legend pos=outer north east,font=\tiny},
+	    %small,
+    ]
+    \addplot[red] table{../Data/maytas_nthbest_cind2_1};
+    \addplot[violet] table{../Data/maytas_nthbest_cind2_2};
+    \addplot[yellow] table{../Data/maytas_nthbest_cind2_3};
+    \addplot[black] table{../Data/maytas_nthbest_cind2_4};
+    \addplot[blue] table{../Data/maytas_nthbest_cind2_5};
+    \addplot[cyan] table{../Data/maytas_nthbest_cind2_6};
+    \addplot[green] table{../Data/maytas_nthbest_cind2_7};
+    \addplot[teal] table{../Data/maytas_nthbest_cind2_8};
+    \addlegendentry{$QIEAR$};
+    \addlegendentry{$UQIEAR$};
+    \addlegendentry{$QIEAR-CO$};
+    \addlegendentry{$UQIEAR-CO$};
+    \addlegendentry{$QIEAR-p$};
+    \addlegendentry{$UQIEAR-p$};
+    \addlegendentry{$QIEAR-pCO$};
+    \addlegendentry{$UQIEAR-pCO$};
+    \end{axis}
+   \end{tikzpicture}
+\end{document}

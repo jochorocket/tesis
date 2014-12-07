@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage[spanish,mexico]{babel}
+\pgfplotsset{compat=1.10}
+
+\begin{document}
+\pagestyle{empty}
+
+% Preamble:
+\begin{tikzpicture}
+    \begin{axis}[view={60}{30},	
+	    scale only axis,
+	    title=Funci\'on Benchmark: Holder table,
+	    xlabel={$x$},
+	    ylabel={$y$},
+	    grid=major,
+	    legend cell align=left,
+	    /pgfplots/enlargelimits=false,
+	      legend style={legend pos=north,font=\tiny},
+	    %small,
+    ]
+    \addplot3[surf,mesh/ordering=y varies,domain=-100:100] {-abs(sin(x)*cos(y)*exp(abs(1-sqrt(x^2+y^2)/pi)))};
+    %\addlegendentry{$-abs(sin(x)*cos(y)*exp(abs(1-sqrt(x^2+y^2)/pi)))$};
+    \end{axis}
+   \end{tikzpicture}
+\end{document}

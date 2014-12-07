@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage[spanish,mexico]{babel}
+\pgfplotsset{compat=1.10}
+
+\begin{document}
+\pagestyle{empty}
+
+% Preamble:   
+\begin{tikzpicture}
+    \begin{axis}[scale only axis,
+	    title=Evoluci\'on por iteraci\'on de los mejores individuos ,
+	    xlabel={$x$ (mejor individuo)},
+	    ylabel={$y$ (iteraci\'on)},
+	    %xmin=1, xmax=4, 
+	    %ymin=0,ymax=20,
+	    grid=major,
+	    legend cell align=left,
+	    /pgfplots/enlargelimits=false,
+	      legend style={legend pos=outer north east,font=\tiny},
+	    %small,
+    ]
+    \addplot[red] table{../Data/arckley_bestevol_cind9_1};
+    \addplot[violet] table{../Data/arckley_bestevol_cind9_2};
+    \addplot[yellow] table{../Data/arckley_bestevol_cind9_3};
+    \addplot[black] table{../Data/arckley_bestevol_cind9_4};
+    \addplot[blue] table{../Data/arckley_bestevol_cind9_5};
+    \addplot[cyan] table{../Data/arckley_bestevol_cind9_6};
+    \addplot[green] table{../Data/arckley_bestevol_cind9_7};
+    \addplot[teal] table{../Data/arckley_bestevol_cind9_8};
+    \addlegendentry{$QIEAR$};
+    \addlegendentry{$UQIEAR$};
+    \addlegendentry{$QIEAR-CO$};
+    \addlegendentry{$UQIEAR-CO$};
+    \addlegendentry{$QIEAR-p$};
+    \addlegendentry{$UQIEAR-p$};
+    \addlegendentry{$QIEAR-pCO$};
+    \addlegendentry{$UQIEAR-pCO$};
+    \end{axis}
+   \end{tikzpicture}
+\end{document}

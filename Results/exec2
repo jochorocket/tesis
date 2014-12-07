@@ -1,0 +1,13 @@
+#!/bin/bash
+for i in {8..10..1}
+do
+	for j in {2..10..1}
+	do			
+		mkdir holdertable_clas$i\qua$j
+		cd holdertable_clas$i\qua$j
+		cp ../QIEAR QIEAR
+		./QIEAR $i $j
+		cd ..
+	done
+done
+

@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\usepackage[spanish,mexico]{babel}
+\pgfplotsset{compat=1.10}
+
+\begin{document}
+\pagestyle{empty}
+
+% Preamble:
+\begin{tikzpicture}
+    \begin{axis}[view={60}{30},	
+	    scale only axis,
+	    title=Funci\'on Benchmark: Booth,
+	    xlabel={$x$},
+	    ylabel={$y$},
+	    grid=major,
+	    legend cell align=left,
+	    /pgfplots/enlargelimits=false,
+	      legend style={legend pos=north,font=\tiny},
+	    %small,
+    ]
+    \addplot3[surf,mesh/ordering=y varies,domain=-10:10] {(x+2*y-7)^2+(2*x+y-5)^2};
+    %\addlegendentry{$(x+2*y-7)^2+(2*x+y-5)^2$};
+    \end{axis}
+   \end{tikzpicture}
+\end{document}
