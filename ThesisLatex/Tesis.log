@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  8 DEC 2014 03:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  8 DEC 2014 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -616,38 +616,57 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
 )))
-(./Tesis.aux
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen178
+\extrarowheight=\dimen179
+\NC@list=\toks42
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
+\TX@col@width=\dimen180
+\TX@old@table=\dimen181
+\TX@old@col=\dimen182
+\TX@target=\dimen183
+\TX@delta=\dimen184
+\TX@cols=\count147
+\TX@ftn=\toks43
+) (./Tesis.aux
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- (./abreviaturas.aux))
+
+(./abreviaturas.aux))
 \openout1 = `Tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count147
-\scratchdimen=\dimen178
+\scratchcounter=\count148
+\scratchdimen=\dimen185
 \scratchbox=\box43
-\nofMPsegments=\count148
-\nofMParguments=\count149
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count150
-\MPscratchDim=\dimen179
-\MPnumerator=\count151
-\makeMPintoPDFobject=\count152
-\everyMPtoPDFconversion=\toks43
+\nofMPsegments=\count149
+\nofMParguments=\count150
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count151
+\MPscratchDim=\dimen186
+\MPnumerator=\count152
+\makeMPintoPDFobject=\count153
+\everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -696,8 +715,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
 -------------------- Geometry parameters
 paper: a4paper
 landscape: --
@@ -743,19 +762,19 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 34.
+ on input line 35.
 
 <UCSP.png, id=4, 669.50125pt x 280.04625pt>
 File: UCSP.png Graphic file (type png)
  <use UCSP.png>
-Package pdftex.def Info: UCSP.png used on input line 37.
+Package pdftex.def Info: UCSP.png used on input line 38.
 (pdftex.def)             Requested size: 334.7498pt x 140.02277pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -773,19 +792,22 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 [3
 
 
-] (./Resumen.tex [4
-
-
-]) (./Abstract.tex
+] (./Abstract.tex
 Package acronym Info: Label `acro:QIEA' newly defined as it shall be overridden
 
-although it is yet undefined on input line 2.
- [5
+although it is yet undefined on input line 3.
+ [4
+
+
+]) (./Resumen.tex [5
 
 
 ]) (./Tesis.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+
+Underfull \vbox (badness 2573) has occurred while \output is active []
+
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
@@ -843,9 +865,6 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 [2
 
 ]) (./Cap_2.tex
-Underfull \vbox (badness 2626) has occurred while \output is active []
-
-
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
@@ -939,8 +958,11 @@ Package pdftex.def Info: ./Figure2.png used on input line 160.
 (pdftex.def)             Requested size: 235.02646pt x 248.20059pt.
 
 
-abreviaturas.tex:181: LaTeX Warning: Command \textbar invalid in math mode on i
-nput line 181.
+abreviaturas.tex:182: LaTeX Warning: Command \textbar invalid in math mode on i
+nput line 182.
+
+
+Underfull \vbox (badness 2065) has occurred while \output is active []
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
@@ -948,14 +970,14 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 [12]
 Package acronym Info: Label `acro:PDD' newly defined as it shall be overridden
-although it is yet undefined on input line 208.
+although it is yet undefined on input line 209.
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
 [13 <./Figure2.png>]
 Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
-although it is yet undefined on input line 236.
+although it is yet undefined on input line 237.
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
@@ -977,19 +999,37 @@ Overfull \hbox (17.49738pt too wide) in paragraph at lines 15--15
 []\T1/aer/bx/n/17.28 Operador de cru-za-mien-to pa-ra los in-di-vi-duos cuán-
  []
 
-) (./Cap_5.tex
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[17]
+[17]) (./Cap_5.tex
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[18]
 Cap\'{\i }tulo 5.
-<./Figures/Functions/arckley.pdf, id=106, 253.94875pt x 238.8925pt>
+<./Figures/Functions/arckley.pdf, id=109, 253.94875pt x 238.8925pt>
 File: ./Figures/Functions/arckley.pdf Graphic file (type pdf)
 
 <use ./Figures/Functions/arckley.pdf>
-Package pdftex.def Info: ./Figures/Functions/arckley.pdf used on input line 17.
+Package pdftex.def Info: ./Figures/Functions/arckley.pdf used on input line 22.
 
 (pdftex.def)             Requested size: 253.94812pt x 238.8919pt.
+
+<./Figures/Functions/booth.pdf, id=110, 276.03125pt x 236.885pt>
+File: ./Figures/Functions/booth.pdf Graphic file (type pdf)
+
+<use ./Figures/Functions/booth.pdf>
+Package pdftex.def Info: ./Figures/Functions/booth.pdf used on input line 29.
+(pdftex.def)             Requested size: 276.03056pt x 236.88441pt.
+
+<./Figures/Functions/maytas.pdf, id=111, 268.00125pt x 238.8925pt>
+File: ./Figures/Functions/maytas.pdf Graphic file (type pdf)
+
+<use ./Figures/Functions/maytas.pdf>
+Package pdftex.def Info: ./Figures/Functions/maytas.pdf used on input line 36.
+(pdftex.def)             Requested size: 268.00058pt x 238.8919pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -997,216 +1037,213 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[18
+[19
 
-] <./Figures/arckley_nth_cind2.pdf, id=110, 355.3275pt x 252.945pt>
+]
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[20 <./Figures/Functions/arckley.pdf> <./Figures/Functions/booth.pdf>]
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+
+[21 <./Figures/Functions/maytas.pdf>]
+<./Figures/arckley_nth_cind2.pdf, id=166, 355.3275pt x 252.945pt>
 File: ./Figures/arckley_nth_cind2.pdf Graphic file (type pdf)
 
 <use ./Figures/arckley_nth_cind2.pdf>
-Package pdftex.def Info: ./Figures/arckley_nth_cind2.pdf used on input line 24.
+Package pdftex.def Info: ./Figures/arckley_nth_cind2.pdf used on input line 69.
 
 (pdftex.def)             Requested size: 355.32661pt x 252.94438pt.
 
-<./Figures/arckley_nth_cind4.pdf, id=111, 355.3275pt x 252.945pt>
+<./Figures/arckley_nth_cind4.pdf, id=167, 355.3275pt x 252.945pt>
 File: ./Figures/arckley_nth_cind4.pdf Graphic file (type pdf)
 
 <use ./Figures/arckley_nth_cind4.pdf>
-Package pdftex.def Info: ./Figures/arckley_nth_cind4.pdf used on input line 31.
+Package pdftex.def Info: ./Figures/arckley_nth_cind4.pdf used on input line 76.
 
 (pdftex.def)             Requested size: 355.32661pt x 252.94438pt.
 
-<./Figures/arckley_nth_cind10.pdf, id=112, 355.3275pt x 252.945pt>
+<./Figures/arckley_nth_cind10.pdf, id=168, 355.3275pt x 252.945pt>
 File: ./Figures/arckley_nth_cind10.pdf Graphic file (type pdf)
 
 <use ./Figures/arckley_nth_cind10.pdf>
-Package pdftex.def Info: ./Figures/arckley_nth_cind10.pdf used on input line 38
+Package pdftex.def Info: ./Figures/arckley_nth_cind10.pdf used on input line 83
 .
 (pdftex.def)             Requested size: 355.32661pt x 252.94438pt.
 
-<./Figures/arckley_bestevol_cind3.pdf, id=113, 364.36125pt x 254.9525pt>
+<./Figures/arckley_bestevol_cind3.pdf, id=169, 364.36125pt x 254.9525pt>
 File: ./Figures/arckley_bestevol_cind3.pdf Graphic file (type pdf)
 
 <use ./Figures/arckley_bestevol_cind3.pdf>
 Package pdftex.def Info: ./Figures/arckley_bestevol_cind3.pdf used on input lin
-e 45.
+e 90.
 (pdftex.def)             Requested size: 364.36035pt x 254.95186pt.
 
-<./Figures/arckley_bestevol_cind7.pdf, id=114, 370.38374pt x 254.9525pt>
+<./Figures/arckley_bestevol_cind7.pdf, id=170, 370.38374pt x 254.9525pt>
 File: ./Figures/arckley_bestevol_cind7.pdf Graphic file (type pdf)
 
 <use ./Figures/arckley_bestevol_cind7.pdf>
 Package pdftex.def Info: ./Figures/arckley_bestevol_cind7.pdf used on input lin
-e 52.
+e 97.
 (pdftex.def)             Requested size: 370.38283pt x 254.95186pt.
 
-<./Figures/arckley_bestevol_cind9.pdf, id=115, 370.38374pt x 254.9525pt>
+<./Figures/arckley_bestevol_cind9.pdf, id=171, 370.38374pt x 254.9525pt>
 File: ./Figures/arckley_bestevol_cind9.pdf Graphic file (type pdf)
 
 <use ./Figures/arckley_bestevol_cind9.pdf>
 Package pdftex.def Info: ./Figures/arckley_bestevol_cind9.pdf used on input lin
-e 59.
+e 104.
 (pdftex.def)             Requested size: 370.38283pt x 254.95186pt.
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[19 <./Figures/Functions/arckley.pdf>]
+[22 <./Figures/arckley_nth_cind2.pdf>]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[20 <./Figures/arckley_nth_cind2.pdf> <./Figures/arckley_nth_cind4.pdf>]
+[23 <./Figures/arckley_nth_cind4.pdf> <./Figures/arckley_nth_cind10.pdf>]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[21 <./Figures/arckley_nth_cind10.pdf> <./Figures/arckley_bestevol_cind3.pdf>]
+[24 <./Figures/arckley_bestevol_cind3.pdf> <./Figures/arckley_bestevol_cind7.pd
+f>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[22 <./Figures/arckley_bestevol_cind7.pdf> <./Figures/arckley_bestevol_cind9.pd
-f>] <./Figures/Functions/booth.pdf, id=279, 276.03125pt x 236.885pt>
-File: ./Figures/Functions/booth.pdf Graphic file (type pdf)
-
-<use ./Figures/Functions/booth.pdf>
-Package pdftex.def Info: ./Figures/Functions/booth.pdf used on input line 78.
-(pdftex.def)             Requested size: 276.03056pt x 236.88441pt.
-
-<./Figures/booth_nthbest_cind3.pdf, id=280, 364.36125pt x 254.9525pt>
+[25 <./Figures/arckley_bestevol_cind9.pdf>]
+<./Figures/booth_nthbest_cind3.pdf, id=321, 364.36125pt x 254.9525pt>
 File: ./Figures/booth_nthbest_cind3.pdf Graphic file (type pdf)
 
 <use ./Figures/booth_nthbest_cind3.pdf>
-Package pdftex.def Info: ./Figures/booth_nthbest_cind3.pdf used on input line 8
-5.
+Package pdftex.def Info: ./Figures/booth_nthbest_cind3.pdf used on input line 1
+24.
 (pdftex.def)             Requested size: 364.36035pt x 254.95186pt.
 
-<./Figures/booth_nthbest_cind6.pdf, id=281, 364.36125pt x 254.9525pt>
+<./Figures/booth_nthbest_cind6.pdf, id=322, 364.36125pt x 254.9525pt>
 File: ./Figures/booth_nthbest_cind6.pdf Graphic file (type pdf)
 
 <use ./Figures/booth_nthbest_cind6.pdf>
-Package pdftex.def Info: ./Figures/booth_nthbest_cind6.pdf used on input line 9
-2.
+Package pdftex.def Info: ./Figures/booth_nthbest_cind6.pdf used on input line 1
+31.
 (pdftex.def)             Requested size: 364.36035pt x 254.95186pt.
 
-<./Figures/booth_nthbest_cind9.pdf, id=282, 364.36125pt x 254.9525pt>
+<./Figures/booth_nthbest_cind9.pdf, id=323, 364.36125pt x 254.9525pt>
 File: ./Figures/booth_nthbest_cind9.pdf Graphic file (type pdf)
 
 <use ./Figures/booth_nthbest_cind9.pdf>
-Package pdftex.def Info: ./Figures/booth_nthbest_cind9.pdf used on input line 9
-9.
+Package pdftex.def Info: ./Figures/booth_nthbest_cind9.pdf used on input line 1
+38.
 (pdftex.def)             Requested size: 364.36035pt x 254.95186pt.
 
-<./Figures/booth_bestevol_cind2.pdf, id=283, 364.36125pt x 254.9525pt>
+<./Figures/booth_bestevol_cind2.pdf, id=324, 364.36125pt x 254.9525pt>
 File: ./Figures/booth_bestevol_cind2.pdf Graphic file (type pdf)
 
 <use ./Figures/booth_bestevol_cind2.pdf>
 Package pdftex.def Info: ./Figures/booth_bestevol_cind2.pdf used on input line 
-106.
+145.
 (pdftex.def)             Requested size: 364.36035pt x 254.95186pt.
 
-<./Figures/booth_bestevol_cind4.pdf, id=284, 364.36125pt x 254.9525pt>
+<./Figures/booth_bestevol_cind4.pdf, id=325, 364.36125pt x 254.9525pt>
 File: ./Figures/booth_bestevol_cind4.pdf Graphic file (type pdf)
 
 <use ./Figures/booth_bestevol_cind4.pdf>
 Package pdftex.def Info: ./Figures/booth_bestevol_cind4.pdf used on input line 
-113.
+152.
 (pdftex.def)             Requested size: 364.36035pt x 254.95186pt.
 
-<./Figures/booth_bestevol_cind9.pdf, id=285, 364.36125pt x 254.9525pt>
+<./Figures/booth_bestevol_cind9.pdf, id=326, 364.36125pt x 254.9525pt>
 File: ./Figures/booth_bestevol_cind9.pdf Graphic file (type pdf)
 
 <use ./Figures/booth_bestevol_cind9.pdf>
 Package pdftex.def Info: ./Figures/booth_bestevol_cind9.pdf used on input line 
-120.
+159.
 (pdftex.def)             Requested size: 364.36035pt x 254.95186pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[23 <./Figures/Functions/booth.pdf>]
+[26 <./Figures/booth_nthbest_cind3.pdf>]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[24 <./Figures/booth_nthbest_cind3.pdf> <./Figures/booth_nthbest_cind6.pdf>]
+[27 <./Figures/booth_nthbest_cind6.pdf> <./Figures/booth_nthbest_cind9.pdf>]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[25 <./Figures/booth_nthbest_cind9.pdf> <./Figures/booth_bestevol_cind2.pdf>]
-Overfull \vbox (15.11194pt too high) has occurred while \output is active []
-
-
-[26 <./Figures/booth_bestevol_cind4.pdf> <./Figures/booth_bestevol_cind9.pdf>]
-<./Figures/Functions/maytas.pdf, id=465, 268.00125pt x 238.8925pt>
-File: ./Figures/Functions/maytas.pdf Graphic file (type pdf)
-
-<use ./Figures/Functions/maytas.pdf>
-Package pdftex.def Info: ./Figures/Functions/maytas.pdf used on input line 139.
-
-(pdftex.def)             Requested size: 268.00058pt x 238.8919pt.
-
-<./Figures/maytas_nthbest_cind2.pdf, id=466, 362.35374pt x 252.945pt>
+[28 <./Figures/booth_bestevol_cind2.pdf> <./Figures/booth_bestevol_cind4.pdf>]
+<./Figures/maytas_nthbest_cind2.pdf, id=465, 362.35374pt x 252.945pt>
 File: ./Figures/maytas_nthbest_cind2.pdf Graphic file (type pdf)
 
 <use ./Figures/maytas_nthbest_cind2.pdf>
 Package pdftex.def Info: ./Figures/maytas_nthbest_cind2.pdf used on input line 
-146.
+178.
 (pdftex.def)             Requested size: 362.35286pt x 252.94438pt.
 
-<./Figures/maytas_nthbest_cind6.pdf, id=467, 362.35374pt x 252.945pt>
+<./Figures/maytas_nthbest_cind6.pdf, id=466, 362.35374pt x 252.945pt>
 File: ./Figures/maytas_nthbest_cind6.pdf Graphic file (type pdf)
 
 <use ./Figures/maytas_nthbest_cind6.pdf>
 Package pdftex.def Info: ./Figures/maytas_nthbest_cind6.pdf used on input line 
-153.
+185.
 (pdftex.def)             Requested size: 362.35286pt x 252.94438pt.
 
-<./Figures/maytas_nthbest_cind10.pdf, id=468, 362.35374pt x 252.945pt>
+<./Figures/maytas_nthbest_cind10.pdf, id=467, 362.35374pt x 252.945pt>
 File: ./Figures/maytas_nthbest_cind10.pdf Graphic file (type pdf)
 
 <use ./Figures/maytas_nthbest_cind10.pdf>
 Package pdftex.def Info: ./Figures/maytas_nthbest_cind10.pdf used on input line
- 160.
+ 192.
 (pdftex.def)             Requested size: 362.35286pt x 252.94438pt.
 
-<./Figures/maytas_bestevol_cind2.pdf, id=469, 370.38374pt x 254.9525pt>
+<./Figures/maytas_bestevol_cind2.pdf, id=468, 370.38374pt x 254.9525pt>
 File: ./Figures/maytas_bestevol_cind2.pdf Graphic file (type pdf)
 
 <use ./Figures/maytas_bestevol_cind2.pdf>
 Package pdftex.def Info: ./Figures/maytas_bestevol_cind2.pdf used on input line
- 167.
+ 199.
 (pdftex.def)             Requested size: 370.38283pt x 254.95186pt.
 
-<./Figures/maytas_bestevol_cind4.pdf, id=470, 370.38374pt x 254.9525pt>
+<./Figures/maytas_bestevol_cind4.pdf, id=469, 370.38374pt x 254.9525pt>
 File: ./Figures/maytas_bestevol_cind4.pdf Graphic file (type pdf)
 
 <use ./Figures/maytas_bestevol_cind4.pdf>
 Package pdftex.def Info: ./Figures/maytas_bestevol_cind4.pdf used on input line
- 174.
+ 206.
 (pdftex.def)             Requested size: 370.38283pt x 254.95186pt.
 
-<./Figures/maytas_bestevol_cind10.pdf, id=471, 370.38374pt x 254.9525pt>
+<./Figures/maytas_bestevol_cind10.pdf, id=470, 370.38374pt x 254.9525pt>
 File: ./Figures/maytas_bestevol_cind10.pdf Graphic file (type pdf)
 
 <use ./Figures/maytas_bestevol_cind10.pdf>
 Package pdftex.def Info: ./Figures/maytas_bestevol_cind10.pdf used on input lin
-e 181.
+e 213.
 (pdftex.def)             Requested size: 370.38283pt x 254.95186pt.
 ) (./Tesis.bbl
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[27 <./Figures/Functions/maytas.pdf>]
+[29 <./Figures/booth_bestevol_cind9.pdf>]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[28 <./Figures/maytas_nthbest_cind2.pdf> <./Figures/maytas_nthbest_cind6.pdf>]
+[30 <./Figures/maytas_nthbest_cind2.pdf> <./Figures/maytas_nthbest_cind6.pdf>]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[29 <./Figures/maytas_nthbest_cind10.pdf> <./Figures/maytas_bestevol_cind2.pdf>
+[31 <./Figures/maytas_nthbest_cind10.pdf> <./Figures/maytas_bestevol_cind2.pdf>
 ]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[30 <./Figures/maytas_bestevol_cind4.pdf> <./Figures/maytas_bestevol_cind10.pdf
+[32 <./Figures/maytas_bestevol_cind4.pdf> <./Figures/maytas_bestevol_cind10.pdf
 >]
 Underfull \hbox (badness 1472) in paragraph at lines 66--70
 []\T1/aer/m/n/12 Fan, K., Bra-ba-zon, A., O'Sullivan, C., and O'Neill, M. (2008
@@ -1217,29 +1254,29 @@ Underfull \hbox (badness 1472) in paragraph at lines 66--70
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[31
+[33
 
 ]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[32]
+[34]
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[33])
+[35])
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
-[34] (./Tesis.aux
+[36] (./Tesis.aux
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
  (./abreviaturas.aux)) ) 
 Here is how much of TeX's memory you used:
- 20889 strings out of 493304
- 471069 string characters out of 6139871
- 636495 words of memory out of 5000000
- 23798 multiletter control sequences out of 15000+600000
+ 20987 strings out of 493304
+ 472241 string characters out of 6139871
+ 636496 words of memory out of 5000000
+ 23891 multiletter control sequences out of 15000+600000
  40097 words of font info for 83 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,13n,74p,1239b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1255,10 +1292,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on Tesis.pdf (43 pages, 1404541 bytes).
+Output written on Tesis.pdf (45 pages, 1408912 bytes).
 PDF statistics:
- 693 PDF objects out of 1000 (max. 8388607)
- 483 compressed objects within 5 object streams
+ 699 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

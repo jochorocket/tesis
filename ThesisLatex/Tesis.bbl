@@ -153,6 +153,11 @@ Miao, H., Wang, H., and Deng, Z. (2009).
 \newblock In {\em Computational Intelligence and Security, 2009. CIS'09.
   International Conference on}, volume~1, pages 107--111. IEEE.
 
+\bibitem[Mishra, 2006]{mishra2006some}
+Mishra, S. (2006).
+\newblock Some new test functions for global optimization and performance of
+  repulsive particle swarm method.
+
 \bibitem[Narayanan and Moore, 1996]{narayanan1996quantum}
 Narayanan, A. and Moore, M. (1996).
 \newblock Quantum-inspired genetic algorithms.
@@ -192,6 +197,11 @@ Shor, P.~W. (1994).
   factoring.
 \newblock In {\em Foundations of Computer Science, 1994 Proceedings., 35th
   Annual Symposium on}, pages 124--134. IEEE.
+
+\bibitem[Silagadze, 2007]{silagadze2007finding}
+Silagadze, Z. (2007).
+\newblock Finding two-dimensional peaks.
+\newblock {\em Physics of Particles and Nuclei Letters}, 4(1):73--80.
 
 \bibitem[Singulani et~al., 2008]{singulani2008computational}
 Singulani, A.~P., Vilela~Neto, O.~P., Aur{\'e}lio~Pacheco, M.~C., Vellasco,

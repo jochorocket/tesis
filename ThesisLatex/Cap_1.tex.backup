@@ -12,29 +12,25 @@ Dada la relativa novedad del campo, los algoritmos evolutivos de inspiración gen
 
 \section{Planteamiento del Problema}
 
-Se puede afirmar con certeza que el grueso de soluciones y aplicaciones a partir del algoritmo evolutivo de inspiración cuántica original contemplan actualizaciones de los individuos cuánticos basadas tanto en la evaluación de, como en la interacción entre individuos clásicos generados a partir de éstos \cite{nowotniak2014higher}. Esta visión es heredera del accionar propio de distintos tipos de algoritmos evolutivos estudiados y evaluados desde tiempo atrás que se pusiera ojos en la inspiración cuántica.
+Se puede afirmar con certeza que el grueso de soluciones y aplicaciones a partir del \ac{QIEA} original contemplan actualizaciones de los individuos cuánticos basadas tanto en la evaluación de, como en la interacción entre individuos clásicos generados a partir de éstos \cite{nowotniak2014higher}. Esta visión es heredera del accionar propio de distintos tipos de algoritmos evolutivos estudiados y evaluados desde tiempo atrás que se pusiera ojos en la inspiración cuántica.
 
 Se puede apreciar también que los individuos cuánticos en sí no son directamente evaluados, y mucho menos poseen una verdadera interacción entre sí. A pesar de ser la parte esencial de los algoritmos evolutivos de inspiración cuántica como generadores de individuos cuánticos, son estos últimos los que realmente presentan las características propias de los algoritmos evolutivos, tales como operadores de mutación y cruzamiento, entre otras.
 
-Como se verá en el Capítulo 3, uno de los requerimientos para la formulación de un algoritmo de inspiración cuántica es la existencia de alguna interacción entre universos la cual ha de permitir hallar la solución o ayudar a que los sub-problemas al interior de cada universo puedan ser resueltos \cite{da2007algoritmos}. Este requerimiento podría verse cumplido mediante una separación de los espacios de acción de los respectivos individuos cuánticos en universos únicos, los cuales puedan compartir mutuamente sus mejoras para incrementar el espacio de búsqueda de cada cual. De esta manera, los individuos cuánticos podrían ejecutar operadores que hasta el momento sólo se habían reservado para los individuos clásicos.
+Como se verá en el Capítulo 3, uno de los requerimientos para la formulación de un algoritmo de inspiración cuántica es, de existir alguna separación del campo de búsqueda en universos, permitir la existencia de alguna interacción entre los mismos, la cual ha de permitir hallar la solución o ayudar a que los sub-problemas al interior de cada universo puedan ser resueltos \cite{da2007algoritmos}. Este requerimiento permitiría controlar de forma más eficiente el grado de actualización global y local, y podría verse cumplido mediante una separación de los espacios de acción de los respectivos individuos cuánticos en universos únicos, los cuales puedan compartir mutuamente sus mejoras para incrementar el espacio de búsqueda de cada cual. %De esta manera, los individuos cuánticos podrían ejecutar operadores que hasta el momento sólo se habían reservado para los individuos clásicos.
 
 \section{Objetivos}
 
-El principal objetivo de la presente tesis es la evaluación comparativa del desempeño de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ que presente las características 
-
-del algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$
-
-El objetivo primordial de esta tesis es la proposición de un control de actualización para el algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$ que gradúe el grado de actualización global y local de cada individuo.
+El principal objetivo de la presente tesis es la evaluación del desempeño de un \ac{QIEA} para $\mathbb{R}$ que presente las características de segregación/interacción entre universos de operación para cada individuo cuántico en operación. La evaluación es comparativa y se hará con respecto al \ac{QIEA}-$\mathbb{R}$ original. Se busca evaluar y explorar el hecho de poder tener mayor control sobre el grado de localidad y globalidad de la actualización de cada individuo cuántico mediante la segregación del campo operativo de los mismos, así como la incorporación de un operador de cruzamiento que funcione a este nivel.
 
 \subsection{Objetivos Específicos}
 
 \begin{itemize}
- \item Estudiar el algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$, comprender sus características y factibilidad de aplicación.
- \item Controlar el grado de globalidad/localidad en la actualización de individuos cuánticos mediante el aislamiento de los individuos cuánticos en universos separados y la introducción de un operador de recombinación para la mejora y ampliación de los espacios de búsqueda de cada individuo cuántico.
- \item Realización de pruebas en funciones benchmark.
+ \item Estudiar el algoritmo \ac{QIEA}-$\mathbb{R}$, comprender sus características y evaluar posibles escenarios de mejora con respecto al grado de globalidad/localidad de sus elementos.
+ \item Incrementar el grado de control tanto de la globalidad como de la localidad en la actualización de individuos cuánticos mediante el aislamiento de los individuos cuánticos en universos separados, así como mediante la introducción de un operador de recombinación para la mejora de los espacios de búsqueda de cada individuo cuántico.
+ \item Medición del desempeño tanto del algoritmo original como de las propuestas evaluadas mediante la realización de pruebas en funciones \textit{benchmark}.
 \end{itemize}
 
 
 \section{Organización de la tesis}
 
-El capítulo 2 busca hacer una revisión del estado del arte en el área de los algoritmos evolutivos de inspiración cuántica, incluyendo un apartado referido a los algoritmos evolutivos de inspiración cuántica en $\mathbb{R}$. El capítulo 3 contiene el marco teórico de la tesis, introduciendo los conceptos básicos en los campos de la computación cuántica, la computación evolutiva, y los propios algoritmos evolutivos de inspiración cuántica. El capítulo 4 explica el algoritmo que se propone en el presente trabajo, además de las condiciones y escenarios de prueba. El capítulo 5 muestra los resultados de las pruebas realizadas para el algoritmo propuesto. Finalmente, el capítulo 6 contiene las conclusiones obtenidas por la presente tesis, además de indicaciones adicionales y futuras oportunidades para la investigación en el campo.
+El capítulo 2 busca hacer una revisión del estado del arte en el área de los algoritmos evolutivos de inspiración cuántica, incluyendo un apartado referido a los algoritmos evolutivos de inspiración cuántica en $\mathbb{R}$. El capítulo 3 contiene el marco teórico de la tesis, introduciendo los conceptos básicos en los campos de la computación cuántica, la computación evolutiva, y los algoritmos evolutivos de inspiración cuántica. El capítulo 4 describe las características elegidas a ser implementadas y evaluadas sobre el algoritmo ya indicado. El capítulo 5 describe los escenarios de prueba condiciones, los escenarios elegidos y los resultados de los mismos. Finalmente, el capítulo 6 contiene las conclusiones obtenidas por la presente tesis, además de indicaciones adicionales y posibles escenarios para la investigación futuras en el campo.

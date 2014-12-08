@@ -1,12 +1,12 @@
 \chapter{Propuesta}
 
-Como ya fue mencionado en su momento en la introducción de la presente tesis, se busca evaluar el desempeño de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ que presente las características de segregación/interacción entre universos de operación para cada individuo cuántico en operación con respecto al algoritmo original, con el fin de obtener mayor control sobre el grado de localidad y globalidad de la actualización de cada individuo cuántico mediante la segregación del campo operativo de los mismos, así como la incorporación de un operador de cruzamiento que funcione a este nivel. 
+Como ya fue mencionado en su momento en la introducción de la presente tesis, se busca evaluar el desempeño de un algoritmo \ac{QIEA} para $\mathbb{R}$ que presente las características de segregación/interacción entre universos de operación para cada individuo cuántico en operación con respecto al algoritmo original, con el fin de obtener mayor control sobre el grado de localidad y globalidad de la actualización de cada individuo cuántico mediante la segregación del campo operativo de los mismos, así como la incorporación de un operador de cruzamiento que funcione a este nivel. 
 
-Se escogió trabajar sobre el algoritmo para $\mathbb{R}$ debido a la menor cantidad de investigación realizada sobre el mismo a diferencia del algoritmo para $\mathbb{B}$. Además, cabe considerar la relativa simplicidad de su evaluación, la cual se hará sobre funciones \textit{benchmark} -se verá con más detalle este apartado en el siguiente capítulo-.
+Se escogió trabajar sobre el algoritmo para $\mathbb{R}$ debido a la menor cantidad de investigación realizada sobre el mismo a diferencia de la versión original orientada a $\mathbb{B}$. Además, cabe considerar la relativa simplicidad de su evaluación, la cual se hará sobre funciones \textit{benchmark} -se verá con más detalle este apartado en el siguiente capítulo-.
 
 A continuación, se describirá con detalle las características a ser tomadas en consideración para la descripción del algoritmo a evaluar.
 
-\section{Segregación del campo operativo de los individuos cuánticos en universos segregados}
+\section{Segregación del campo operativo de los individuos cuánticos en universos}
 
 Como se vió al principio de la sección 3.3 del presente documento, hay algunas condiciones especiales sobre las cuales se pueden proponer algoritmos evolutivos de inspiración cuántica. Se identifica la necesidad de una subdivisión de problemas en universos, los cuales se requiere que sean independientes de los demás. El algoritmo original ejecuta una evaluación conjunta de los distintos individuos clásicos generados, por lo que no satisface esta condición. Incluso si se procede con el particionamiento del espacio de búsqueda, sólo se llegaría a satisfacer parcialmente, porque aún así los individuos clásicos generados permanecen evaluados en forma conjunta y no segregada.
 
@@ -21,3 +21,28 @@ Ya se ha hecho notar con anterioridad en la introducción que el énfasis del cruz
 Existen diversos modelos de cruzamiento a nivel de individuos clásicos, los cuales ya fueron descritos en el capítulo anterior. Para el presente trabajo se ha elegido trabajar con un operador elitista que, para cada iteración, seleccione tanto al mejor como al peor elemento cuántico. Las características del mejor operador cuántico (que en realidad refiere al espacio de búsqueda del mismo) serán agregados a las del peor elemento cuántico. De esta manera, se busca incrementar la capacidad de generación de individuos clásicos de calidad para los individuos cuánticos de desempeño más discreto.
 
 Como es evidente, no es posible evaluar directamente a un individuo cuántico mediante una función \textit{fitness} como si se hace con los individuos clásicos. Sin embargo, si es posible evaluar a los individuos clásicos generados por cada individuo cuántico. De esta forma, a cada individuo cuántico se le evaluaría la calidad de la generación de individuos clásicos que respondan bien ante las circunstancias a evaluar.
+
+\section{Detalle y nomenclatura de los algoritmos a evaluar}
+
+Para efectos de nomenclatura, se ha decidido utilizar el nombre \ac{QIEA}$\mathbb{R}$ para denominar al algoritmo original sobre el cual se realizan las modificaciones ya explicadas. De acuerdo a lo ya expuesto en secciones anteriores, el espacio de búsqueda puede o no estar particionado, por lo que para indicar la existencia de un particionamiento en el mismo, se usará el sufijo $-p$.
+
+De la misma manera, se utilizará el prefijo $U$ para indicar que los espacios de búsqueda para cada individuo cuántico están siendo segregados. Finalmente, el sufijo $CO$  será empleado para indicar la implementación del operador de cruzamiento entre individuos cuánticos.
+
+A partir de esto, se evidencia la existencia de dos algoritmos originales y 7 modificaciones al mismo de acuerdo a la incorporación de las dos características novedosas ya detalladas. Una explicación más clara de esto se puede ver en la Tabla 4.1.
+
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{ |X|X|X|X| }
+\hline
+Algoritmo                    & Espacio de \newline búsqueda \newline particionado & Campo de acción \newline de individuos \newline  cuánticos segregado \newline en universos & Operador de \newline cruzamiento para \newline individuos \newline cuánticos \\ \hline
+\ac{QIEA}$\mathbb{R}$      & No                               & No                                                             & No                                                \\
+U\ac{QIEA}$\mathbb{R}$     & No                               & Si                                                             & No                                                \\
+\ac{QIEA}$\mathbb{R}$-CO   & No                               & No                                                             & Si                                                \\
+U\ac{QIEA}$\mathbb{R}$-CO  & No                               & Si                                                             & Si                                                \\
+\ac{QIEA}$\mathbb{R}$-p    & Si                               & No                                                             & No                                                \\
+U\ac{QIEA}$\mathbb{R}$-p   & Si                               & Si                                                             & No                                                \\
+\ac{QIEA}$\mathbb{R}$-pCO  & Si                               & No                                                             & Si                                                \\
+U\ac{QIEA}$\mathbb{R}$-pCO & Si                               & Si                                                             & Si                                                \\ \hline
+\end{tabularx}
+\caption{Descripción de los algoritmos a evaluar}
+ \label{table4-1}
+\end{table}

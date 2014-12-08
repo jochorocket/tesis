@@ -92,7 +92,7 @@ Por supuesto, los algoritmos evolutivos también presentan algunos inconvenientes
 
 \section{Algoritmos Evolutivos de Inspiración Cuántica}
 
-Los algoritmos evolutivos de inspiración cuántica buscan aprovechar los paradigmas de la física cuántica para mejorar su rendimiento al resolver problemas. El algoritmo evolutivo de inspiración cuántica original fue descrito originalmente en \cite{han2000genetic} y posteriormente analizado \cite{han2001analysis}. Como se puede ver en el capítulo anterior, han surgido buen número de variaciones y aplicaciones, todos basados en el original descrito a continuación. Para la formulación de un algoritmo de inspiración cuántica se debe cumplir con los siguientes requerimientos:
+Los algoritmos evolutivos de inspiración cuántica buscan aprovechar los paradigmas de la física cuántica para mejorar su rendimiento al resolver problemas. El algoritmo \ac{QIEA} original fue descrito originalmente en \cite{han2000genetic} y posteriormente analizado \cite{han2001analysis}. Como se puede ver en el capítulo anterior, han surgido buen número de variaciones y aplicaciones, todos basados en el original descrito a continuación. Para la formulación de un algoritmo de inspiración cuántica se debe cumplir con los siguientes requerimientos:
 
 \begin{itemize}
  \item Tener una representación numérica o un método para convertir en representación numérica.
@@ -165,7 +165,8 @@ En la figura \ref{figure3-2} se puede apreciar cómo las modificaciones en el ope
 
 \begin{algorithmic}
 \begin{algorithm}[ht]
-\caption{Pseudocódigo para el algoritmo evolutivo de inspiración cuántica}
+\caption{Pseudocódigo para el \ac{QIEA}-$\mathbb{B}$}
+ \label{table3-1}
 INITIALIZE $t \leftarrow 0$;
 \State INITIALIZE ${\bf Q}_t$;
 \State MAKE ${\bf P}_t$ by observing the states of ${\bf Q}_t$;
@@ -185,9 +186,9 @@ INITIALIZE $t \leftarrow 0$;
 \end{algorithmic}
 
 
-\section{Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb{R}$}
+\section{Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb{R}$ (\ac{QIEA}-$\mathbb{R}$}
 
-La propuesta original de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base \cite{da2007algoritmos}. La inspiración de este modelo está en el uso de funciones de onda.
+La propuesta original de un \ac{QIEA} para $\mathbb{R}$ busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base \cite{da2007algoritmos}. La inspiración de este modelo está en el uso de funciones de onda.
 
 Se calcula el momento de un fotón a partir de su masa al moverse a la velocidad de la luz $m=hv/c^2$ derivada de la ecuación de equivalencia entre masa y energía $E=mc^2$.
 
@@ -215,7 +216,7 @@ El concepto de función de onda relaciona probabilísticamente una onda con la loc
 
 \begin{algorithmic}
 \begin{algorithm}[ht]
-\caption{Pseudocódigo para el algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$}
+\caption{Pseudocódigo para \ac{QIEA}-$\mathbb{R}$}
 INITIALIZE $t \leftarrow 0$;
 \State INITIALIZE ${\bf Q}_t$ with $m$ individuals of $n$ genes;
 \While {$t \leq T$}
@@ -257,5 +258,5 @@ Cada individuo cuántico $q_i$ perteneciente a una población cuántica $\text{Q}_0
 
 \section{Consideraciones Finales}
 
-Según se ha visto, el algoritmo evolutivo de inspiración cuántica original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir un nuevo mecanismo de recombinación (\textit{crossover}) en un entorno concurrente de ejecución con más de una población cuántica generadora.
+Según se ha visto, el algoritmo \ac{QIEA} original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir un nuevo mecanismo de recombinación (\textit{crossover}) en un entorno concurrente de ejecución con más de una población cuántica generadora.
 
