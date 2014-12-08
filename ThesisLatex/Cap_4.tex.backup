@@ -22,13 +22,27 @@ Existen diversos modelos de cruzamiento a nivel de individuos clásicos, los cual
 
 Como es evidente, no es posible evaluar directamente a un individuo cuántico mediante una función \textit{fitness} como si se hace con los individuos clásicos. Sin embargo, si es posible evaluar a los individuos clásicos generados por cada individuo cuántico. De esta forma, a cada individuo cuántico se le evaluaría la calidad de la generación de individuos clásicos que respondan bien ante las circunstancias a evaluar.
 
-\section{Algoritmos a evaluar}
+\section{Detalle y nomenclatura de los algoritmos a evaluar}
 
 Para efectos de nomenclatura, se ha decidido utilizar el nombre \ac{QIEA}$\mathbb{R}$ para denominar al algoritmo original sobre el cual se realizan las modificaciones ya explicadas. De acuerdo a lo ya expuesto en secciones anteriores, el espacio de búsqueda puede o no estar particionado, por lo que para indicar la existencia de un particionamiento en el mismo, se usará el sufijo $-p$.
 
-De la misma manera, se utilizará el prefijo $U$ para indicar que los espacios de búsqueda para cada individuo cuántico están siendo segregados. Finalmente, el sufijo $-ca$ 
+De la misma manera, se utilizará el prefijo $U$ para indicar que los espacios de búsqueda para cada individuo cuántico están siendo segregados. Finalmente, el sufijo $CO$  será empleado para indicar la implementación del operador de cruzamiento entre individuos cuánticos.
 
-\begin{table}
+A partir de esto, se evidencia la existencia de dos algoritmos originales y 7 modificaciones al mismo de acuerdo a la incorporación de las dos características novedosas ya detalladas. Una explicación más clara de esto se puede ver en la Tabla 4.1.
 
-\caption{Probando probando}
-\end{table} 
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{ |X|X|X|X| }
+\hline
+Algoritmo                    & Espacio de \newline búsqueda \newline particionado & Campo de acción \newline de individuos \newline  cuánticos segregado \newline en universos & Operador de \newline cruzamiento para \newline individuos \newline cuánticos \\ \hline
+\ac{QIEA}$\mathbb{R}$      & No                               & No                                                             & No                                                \\
+U\ac{QIEA}$\mathbb{R}$     & No                               & Si                                                             & No                                                \\
+\ac{QIEA}$\mathbb{R}$-CO   & No                               & No                                                             & Si                                                \\
+U\ac{QIEA}$\mathbb{R}$-CO  & No                               & Si                                                             & Si                                                \\
+\ac{QIEA}$\mathbb{R}$-p    & Si                               & No                                                             & No                                                \\
+U\ac{QIEA}$\mathbb{R}$-p   & Si                               & Si                                                             & No                                                \\
+\ac{QIEA}$\mathbb{R}$-pCO  & Si                               & No                                                             & Si                                                \\
+U\ac{QIEA}$\mathbb{R}$-pCO & Si                               & Si                                                             & Si                                                \\ \hline
+\end{tabularx}
+\caption{Descripción de los algoritmos a evaluar}
+ \label{table4-1}
+\end{table}

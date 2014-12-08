@@ -2,9 +2,67 @@
 
 \section{Escenarios de prueba}
 
-Como se ind
+Como se indicó desde un principio, los escenarios para las pruebas son un conjunto de funciones \textit{benchmark} orientadas a problemas de optimización de objetivo único especialmente seleccionadas para evaluar el desempeño de los algoritmos derivados comparativamente con respecto al algoritmo original. Las funciones fueron seleccionadas a partir de \cite{mishra2006some} \cite{silagadze2007finding}.
+
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{ 
+  |p{\dimexpr.12\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 1
+  |p{\dimexpr.45\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 2
+  |p{\dimexpr.15\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 3
+  |p{\dimexpr.28\linewidth-2\tabcolsep-1.3333\arrayrulewidth}|% column 3
+ }
+\hline
+Función	& Fórmula 							& Valor \newline mínimo	& Dominio de búsqueda \\ \hline
+Arckley	& $f(x,y)=-20e^{-0.2\sqrt{0.5(x^2+y^2)}}-e^{0.5(cos(2\pi x)+cos(2\pi y)}+e+20$	& $f(0,0)=0$	& $-5\leq x,y\leq5$   \\
+Booth   & $f(x,y)=(x+2y-7)^2+(2x+y-5)^2$						& $f(1,3)=0$	& $-10\leq x,y\leq10$   \\
+Maytas  & $f(x,y)=0.26(x^2+y^2)-0.48xy$							& $f(0,0)=0$	& $-10\leq x,y\leq10$   \\
+\hline
+\end{tabularx}
+\caption{Descripción de las funciones de prueba}
+ \label{table5-1}
+\end{table}
+
+Todas las funciones poseen en común el evaluar dos variables. Además, otras condiciones que debieron cumplir para ser seleccionadas como escenarios de prueba son:
+\begin{itemize}
+ \item Poseer espacios de búsqueda reducidos.
+ \item Poseer mínimos cuya vecindad representen un porcentaje reducido del total del conjunto de soluciones en el dominio de búsqueda.
+ \item Evitar la tendencia a valores mínimos por debajo del mínimo identificado dentro del dominio de búsqueda.
+\end{itemize}
+
+Estas condiciones se explican por la tendencia que presentan tanto el algoritmo \ac{QIEA}-$\mathbb{R}$ como las distintas derivaciones del mismo que se han evaluado: la tendencia a aumentar desproporcionadamente el espacio de búsqueda conforme se deja de generar mejores individuos. Si se comienza con un espacio de búsqueda amplio, su crecimiento prematuro podría no devolver los mejores resultados; por el contrario, la calidad de las soluciones comienza a decrecer con gran velocidad.
+
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/arckley.pdf}%
+   \caption{$f(x,y)=-20e^{-0.2\sqrt{0.5(x^2+y^2)}}-e^{0.5(cos(2\pi x)+cos(2\pi y)}+e+20$}
+   \label{figure5-1}
+\end{figure}
+
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/booth.pdf}%
+   \caption{$f(x,y)=(x+2y-7)^2+(2x+y-5)^2$}
+   \label{figure5-8}
+\end{figure}
+
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/maytas.pdf}%
+   \caption{$f(x,y)=0.26(x^2+y^2)-0.48xy$	}
+   \label{figure5-15}
+\end{figure}
 
 \section{Condiciones para las pruebas}
+
+Todos los algoritmos ya indicados fueron evaluados bajo las siguientes condiciones:
+
+\begin{itemize}
+ \item Un espacio de búsqueda $p_{ij}$ delimitado por $l_{ij}$ y $u_{ij}$ el cual puede ser único o presentarse particionado. 
+ \item Un número de particiones $m$ donde $2\leq m\leq10$.
+ \item Una población cuántica $Q_t$ donde $Q_t = \{q_1 ,... , q_m\}$ en el que cada $q_i$ representa a un individuo cuántico y donde $m$ se corresponde con el número de particiones del espacio de búsqueda. En caso que el espacio de búsqueda no esté particionado, $m$ presenta los mismos límites que el número de particiones.
+ \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
+ \item 
+\end{itemize}
 
 \section{Resultados}
 
@@ -27,12 +85,6 @@ The path of the righteous man is beset on all sides by the iniquities of the sel
 
 Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
 
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/Functions/arckley.pdf}%
-   \caption{Función Benchmark: Arckley}
-   \label{figure5-1}
-\end{figure}
 
 \begin{figure}
    \centering
@@ -88,12 +140,6 @@ The path of the righteous man is beset on all sides by the iniquities of the sel
 
 Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
 
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/Functions/booth.pdf}%
-   \caption{Función Benchmark: Booth}
-   \label{figure5-8}
-\end{figure}
 
 \begin{figure}
    \centering
@@ -148,13 +194,6 @@ Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is ad
 The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
 
 Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/Functions/maytas.pdf}%
-   \caption{Función Benchmark: Maytas}
-   \label{figure5-15}
-\end{figure}
 
 \begin{figure}
    \centering

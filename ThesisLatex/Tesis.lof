@@ -6,9 +6,9 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Rotación del ángulo al momento de la aplicación del operador Q-gate}}{13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Función Benchmark: Arckley}}{20}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Función Benchmark: Booth}}{20}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Función Benchmark: Maytas}}{21}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces $f(x,y)=-20e^{-0.2\sqrt {0.5(x^2+y^2)}}-e^{0.5(cos(2\pi x)+cos(2\pi y)}+e+20$}}{20}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces $f(x,y)=(x+2y-7)^2+(2x+y-5)^2$}}{20}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces $f(x,y)=0.26(x^2+y^2)-0.48xy$ }}{20}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=2$}}{22}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=4$}}{23}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $ci=10$}}{23}
