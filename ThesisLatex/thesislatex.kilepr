@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=Cap_5.tex
+lastDocument=Cap_4.tex
 masterDocument=
 name=ThesisLatex
 pkg_extIsRegExp=false
@@ -107,8 +107,8 @@ encoding=UTF-8
 highlight=LaTeX
 line=1
 mode=LaTeX
-open=false
-order=5
+open=true
+order=1
 
 [item:Agradecimientos.tex]
 archive=true
@@ -122,23 +122,23 @@ order=-1
 
 [item:Bibliog.bib]
 archive=true
-column=0
+column=26
 encoding=ISO-8859-15
 highlight=BibTeX
-line=419
+line=436
 mode=BibTeX
-open=false
+open=true
 order=0
 
 [item:Cap_1.tex]
 archive=true
-column=215
+column=465
 encoding=ISO-8859-15
 highlight=LaTeX
-line=10
+line=22
 mode=LaTeX
 open=true
-order=1
+order=3
 
 [item:Cap_2.tex]
 archive=true
@@ -148,27 +148,27 @@ highlight=LaTeX
 line=4
 mode=LaTeX
 open=true
-order=2
+order=4
 
 [item:Cap_3.tex]
 archive=true
-column=26
+column=0
 encoding=ISO-8859-15
 highlight=LaTeX
-line=158
+line=95
 mode=LaTeX
 open=true
-order=3
+order=5
 
 [item:Cap_4.tex]
 archive=true
-column=600
+column=126
 encoding=ISO-8859-15
 highlight=LaTeX
-line=3
+line=20
 mode=LaTeX
 open=true
-order=4
+order=6
 
 [item:Cap_5.tex]
 archive=true
@@ -177,7 +177,7 @@ encoding=ISO-8859-15
 highlight=LaTeX
 line=13
 mode=LaTeX
-open=true
+open=false
 order=5
 
 [item:Figure1.png]
@@ -207,17 +207,17 @@ encoding=ISO-8859-15
 highlight=LaTeX
 line=1
 mode=LaTeX
-open=false
-order=4
+open=true
+order=2
 
 [item:Tesis.tex]
 archive=true
-column=0
+column=155
 encoding=ISO-8859-15
 highlight=LaTeX
-line=33
+line=31
 mode=LaTeX
-open=true
+open=false
 order=0
 
 [item:abreviaturas.tex]
@@ -273,16 +273,16 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Bibliog.bib]
-CursorColumn=0
-CursorLine=419
+CursorColumn=26
+CursorLine=436
 JumpList=
-ViMarks=.,424,27,[,424,25,],424,27
+ViMarks=.,439,8,[,439,7,],439,8
 
 [view-settings,view=0,item:Cap_1.tex]
-CursorColumn=215
-CursorLine=10
+CursorColumn=465
+CursorLine=22
 JumpList=
-ViMarks=.,10,175,[,10,175,],10,175
+ViMarks=.,22,504,[,22,501,],22,504
 
 [view-settings,view=0,item:Cap_2.tex]
 CursorColumn=324
@@ -291,16 +291,16 @@ JumpList=
 ViMarks=.,2,403,[,2,401,],2,403
 
 [view-settings,view=0,item:Cap_3.tex]
-CursorColumn=26
-CursorLine=158
+CursorColumn=0
+CursorLine=95
 JumpList=
-ViMarks=.,158,25,[,158,24,],158,25
+ViMarks=.,94,466,[,94,466,],94,466
 
 [view-settings,view=0,item:Cap_4.tex]
-CursorColumn=600
-CursorLine=3
+CursorColumn=126
+CursorLine=20
 JumpList=
-ViMarks=.,3,599,[,3,563,],3,599
+ViMarks=.,20,125,[,20,118,],20,125
 
 [view-settings,view=0,item:Cap_5.tex]
 CursorColumn=0
@@ -315,10 +315,10 @@ JumpList=
 ViMarks=.,1,164,[,1,164,],1,164
 
 [view-settings,view=0,item:Tesis.tex]
-CursorColumn=0
-CursorLine=33
+CursorColumn=155
+CursorLine=31
 JumpList=
-ViMarks=.,16,0,[,16,0,],16,20
+ViMarks=.,31,154,[,31,153,],31,154
 
 [view-settings,view=0,item:abreviaturas.tex]
 CursorColumn=0

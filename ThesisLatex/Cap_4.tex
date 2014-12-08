@@ -1,4 +1,23 @@
 \chapter{Propuesta}
 
-La propuesta que presenta esta tesis busca extender el algoritmo evolutivo de inspiración cuántica original, %tomando como base la generalización del mismo para más de dos estados como se muestra en \cite{alegria2014generalized}, 
-e introducir el concepto de \textit{entrelazamiento intergeneracional} como justificación para la implementación de un operador de recombinación. Se busca introducir una versión concurrente del algoritmo base, el cual a partir de una determinada iteración $u$ combinará un Q-bit que sea parte del individuo generador de mejores soluciones con otro Q-bit de otro individuo caracterizado por entregar soluciones peores que las del resto. De esta manera, se intenta que la búsqueda de valores óptimos no se vea desviada por la tendencia a un máximo local en vez de al máximo global que se busca obtener.
+Como ya fue mencionado en su momento en la introducción de la presente tesis, se busca evaluar el desempeño de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ que presente las características de segregación/interacción entre universos de operación para cada individuo cuántico en operación con respecto al algoritmo original, con el fin de obtener mayor control sobre el grado de localidad y globalidad de la actualización de cada individuo cuántico mediante la segregación del campo operativo de los mismos, así como la incorporación de un operador de cruzamiento que funcione a este nivel. 
+
+Se escogió trabajar sobre el algoritmo para $\mathbb{R}$ debido a la menor cantidad de investigación realizada sobre el mismo a diferencia del algoritmo para $\mathbb{B}$. Además, cabe considerar la relativa simplicidad de su evaluación, la cual se hará sobre funciones \textit{benchmark} -se verá con más detalle este apartado en el siguiente capítulo-.
+
+A continuación, se describirá con detalle las características a ser tomadas en consideración para la descripción del algoritmo a evaluar.
+
+\section{Segregación del campo operativo de los individuos cuánticos en universos segregados}
+
+Como se vió al principio de la sección 3.3 del presente documento, hay algunas condiciones especiales sobre las cuales se pueden proponer algoritmos evolutivos de inspiración cuántica. Se identifica la necesidad de una subdivisión de problemas en universos, los cuales se requiere que sean independientes de los demás. El algoritmo original ejecuta una evaluación conjunta de los distintos individuos clásicos generados, por lo que no satisface esta condición. Incluso si se procede con el particionamiento del espacio de búsqueda, sólo se llegaría a satisfacer parcialmente, porque aún así los individuos clásicos generados permanecen evaluados en forma conjunta y no segregada.
+
+Es por ello que para este caso, se propone de forma inicial la segregación completa de los campos de operación de cada individuo cuántico en universos con nula interacción a nivel de individuos cuánticos entre sí. Ya sea que se particione o no el espacio de búsqueda, cada universo evaluará sus respectivas generaciones de individuos clásicos de forma independiente.
+
+\section{Operador de cruzamiento para los individuos cuánticos}
+
+Si, como se vió en el punto anterior, se limita la capacidad de interacción a nivel de individuos clásicos entre individuos sin ofrecer otra forma de interacción entre universos, se volvería a un escenario en el que se incumplen las condiciones para la propuesta de algoritmos evolutivos de  inspiración cuántica mostrados en la tercera sección del anterior capítulo. Esta vez, a diferencia del algoritmo original, el énfasis estaría en la nulidad de la interacción entre universos.
+
+Ya se ha hecho notar con anterioridad en la introducción que el énfasis del cruzamiento en los algoritmos hasta la actualidad sigue recayendo en los individuos clásicos. Por lo tanto, la forma mas lógica de cumplir esta característica sin entrar en conflicto con la condición descrita en la sección anterior, sería introducir un operador de cruzamiento que trabaje directamente entre individuos cuánticos.
+
+Existen diversos modelos de cruzamiento a nivel de individuos clásicos, los cuales ya fueron descritos en el capítulo anterior. Para el presente trabajo se ha elegido trabajar con un operador elitista que, para cada iteración, seleccione tanto al mejor como al peor elemento cuántico. Las características del mejor operador cuántico (que en realidad refiere al espacio de búsqueda del mismo) serán agregados a las del peor elemento cuántico. De esta manera, se busca incrementar la capacidad de generación de individuos clásicos de calidad para los individuos cuánticos de desempeño más discreto.
+
+Como es evidente, no es posible evaluar directamente a un individuo cuántico mediante una función \textit{fitness} como si se hace con los individuos clásicos. Sin embargo, si es posible evaluar a los individuos clásicos generados por cada individuo cuántico. De esta forma, a cada individuo cuántico se le evaluaría la calidad de la generación de individuos clásicos que respondan bien ante las circunstancias a evaluar.
