@@ -80,6 +80,10 @@ Grover, L.~K. (1996).
 \newblock In {\em Proceedings of the twenty-eighth annual ACM symposium on
   Theory of computing}, pages 212--219. ACM.
 
+\bibitem[Gruska, 2004]{gruska2004quantum}
+Gruska, J. (2004).
+\newblock Quantum computing 1.
+
 \bibitem[Han and Kim, 2000]{han2000genetic}
 Han, K.-H. and Kim, J.-H. (2000).
 \newblock Genetic quantum algorithm and its application to combinatorial
@@ -220,6 +224,11 @@ Venayagamoorthy, G.~K. and Singhal, G. (2005).
   optimization for training mlp and srn neural networks.
 \newblock {\em Journal of Computational and Theoretical Nanoscience},
   2(4):561--568.
+
+\bibitem[Wall, 1991]{wall1991limits}
+Wall, D.~W. (1991).
+\newblock {\em Limits of instruction-level parallelism}, volume~19.
+\newblock ACM.
 
 \bibitem[Xing et~al., 2009]{xing2009multi}
 Xing, H., Liu, X., Jin, X., Bai, L., and Ji, Y. (2009).

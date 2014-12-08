@@ -1,50 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2014/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Tesis.aux
 A level-1 auxiliary file: abreviaturas.aux
 The style file: apalike.bst
 Database file #1: Bibliog.bib
 Warning--empty journal in alegria2014generalized
+Warning--empty journal in gruska2004quantum
 Warning--empty journal in nowotniaksurvey
-You've used 41 entries,
+Warning--can't use both volume and number fields in wall1991limits
+You've used 43 entries,
             1935 wiz_defined-function locations,
-            715 strings with 11876 characters,
-and the built_in function-call counts, 18041 in all, are:
-= -- 1821
-> -- 678
-< -- 37
-+ -- 250
-- -- 226
-* -- 1461
-:= -- 2983
-add.period$ -- 134
-call.type$ -- 41
-change.case$ -- 311
-chr.to.int$ -- 41
-cite$ -- 43
-duplicate$ -- 738
-empty$ -- 1293
-format.name$ -- 291
-if$ -- 3662
+            724 strings with 12002 characters,
+and the built_in function-call counts, 18596 in all, are:
+= -- 1871
+> -- 692
+< -- 40
++ -- 254
+- -- 230
+* -- 1502
+:= -- 3085
+add.period$ -- 139
+call.type$ -- 43
+change.case$ -- 322
+chr.to.int$ -- 43
+cite$ -- 47
+duplicate$ -- 765
+empty$ -- 1336
+format.name$ -- 297
+if$ -- 3767
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 45
-newline$ -- 206
-num.names$ -- 123
-pop$ -- 312
+missing$ -- 48
+newline$ -- 215
+num.names$ -- 129
+pop$ -- 325
 preamble$ -- 1
-purify$ -- 317
+purify$ -- 329
 quote$ -- 0
-skip$ -- 578
+skip$ -- 600
 stack$ -- 0
-substring$ -- 1346
-swap$ -- 160
-text.length$ -- 15
+substring$ -- 1370
+swap$ -- 163
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 236
-warning$ -- 2
-while$ -- 151
+type$ -- 246
+warning$ -- 4
+while$ -- 155
 width$ -- 0
-write$ -- 538
-(There were 2 warnings)
+write$ -- 561
+(There were 4 warnings)

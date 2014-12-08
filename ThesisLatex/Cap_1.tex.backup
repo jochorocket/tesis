@@ -1,21 +1,28 @@
 \chapter{Introducción}
 
-Este es el primer capítulo de la tesis. Se inicia con el desarrollo de la introducción de la tesis. Es importante que el texto utilice la tabla de abreviaturas correctamente. En el archivo abreviaturas.tex contiene la tabla de abreviaturas. Para citar alguna de ellas debes usar los comandos $\backslash$ac\{tu-sigla-aqui\}. Si es la primera vez que utilizas la sigla ella se expandirá por completo. Por ejemplo, el comando $\backslash$ac\{CMM\} va a producir: \ac{CMM}. Si más adelante repites el mismo comando sólo aparecerá la sigla \ac{CMM}. Para explorar mucho más este comando es necesario leer su manual disponible en: $http://www.ctan.org/tex-archive/macros/latex/contrib/acronym/$
-
+%Este es el primer capítulo de la tesis. Se inicia con el desarrollo de la introducción de la tesis. Es importante que el texto utilice la tabla de abreviaturas correctamente. En el archivo abreviaturas.tex contiene la tabla de abreviaturas. Para citar alguna de ellas debes usar los comandos $\backslash$ac\{tu-sigla-aqui\}. Si es la primera vez que utilizas la sigla ella se expandirá por completo. Por ejemplo, el comando $\backslash$ac\{CMM\} va a producir: \ac{CMM}. Si más adelante repites el mismo comando sólo aparecerá la sigla \ac{CMM}. Para explorar mucho más este comando es necesario leer su manual disponible en: $http://www.ctan.org/tex-archive/macros/latex/contrib/acronym/$
 
 \section{Motivación y Contexto}
 
-En esta sección se va desde aspectos generales a  aspectos específicos (como un embudo). No se olvide que es la primera parte que tiene contacto con el lector y que hará que este se interese en el tema a investigar.
+A pesar de su existencia aún restringida al campo teórico, la computación cuántica ofrece posibilidades que la computación tradicional no considera ni remotamente realizables, considerando en especial las limitaciones actuales en procesamiento que han obligado a volcar la atención hacia la paralelización en búsqueda de un mayor aprovechamiento de los recursos \cite{wall1991limits}. 
 
-El objetivo de esta sección es llevar al lector hacie el tema que se va a tratar en forma específica y dejar la puerta abierta a otras investigaciones
+Sin embargo, es precisamente la no existencia de ordenadores cuánticos funcionales un limitante en este campo. Aún son pocos los algoritmos cuánticos verdaderos que serían capaces de aprovechar las posibilidades de la computación cuántica \cite{gruska2004quantum}. No obstante, se busca aprovechar desde ya algunas de las características que ofrece la computación cuántica. Es aquí donde entran en acción diversos algoritmos de inspiración cuántica, que buscan traer al paradigma tradicional elementos y fenómenos propios del paradigma cuántico con la ya característica búsqueda de un incremento de la performance, calidad de resultados y disminución de tiempos.
+
+Dada la relativa novedad del campo, los algoritmos evolutivos de inspiración genética han sido todavía poco estudiados y explorados, por lo que se avisoran grandes posibilidades en lo que concierne a la investigación en el área.
 
 \section{Planteamiento del Problema}
 
-Se puede afirmar con certeza que el grueso de soluciones a partir del algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ original contemplan actualizaciones globales para toda la población de individuos cuánticos \cite{nowotniak2014higher}. Si se logra independizar las actualizaciones para cada individuo cuántico, se podría ganar diversidad al momento de buscar óptimos. Además, se podría aplicar este tipo de algoritmos a funciones multimodales, al poder abarcar una mayor cantidad de óptimos locales.
+Se puede afirmar con certeza que el grueso de soluciones y aplicaciones a partir del algoritmo evolutivo de inspiración cuántica original contemplan actualizaciones de los individuos cuánticos basadas tanto en la evaluación de, como en la interacción entre individuos clásicos generados a partir de éstos \cite{nowotniak2014higher}. Esta visión es heredera del accionar propio de distintos tipos de algoritmos evolutivos estudiados y evaluados desde tiempo atrás que se pusiera ojos en la inspiración cuántica.
 
-Como se verá en el Capítulo 3, uno de los requerimientos para la formulación de un algoritmo de inspiración cuántica es la existencia de alguna interacción entre universos la cual ha de permitir hallar la solución o ayudar a que los sub-problemas al interior de cada universo puedan ser resueltos \cite{da2007algoritmos}. Este requerimiento se vería cumplido mediante una separación de los individuos cuánticos en universos únicos para cada cual, los cuales puedan compartir mutuamente sus mejoras para incrementar el espacio de búsqueda de cada cual.
+Se puede apreciar también que los individuos cuánticos en sí no son directamente evaluados, y mucho menos poseen una verdadera interacción entre sí. A pesar de ser la parte esencial de los algoritmos evolutivos de inspiración cuántica como generadores de individuos cuánticos, son estos últimos los que realmente presentan las características propias de los algoritmos evolutivos, tales como operadores de mutación y cruzamiento, entre otras.
+
+Como se verá en el Capítulo 3, uno de los requerimientos para la formulación de un algoritmo de inspiración cuántica es la existencia de alguna interacción entre universos la cual ha de permitir hallar la solución o ayudar a que los sub-problemas al interior de cada universo puedan ser resueltos \cite{da2007algoritmos}. Este requerimiento podría verse cumplido mediante una separación de los espacios de acción de los respectivos individuos cuánticos en universos únicos, los cuales puedan compartir mutuamente sus mejoras para incrementar el espacio de búsqueda de cada cual. De esta manera, los individuos cuánticos podrían ejecutar operadores que hasta el momento sólo se habían reservado para los individuos clásicos.
 
 \section{Objetivos}
+
+El principal objetivo de la presente tesis es la evaluación comparativa del desempeño de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ que presente las características 
+
+del algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$
 
 El objetivo primordial de esta tesis es la proposición de un control de actualización para el algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$ que gradúe el grado de actualización global y local de cada individuo.
 
