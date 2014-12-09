@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{pgfplots}
 \usepackage[spanish,mexico]{babel}
-\pgfplotsset{compat=1.10}
+\pgfplotsset{compat=1.9}
 
 \begin{document}
 \pagestyle{empty}
@@ -9,7 +9,7 @@
 % Preamble:
 \begin{tikzpicture}
     \begin{axis}[scale only axis,
-	    title=Promedio de los $n$-\'esimos mejores individuos,
+	    title=Promedio de los $2m$-\'esimos mejores individuos,
 	    xlabel={$x$ (nth mejor individuo)},
 	    ylabel={$y$ (valor promedio)},
 	    xmin=1, xmax=20, ymin=0, ymax=0.6,

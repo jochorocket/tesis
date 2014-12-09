@@ -42,22 +42,22 @@ Estas condiciones se explican por la tendencia que presentan tanto el algoritmo 
    \centering
     \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/booth.pdf}%
    \caption{$f(x,y)=(x+2y-7)^2+(2x+y-5)^2$}
-   \label{figure5-8}
+   \label{figure5-2}
 \end{figure}
 
 \begin{figure}
    \centering
     \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/maytas.pdf}%
-   \caption{$f(x,y)=0.26(x^2+y^2)-0.48xy$	}
-   \label{figure5-15}
+   \caption{$f(x,y)=0.26(x^2+y^2)-0.48xy$}
+   \label{figure5-3}
 \end{figure}
 
 \section{Condiciones para las pruebas}
 
-Todos los algoritmos ya indicados fueron evaluados bajo las siguientes condiciones:
+Las pruebas fueron ejecutadas en un ordenador Acer Aspire 4552 con procesador AMD Phenom\textsuperscript{TM} II N830 Triple-Core Processor y 6 GB RAM DDR3. Todos los algoritmos ya indicados fueron evaluados bajo las siguientes condiciones:
 
 \begin{itemize}
- \item Un espacio de búsqueda $p_{ij}$ delimitado por $l_{ij}$ y $u_{ij}$ el cual puede ser único o presentarse particionado. 
+ \item Un espacio de búsqueda $p$ delimitado por $l$ y $u$ el cual puede ser único o presentarse particionado. 
  \item Un número de particiones $m$ donde $2\leq m\leq10$.
  \item Una población cuántica $Q_t$ donde $Q_t = \{q_1 ,... , q_m\}$ en el que cada $q_i$ representa a un individuo cuántico y donde $m$ se corresponde con el número de particiones del espacio de búsqueda. En caso que el espacio de búsqueda no esté particionado, $m$ presenta los mismos límites que el número de particiones.
  \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
@@ -69,170 +69,154 @@ Finalmente, es pertinente indicar que la condición de parada para cada una de la
 
 \section{Resultados}
 
-\subsection{}
+Para un mejor análisis de los resultados, corresponde explicar los dos tipos de gráficos incluidos a continuación. El primer tipo incluye un promedio ponderado de los $2m$-ésimos mejores valores \textit{fitness} para un valor $n$ de individuos clásicos generados por individuo cuántico por iteración. De esta manera es posible evaluar cuál algoritmo es el que está produciendo mejores valores en promedio y cuál ejerce mayor presión evolutiva sobre los mejores individuos almacenados.
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
+El segundo, por el contrario, muestra la evolución del mejor valor \textit{fitness} por generación para cada algoritmo, el cual se ejecuta a lo largo de las iteraciones del programa (determinado en 100 iteraciones por ejecución, como ya fue indicado en la sección anterior). Acá se busca identificar la velocidad de convergencia de los datos hacia el óptimo deseado.
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_nth_cind2.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=2$}
-   \label{figure5-2}
-\end{figure}
-
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/arckley_nth_cind4.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=4$}
-   \label{figure5-3}
-\end{figure}
-
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/arckley_nth_cind10.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=10$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_nth_cind2.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Arckley}
    \label{figure5-4}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_bestevol_cind3.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=3$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_nth_cind4.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=4$ - Función Arckley}
    \label{figure5-5}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_bestevol_cind7.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=7$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_nth_cind10.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Arckley}
    \label{figure5-6}
 \end{figure}
 
+\subsection{Resultados sobre la función Arckley}
+
+De acuerdo a lo que se aprecia en las Figuras 5.4, 5.5 y 5.6, se ve que en promedio, los mejores resultados fueron producidos por el algoritmo original \ac{QIEA}$\mathbb{R}$, así como por \ac{QIEA}$\mathbb{R}$-CO, ambos algoritmos sin particionar. Por el contrario, los peores resultados fueron producidos sobre todo por el algoritmo original \ac{QIEA}$\mathbb{R}$-p y por la variante segregada U\ac{QIEA}$\mathbb{R}$-p, ambos particionados. En general, la calidad de datos producida por los algoritmos particionados fue inferior a los que ocupaban el dominio entero. Los demás algoritmos obtuvieron resultados intermedios.
+
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_bestevol_cind9.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=9$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_bestevol_cind3.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=3$ - Función Arckley}
    \label{figure5-7}
 \end{figure}
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_nthbest_cind3.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=3$}
-   \label{figure5-9}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_bestevol_cind7.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=7$ - Función Arckley}
+   \label{figure5-8}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_nthbest_cind6.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=6$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_bestevol_cind9.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=9$ - Función Arckley}
+   \label{figure5-9}
+\end{figure}
+
+En cambio, en las pruebas de velocidad de convergencia (Figuras 5.7, 5.8 y 5.9), se puede ver que el algoritmo \ac{QIEA}$\mathbb{R}$-pCO supera a los demás tanto en velocidad de convergencia como calidad final de resultados, siendo seguido a corta distancia por \ac{QIEA}$\mathbb{R}$-p, U\ac{QIEA}$\mathbb{R}$-pCO y U\ac{QIEA}$\mathbb{R}$-p. Todos estos algoritmos son particionados. Los algoritmos con peores resultados en convergencia son las modificaciones U\ac{QIEA}$\mathbb{R}$ y U\ac{QIEA}$\mathbb{R}$-CO. El algoritmo original \ac{QIEA}$\mathbb{R}$ converge mediocremente con un bajo número de individuos clásicos generados por individuo, pero al incrementarse éste, los resultados mejoran notablemente pero solamente gracias a una convergencia relativamente tardía en comparación a los mejores en esta prueba.
+
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_nthbest_cind3.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=3$ - Función Booth}
    \label{figure5-10}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_nthbest_cind9.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=9$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_nthbest_cind6.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Booth}
    \label{figure5-11}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_bestevol_cind2.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=2$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_nthbest_cind9.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=9$ - Función Booth}
    \label{figure5-12}
 \end{figure}
 
+
+\subsection{Resultados sobre la función Booth}
+
+En la primera prueba para esta función (resultados visibles en las Figuras 5.10, 5.11 y 5.12), se puede ver cómo los algoritmos segregados en promedio se comportan de forma más mediocre que los algoritmos sin segregar. Si bien para $n=3$, los algoritmos originales\ac{QIEA}$\mathbb{R}$ y \ac{QIEA}$\mathbb{R}$-p muestran mejor promedio de resultados, conforme $n$ aumenta, los algoritmos con el operador de cruzamiento mejoran en la calidad de datos (\ac{QIEA}$\mathbb{R}$-pCO y \ac{QIEA}$\mathbb{R}$-CO, en ese orden). 
+
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_bestevol_cind4.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=4$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_bestevol_cind2.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=2$ - Función Booth}
    \label{figure5-13}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_bestevol_cind9.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=9$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_bestevol_cind4.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=4$ - Función Booth}
    \label{figure5-14}
 \end{figure}
 
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_bestevol_cind9.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=9$ - Función Booth}
+   \label{figure5-15}
+\end{figure}
 
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
-
-The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee fdgsdfss.
-
-Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit. 
+Para las pruebas de convergencia (Figuras 5.13, 5.14 y 5.15), sin embargo, es el algoritmo U\ac{QIEA}$\mathbb{R}$-pCO seguido de \ac{QIEA}$\mathbb{R}$-pCO los que presentan mejor balance entre convergencia y calidad de datos. Aunque el algoritmo original \ac{QIEA}$\mathbb{R}$ haya sido el mejor para $n=9$, cabe destacar que fue el peor para $n=4$, con lo que su desempeño fue irregular en esta prueba. En general, el balance de los algoritmos que implementan el operador de cruzamiento es competitivo en comparación con los demás.
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_nthbest_cind2.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=2$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_nthbest_cind2.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Maytas}
    \label{figure5-16}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_nthbest_cind6.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=6$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_nthbest_cind6.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Maytas}
    \label{figure5-17}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_nthbest_cind10.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $ci=10$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_nthbest_cind10.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Maytas}
    \label{figure5-18}
 \end{figure}
 
+\subsection{Resultados sobre la función Maytas}
+
+En las pruebas de valores promedio (Figuras 5.16, 5.17 y 5.18), destaca los buenos resultados que obtiene la variante \ac{QIEA}$\mathbb{R}$-CO, la cual supera los algoritmos U\ac{QIEA}$\mathbb{R}$-pCO y \ac{QIEA}$\mathbb{R}$-p que son los evidencian mejor promedio de datos generados en comparación con los demás. Se puede afirmar con certeza que los algoritmos que particionan su espacio de búsqueda logran comportarse mejor que los no particionados.
+
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_bestevol_cind2.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=2$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_bestevol_cind2.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=2$ - Función Maytas}
    \label{figure5-19}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_bestevol_cind4.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=4$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_bestevol_cind4.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=4$ - Función Maytas}
    \label{figure5-20}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_bestevol_cind10.pdf}%
-   \caption{Evolución de los valores de los mejores individuos para $ci=10$}
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_bestevol_cind10.pdf}%
+   \caption{Evolución de los valores de los mejores individuos para $n=10$ - Función Maytas}
    \label{figure5-21}
 \end{figure}
+
+Finalmente, en las pruebas de convergencia (Figuras 5.19, 5.20 y 5.21) se evidencia una contraposición de resultados separada por el particionamiento del espacio de búsqueda. A pesar que los algoritmos que implementan espacios particionados de búsqueda obtienen una convergencia más rápida, al final evidencian una menor cercanía al mínimo deseado. En todo caso, el algoritmo que ofrece el mejor desempeño promedio para ambos casos son tanto el algoritmo base \ac{QIEA}$\mathbb{R}$ como U\ac{QIEA}$\mathbb{R}$-pCO debido a figurar por encima del promedio tanto en rapidez de convergencia como en producción de datos cercanos al mínimo.
+
 
 

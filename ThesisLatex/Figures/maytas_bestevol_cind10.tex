@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{pgfplots}
 \usepackage[spanish,mexico]{babel}
-\pgfplotsset{compat=1.10}
+\pgfplotsset{compat=1.9}
 
 \begin{document}
 \pagestyle{empty}
@@ -10,8 +10,8 @@
 \begin{tikzpicture}
     \begin{loglogaxis}[scale only axis,
 	    title=Evoluci\'on por iteraci\'on de los mejores individuos ,
-	    xlabel={$x$ (mejor individuo)},
-	    ylabel={$y$ (iteraci\'on)},
+	    xlabel={$x$ (iteraci\'on)},
+	    ylabel={$y$ (valor fitness del mejor individuo)},
 	    %xmin=1, xmax=4, ymax=9, 
 	    ymin=0.0001,
 	    grid=major,

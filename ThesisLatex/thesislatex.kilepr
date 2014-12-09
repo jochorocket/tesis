@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=Cap_4.tex
+lastDocument=Resumen.tex
 masterDocument=
 name=ThesisLatex
 pkg_extIsRegExp=false
@@ -102,13 +102,13 @@ Mode=LaTeX
 
 [item:Abstract.tex]
 archive=true
-column=92
+column=207
 encoding=UTF-8
 highlight=LaTeX
-line=1
+line=2
 mode=LaTeX
 open=true
-order=1
+order=9
 
 [item:Agradecimientos.tex]
 archive=true
@@ -122,27 +122,27 @@ order=-1
 
 [item:Bibliog.bib]
 archive=true
-column=26
+column=29
 encoding=ISO-8859-15
 highlight=BibTeX
-line=436
+line=449
 mode=BibTeX
 open=true
 order=0
 
 [item:Cap_1.tex]
 archive=true
-column=465
+column=632
 encoding=ISO-8859-15
 highlight=LaTeX
-line=22
+line=35
 mode=LaTeX
 open=true
 order=3
 
 [item:Cap_2.tex]
 archive=true
-column=324
+column=168
 encoding=ISO-8859-15
 highlight=LaTeX
 line=4
@@ -152,33 +152,33 @@ order=4
 
 [item:Cap_3.tex]
 archive=true
-column=0
+column=89
 encoding=ISO-8859-15
 highlight=LaTeX
-line=95
+line=236
 mode=LaTeX
 open=true
 order=5
 
 [item:Cap_4.tex]
 archive=true
-column=126
+column=0
 encoding=ISO-8859-15
 highlight=LaTeX
-line=20
+line=36
 mode=LaTeX
 open=true
 order=6
 
 [item:Cap_5.tex]
 archive=true
-column=0
+column=188
 encoding=ISO-8859-15
 highlight=LaTeX
-line=13
+line=98
 mode=LaTeX
-open=false
-order=5
+open=true
+order=7
 
 [item:Figure1.png]
 archive=true
@@ -202,43 +202,43 @@ order=-1
 
 [item:Resumen.tex]
 archive=true
-column=164
+column=0
 encoding=ISO-8859-15
 highlight=LaTeX
-line=1
+line=2
+mode=LaTeX
+open=true
+order=10
+
+[item:Tesis.tex]
+archive=true
+column=0
+encoding=ISO-8859-15
+highlight=LaTeX
+line=69
 mode=LaTeX
 open=true
 order=2
 
-[item:Tesis.tex]
-archive=true
-column=155
-encoding=ISO-8859-15
-highlight=LaTeX
-line=31
-mode=LaTeX
-open=false
-order=0
-
 [item:abreviaturas.tex]
 archive=true
-column=0
+column=56
 encoding=ISO-8859-15
 highlight=LaTeX
-line=12
+line=8
 mode=LaTeX
-open=false
+open=true
 order=1
 
 [item:conclusiones.tex]
 archive=true
-column=0
+column=310
 encoding=ISO-8859-15
 highlight=LaTeX
-line=0
+line=6
 mode=LaTeX
-open=false
-order=-1
+open=true
+order=8
 
 [item:cs-chap-analisis-de-mercado.tex]
 archive=true
@@ -261,10 +261,10 @@ open=false
 order=-1
 
 [view-settings,view=0,item:Abstract.tex]
-CursorColumn=92
-CursorLine=1
+CursorColumn=207
+CursorLine=2
 JumpList=
-ViMarks=.,1,91,[,1,87,],1,91
+ViMarks=.,2,207,[,2,207,],2,207
 
 [view-settings,view=0,item:Agradecimientos.tex]
 CursorColumn=0
@@ -273,61 +273,61 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Bibliog.bib]
-CursorColumn=26
-CursorLine=436
+CursorColumn=29
+CursorLine=449
 JumpList=
-ViMarks=.,439,8,[,439,7,],439,8
+ViMarks=.,457,12,[,457,12,],457,12
 
 [view-settings,view=0,item:Cap_1.tex]
-CursorColumn=465
-CursorLine=22
+CursorColumn=632
+CursorLine=35
 JumpList=
-ViMarks=.,22,504,[,22,501,],22,504
+ViMarks=.,35,631,[,35,625,],35,631
 
 [view-settings,view=0,item:Cap_2.tex]
-CursorColumn=324
+CursorColumn=168
 CursorLine=4
 JumpList=
-ViMarks=.,2,403,[,2,401,],2,403
+ViMarks=.,4,167,[,4,167,],4,167
 
 [view-settings,view=0,item:Cap_3.tex]
-CursorColumn=0
-CursorLine=95
+CursorColumn=89
+CursorLine=236
 JumpList=
-ViMarks=.,94,466,[,94,466,],94,466
+ViMarks=.,167,49,[,167,49,],167,49
 
 [view-settings,view=0,item:Cap_4.tex]
-CursorColumn=126
-CursorLine=20
+CursorColumn=0
+CursorLine=36
 JumpList=
-ViMarks=.,20,125,[,20,118,],20,125
+ViMarks=.,22,421,[,22,421,],22,421
 
 [view-settings,view=0,item:Cap_5.tex]
-CursorColumn=0
-CursorLine=13
+CursorColumn=188
+CursorLine=98
 JumpList=
-ViMarks=.,12,301,[,2,0,],-1,-1
+ViMarks=.,94,0,[,88,0,],94,11
 
 [view-settings,view=0,item:Resumen.tex]
-CursorColumn=164
-CursorLine=1
+CursorColumn=0
+CursorLine=2
 JumpList=
-ViMarks=.,1,164,[,1,164,],1,164
+ViMarks=.,1,701,[,2,0,],-1,-1
 
 [view-settings,view=0,item:Tesis.tex]
-CursorColumn=155
-CursorLine=31
+CursorColumn=0
+CursorLine=69
 JumpList=
-ViMarks=.,31,154,[,31,153,],31,154
+ViMarks=.,69,0,[,69,0,],69,0
 
 [view-settings,view=0,item:abreviaturas.tex]
-CursorColumn=0
-CursorLine=12
+CursorColumn=56
+CursorLine=8
 JumpList=
-ViMarks=.,10,18,[,10,16,],10,18
+ViMarks=.,8,56,[,8,56,],8,56
 
 [view-settings,view=0,item:conclusiones.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=310
+CursorLine=6
 JumpList=
-ViMarks=
+ViMarks=.,6,310,[,6,310,],6,310
