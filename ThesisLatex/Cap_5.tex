@@ -63,7 +63,17 @@ Las pruebas fueron ejecutadas en un ordenador Acer Aspire 4552 con procesador AM
  \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
 \end{itemize}
 
-Los algoritmos que implementan el operador de cruzamiento para los individuos clásicos, además, poseen un limitante en el número de iteración tope en las que éste ocurre, y el cual está denotado por $m-1$, lo que significa que a partir de la iteración número $m$ dicho operador deja de funcionar. Este tope es incluido debido a la sobreexpansión de los propios espacios de búsqueda cuando el operador es ejecutado más de unas pocas veces sobre un mismo individuo cuántico.
+Los algoritmos que implementan el operador de recombinación para los individuos clásicos, además, poseen un limitante en el número de iteración tope en las que éste ocurre, y el cual está denotado por $m-1$, lo que significa que a partir de la iteración número $m$ dicho operador deja de funcionar. Este tope es incluido debido a la sobreexpansión de los propios espacios de búsqueda cuando el operador es ejecutado más de unas pocas veces sobre un mismo individuo cuántico.
+
+Las características inherentes al algoritmo mencionadas en la Sección 3.3 seleccionadas para ejecutar en las pruebas son:
+
+\begin{itemize}
+ \item Estrategia$(\mu +\lambda)$-EE para la selección de la nueva población clásica.
+ \item Actualización del ancho de los pulsos mediante la regla de 1/5, con $\sigma=0.03$.
+ \item Actualización del centro de los pulsos usando la fórmula $ \mu_{ij}(t+1)=\mu_{ij}(t)+\lambda(\mu_{ij}(t)-x_{ij}(t))$ y tomando $\lambda=0.04$
+\end{itemize}
+
+Se tomaron valores considerablemente bajos de $\sigma$ y $\lambda$ debido al pequeño espacio de búsqueda de las funciones de prueba. Se comprobó en pruebas preliminares que, para valores altos de $\sigma$ y $\lambda$, los espacios aumentaban y/o desviaban considerablemente de tamaño de forma desmesurada, impactando en la generación de soluciones de calidad e impidiendo una adecuada convergencia de los datos generados hacia el mínimo buscado.
 
 Finalmente, es pertinente indicar que la condición de parada para cada una de las pruebas es el número de iteraciones, el cual está fijado en 100 debido a que tras diversas evaluaciones, se comprobó que la evolución a partir del mismo es prácticamente nula debido a la rápida convergencia inherente al algoritmo. Cada algoritmo fue ejecutado un total de 50 veces para cada combinación de condiciones.
 
@@ -145,7 +155,7 @@ En cambio, en las pruebas de velocidad de convergencia (Figuras 5.7, 5.8 y 5.9),
 
 \subsection{Resultados sobre la función Booth}
 
-En la primera prueba para esta función (resultados visibles en las Figuras 5.10, 5.11 y 5.12), se puede ver cómo los algoritmos segregados en promedio se comportan de forma más mediocre que los algoritmos sin segregar. Si bien para $n=3$, los algoritmos originales\ac{QIEA}$\mathbb{R}$ y \ac{QIEA}$\mathbb{R}$-p muestran mejor promedio de resultados, conforme $n$ aumenta, los algoritmos con el operador de cruzamiento mejoran en la calidad de datos (\ac{QIEA}$\mathbb{R}$-pCO y \ac{QIEA}$\mathbb{R}$-CO, en ese orden). 
+En la primera prueba para esta función (resultados visibles en las Figuras 5.10, 5.11 y 5.12), se puede ver cómo los algoritmos segregados en promedio se comportan de forma más mediocre que los algoritmos sin segregar. Si bien para $n=3$, los algoritmos originales\ac{QIEA}$\mathbb{R}$ y \ac{QIEA}$\mathbb{R}$-p muestran mejor promedio de resultados, conforme $n$ aumenta, los algoritmos con el operador de recombinación mejoran en la calidad de datos (\ac{QIEA}$\mathbb{R}$-pCO y \ac{QIEA}$\mathbb{R}$-CO, en ese orden). 
 
 \begin{figure}
    \centering
@@ -168,7 +178,7 @@ En la primera prueba para esta función (resultados visibles en las Figuras 5.10,
    \label{figure5-15}
 \end{figure}
 
-Para las pruebas de convergencia (Figuras 5.13, 5.14 y 5.15), sin embargo, es el algoritmo U\ac{QIEA}$\mathbb{R}$-pCO seguido de \ac{QIEA}$\mathbb{R}$-pCO los que presentan mejor balance entre convergencia y calidad de datos. Aunque el algoritmo original \ac{QIEA}$\mathbb{R}$ haya sido el mejor para $n=9$, cabe destacar que fue el peor para $n=4$, con lo que su desempeño fue irregular en esta prueba. En general, el balance de los algoritmos que implementan el operador de cruzamiento es competitivo en comparación con los demás.
+Para las pruebas de convergencia (Figuras 5.13, 5.14 y 5.15), sin embargo, es el algoritmo U\ac{QIEA}$\mathbb{R}$-pCO seguido de \ac{QIEA}$\mathbb{R}$-pCO los que presentan mejor balance entre convergencia y calidad de datos. Aunque el algoritmo original \ac{QIEA}$\mathbb{R}$ haya sido el mejor para $n=9$, cabe destacar que fue el peor para $n=4$, con lo que su desempeño fue irregular en esta prueba. En general, el balance de los algoritmos que implementan el operador de recombinación es competitivo en comparación con los demás.
 
 \begin{figure}
    \centering

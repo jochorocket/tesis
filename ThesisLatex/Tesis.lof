@@ -6,25 +6,25 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Rotación del ángulo al momento de la aplicación del operador Q-gate}}{13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces $f(x,y)=-20e^{-0.2\sqrt {0.5(x^2+y^2)}}-e^{0.5(cos(2\pi x)+cos(2\pi y)}+e+20$}}{20}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces $f(x,y)=(x+2y-7)^2+(2x+y-5)^2$}}{20}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces $f(x,y)=0.26(x^2+y^2)-0.48xy$}}{20}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Arckley}}{22}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=4$ - Función Arckley}}{22}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Arckley}}{23}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Evolución de los valores de los mejores individuos para $n=3$ - Función Arckley}}{24}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Evolución de los valores de los mejores individuos para $n=7$ - Función Arckley}}{24}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Evolución de los valores de los mejores individuos para $n=9$ - Función Arckley}}{25}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=3$ - Función Booth}}{25}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Booth}}{26}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=9$ - Función Booth}}{26}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Evolución de los valores de los mejores individuos para $n=2$ - Función Booth}}{27}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Evolución de los valores de los mejores individuos para $n=4$ - Función Booth}}{28}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Evolución de los valores de los mejores individuos para $n=9$ - Función Booth}}{28}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Maytas}}{29}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Maytas}}{29}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Maytas}}{30}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Evolución de los valores de los mejores individuos para $n=2$ - Función Maytas}}{30}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Evolución de los valores de los mejores individuos para $n=4$ - Función Maytas}}{31}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Evolución de los valores de los mejores individuos para $n=10$ - Función Maytas}}{31}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces $f(x,y)=-20e^{-0.2\sqrt {0.5(x^2+y^2)}}-e^{0.5(cos(2\pi x)+cos(2\pi y)}+e+20$}}{21}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces $f(x,y)=(x+2y-7)^2+(2x+y-5)^2$}}{21}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces $f(x,y)=0.26(x^2+y^2)-0.48xy$}}{21}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Arckley}}{23}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=4$ - Función Arckley}}{24}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Arckley}}{24}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Evolución de los valores de los mejores individuos para $n=3$ - Función Arckley}}{25}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Evolución de los valores de los mejores individuos para $n=7$ - Función Arckley}}{25}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Evolución de los valores de los mejores individuos para $n=9$ - Función Arckley}}{26}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=3$ - Función Booth}}{27}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Booth}}{27}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=9$ - Función Booth}}{28}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Evolución de los valores de los mejores individuos para $n=2$ - Función Booth}}{28}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Evolución de los valores de los mejores individuos para $n=4$ - Función Booth}}{29}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Evolución de los valores de los mejores individuos para $n=9$ - Función Booth}}{29}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Maytas}}{30}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Maytas}}{30}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Maytas}}{31}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Evolución de los valores de los mejores individuos para $n=2$ - Función Maytas}}{32}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Evolución de los valores de los mejores individuos para $n=4$ - Función Maytas}}{32}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Evolución de los valores de los mejores individuos para $n=10$ - Función Maytas}}{33}
 \addvspace {10\p@ }

@@ -14,20 +14,20 @@
 \contentsline {section}{\numberline {3.2}Computación Evolutiva}{8}
 \contentsline {section}{\numberline {3.3}Algoritmos Evolutivos de Inspiración Cuántica}{11}
 \contentsline {section}{\numberline {3.4}Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb {R}$ (\ac {QIEA}-$\mathbb {R}$}{13}
-\contentsline {section}{\numberline {3.5}Consideraciones Finales}{15}
-\contentsline {chapter}{\numberline {4}Propuesta}{16}
-\contentsline {section}{\numberline {4.1}Segregación del campo operativo de los individuos cuánticos en universos}{16}
-\contentsline {section}{\numberline {4.2}Operador de cruzamiento para los individuos cuánticos}{17}
-\contentsline {section}{\numberline {4.3}Detalle y nomenclatura de los algoritmos a evaluar}{17}
-\contentsline {chapter}{\numberline {5}Pruebas y Resultados}{19}
-\contentsline {section}{\numberline {5.1}Escenarios de prueba}{19}
-\contentsline {section}{\numberline {5.2}Condiciones para las pruebas}{21}
-\contentsline {section}{\numberline {5.3}Resultados}{21}
+\contentsline {section}{\numberline {3.5}Consideraciones Finales}{16}
+\contentsline {chapter}{\numberline {4}Propuesta}{17}
+\contentsline {section}{\numberline {4.1}Segregación del campo operativo de los individuos cuánticos en universos}{17}
+\contentsline {section}{\numberline {4.2}Operador de recombinación para los individuos cuánticos}{18}
+\contentsline {section}{\numberline {4.3}Detalle y nomenclatura de los algoritmos a evaluar}{18}
+\contentsline {chapter}{\numberline {5}Pruebas y Resultados}{20}
+\contentsline {section}{\numberline {5.1}Escenarios de prueba}{20}
+\contentsline {section}{\numberline {5.2}Condiciones para las pruebas}{22}
+\contentsline {section}{\numberline {5.3}Resultados}{23}
 \contentsline {subsection}{\numberline {5.3.1}Resultados sobre la función Arckley}{23}
-\contentsline {subsection}{\numberline {5.3.2}Resultados sobre la función Booth}{23}
-\contentsline {subsection}{\numberline {5.3.3}Resultados sobre la función Maytas}{27}
-\contentsline {chapter}{\numberline {6}Conclusiones y Trabajos Futuros}{32}
-\contentsline {section}{\numberline {6.1}Problemas encontrados}{32}
-\contentsline {section}{\numberline {6.2}Recomendaciones}{32}
-\contentsline {section}{\numberline {6.3}Trabajos futuros}{33}
-\contentsline {chapter}{Bibliografía}{37}
+\contentsline {subsection}{\numberline {5.3.2}Resultados sobre la función Booth}{26}
+\contentsline {subsection}{\numberline {5.3.3}Resultados sobre la función Maytas}{31}
+\contentsline {chapter}{\numberline {6}Conclusiones y Trabajos Futuros}{34}
+\contentsline {section}{\numberline {6.1}Problemas encontrados}{34}
+\contentsline {section}{\numberline {6.2}Recomendaciones}{34}
+\contentsline {section}{\numberline {6.3}Trabajos futuros}{35}
+\contentsline {chapter}{Bibliografía}{39}

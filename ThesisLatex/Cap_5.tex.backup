@@ -48,7 +48,7 @@ Estas condiciones se explican por la tendencia que presentan tanto el algoritmo 
 \begin{figure}
    \centering
     \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/maytas.pdf}%
-   \caption{$f(x,y)=0.26(x^2+y^2)-0.48xy$	}
+   \caption{$f(x,y)=0.26(x^2+y^2)-0.48xy$}
    \label{figure5-3}
 \end{figure}
 
@@ -63,7 +63,7 @@ Las pruebas fueron ejecutadas en un ordenador Acer Aspire 4552 con procesador AM
  \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
 \end{itemize}
 
-Los algoritmos que implementan el operador de cruzamiento para los individuos clásicos, además, poseen un limitante en el número de iteración tope en las que éste ocurre, y el cual está denotado por $m-1$, lo que significa que a partir de la iteración número $m$ dicho operador deja de funcionar. Este tope es incluido debido a la sobreexpansión de los propios espacios de búsqueda cuando el operador es ejecutado más de unas pocas veces sobre un mismo individuo cuántico.
+Los algoritmos que implementan el operador de recombinación para los individuos clásicos, además, poseen un limitante en el número de iteración tope en las que éste ocurre, y el cual está denotado por $m-1$, lo que significa que a partir de la iteración número $m$ dicho operador deja de funcionar. Este tope es incluido debido a la sobreexpansión de los propios espacios de búsqueda cuando el operador es ejecutado más de unas pocas veces sobre un mismo individuo cuántico.
 
 Finalmente, es pertinente indicar que la condición de parada para cada una de las pruebas es el número de iteraciones, el cual está fijado en 100 debido a que tras diversas evaluaciones, se comprobó que la evolución a partir del mismo es prácticamente nula debido a la rápida convergencia inherente al algoritmo. Cada algoritmo fue ejecutado un total de 50 veces para cada combinación de condiciones.
 
@@ -73,103 +73,123 @@ Para un mejor análisis de los resultados, corresponde explicar los dos tipos de 
 
 El segundo, por el contrario, muestra la evolución del mejor valor \textit{fitness} por generación para cada algoritmo, el cual se ejecuta a lo largo de las iteraciones del programa (determinado en 100 iteraciones por ejecución, como ya fue indicado en la sección anterior). Acá se busca identificar la velocidad de convergencia de los datos hacia el óptimo deseado.
 
-\subsection{Resultados sobre la función Arckley}
-
-De acuerdo a lo que se aprecia en las Figuras 5.4, 5.5 y 5.6, se ve que en promedio, los mejores resultados fueron producidos por el algoritmo original \ac{QIEA}$\mathbb{R}$, así como por \ac{QIEA}$\mathbb{R}$-CO, ambos algoritmos sin particionar. Por el contrario, los peores resultados fueron producidos sobre todo por el algoritmo original \ac{QIEA}$\mathbb{R}$-p y por la variante segregada U\ac{QIEA}$\mathbb{R}$-p, ambos particionados. En general, la calidad de datos producida por los algoritmos particionados fue inferior a los que ocupaban el dominio entero. Los demás algoritmos obtuvieron resultados intermedios.
-
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_nth_cind2.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_nth_cind2.pdf}%
    \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Arckley}
    \label{figure5-4}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_nth_cind4.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_nth_cind4.pdf}%
    \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=4$ - Función Arckley}
    \label{figure5-5}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_nth_cind10.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_nth_cind10.pdf}%
    \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Arckley}
    \label{figure5-6}
 \end{figure}
 
-En cambio, en las pruebas de velocidad de convergencia (Figuras 5.7, 5.8 y 5.9), se puede ver que el algoritmo \ac{QIEA}$\mathbb{R}$-pCO supera a los demás tanto en velocidad de convergencia como calidad final de resultados, siendo seguido a corta distancia por \ac{QIEA}$\mathbb{R}$-p, U\ac{QIEA}$\mathbb{R}$-pCO y U\ac{QIEA}$\mathbb{R}$-p. Todos estos algoritmos son particionados. Los algoritmos con peores resultados en convergencia son las modificaciones U\ac{QIEA}$\mathbb{R}$ y U\ac{QIEA}$\mathbb{R}$-CO. El algoritmo original \ac{QIEA}$\mathbb{R}$ converge mediocremente con un bajo número de individuos clásicos generados por individuo, pero al incrementarse éste, los resultados mejoran notablemente pero solamente gracias a una convergencia relativamente tardía en comparación a los mejores en esta prueba.
+\subsection{Resultados sobre la función Arckley}
+
+De acuerdo a lo que se aprecia en las Figuras 5.4, 5.5 y 5.6, se ve que en promedio, los mejores resultados fueron producidos por el algoritmo original \ac{QIEA}$\mathbb{R}$, así como por \ac{QIEA}$\mathbb{R}$-CO, ambos algoritmos sin particionar. Por el contrario, los peores resultados fueron producidos sobre todo por el algoritmo original \ac{QIEA}$\mathbb{R}$-p y por la variante segregada U\ac{QIEA}$\mathbb{R}$-p, ambos particionados. En general, la calidad de datos producida por los algoritmos particionados fue inferior a los que ocupaban el dominio entero. Los demás algoritmos obtuvieron resultados intermedios.
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_bestevol_cind3.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_bestevol_cind3.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=3$ - Función Arckley}
    \label{figure5-7}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_bestevol_cind7.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_bestevol_cind7.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=7$ - Función Arckley}
    \label{figure5-8}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/arckley_bestevol_cind9.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/arckley_bestevol_cind9.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=9$ - Función Arckley}
    \label{figure5-9}
 \end{figure}
 
-
-\subsection{Resultados sobre la función Booth}
-
-En la primera prueba para esta función (resultados visibles en las Figuras 5.10, 5.11 y 5.12), se puede ver cómo los algoritmos segregados en promedio se comportan de forma más mediocre que los algoritmos sin segregar. Si bien para $n=3$, los algoritmos originales\ac{QIEA}$\mathbb{R}$ y \ac{QIEA}$\mathbb{R}$-p muestran mejor promedio de resultados, conforme $n$ aumenta, los algoritmos con el operador de cruzamiento mejoran en la calidad de datos (\ac{QIEA}$\mathbb{R}$-pCO y \ac{QIEA}$\mathbb{R}$-CO, en ese orden). 
+En cambio, en las pruebas de velocidad de convergencia (Figuras 5.7, 5.8 y 5.9), se puede ver que el algoritmo \ac{QIEA}$\mathbb{R}$-pCO supera a los demás tanto en velocidad de convergencia como calidad final de resultados, siendo seguido a corta distancia por \ac{QIEA}$\mathbb{R}$-p, U\ac{QIEA}$\mathbb{R}$-pCO y U\ac{QIEA}$\mathbb{R}$-p. Todos estos algoritmos son particionados. Los algoritmos con peores resultados en convergencia son las modificaciones U\ac{QIEA}$\mathbb{R}$ y U\ac{QIEA}$\mathbb{R}$-CO. El algoritmo original \ac{QIEA}$\mathbb{R}$ converge mediocremente con un bajo número de individuos clásicos generados por individuo, pero al incrementarse éste, los resultados mejoran notablemente pero solamente gracias a una convergencia relativamente tardía en comparación a los mejores en esta prueba.
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_nthbest_cind3.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_nthbest_cind3.pdf}%
    \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=3$ - Función Booth}
    \label{figure5-10}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_nthbest_cind6.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_nthbest_cind6.pdf}%
    \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Booth}
    \label{figure5-11}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_nthbest_cind9.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_nthbest_cind9.pdf}%
    \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=9$ - Función Booth}
    \label{figure5-12}
 \end{figure}
 
-Para las pruebas de convergencia (Figuras 5.13, 5.14 y 5.15), sin embargo, es el algoritmo U\ac{QIEA}$\mathbb{R}$-pCO seguido de \ac{QIEA}$\mathbb{R}$-pCO los que presentan mejor balance entre convergencia y calidad de datos. Aunque el algoritmo original \ac{QIEA}$\mathbb{R}$ haya sido el mejor para $n=9$, cabe destacar que fue el peor para $n=4$, con lo que su desempeño fue irregular en esta prueba. En general, el balance de los algoritmos que implementan el operador de cruzamiento es competitivo en comparación con los demás.
+
+\subsection{Resultados sobre la función Booth}
+
+En la primera prueba para esta función (resultados visibles en las Figuras 5.10, 5.11 y 5.12), se puede ver cómo los algoritmos segregados en promedio se comportan de forma más mediocre que los algoritmos sin segregar. Si bien para $n=3$, los algoritmos originales\ac{QIEA}$\mathbb{R}$ y \ac{QIEA}$\mathbb{R}$-p muestran mejor promedio de resultados, conforme $n$ aumenta, los algoritmos con el operador de recombinación mejoran en la calidad de datos (\ac{QIEA}$\mathbb{R}$-pCO y \ac{QIEA}$\mathbb{R}$-CO, en ese orden). 
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_bestevol_cind2.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_bestevol_cind2.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=2$ - Función Booth}
    \label{figure5-13}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_bestevol_cind4.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_bestevol_cind4.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=4$ - Función Booth}
    \label{figure5-14}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/booth_bestevol_cind9.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/booth_bestevol_cind9.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=9$ - Función Booth}
    \label{figure5-15}
 \end{figure}
 
+Para las pruebas de convergencia (Figuras 5.13, 5.14 y 5.15), sin embargo, es el algoritmo U\ac{QIEA}$\mathbb{R}$-pCO seguido de \ac{QIEA}$\mathbb{R}$-pCO los que presentan mejor balance entre convergencia y calidad de datos. Aunque el algoritmo original \ac{QIEA}$\mathbb{R}$ haya sido el mejor para $n=9$, cabe destacar que fue el peor para $n=4$, con lo que su desempeño fue irregular en esta prueba. En general, el balance de los algoritmos que implementan el operador de recombinación es competitivo en comparación con los demás.
+
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_nthbest_cind2.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Maytas}
+   \label{figure5-16}
+\end{figure}
+
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_nthbest_cind6.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Maytas}
+   \label{figure5-17}
+\end{figure}
+
+\begin{figure}
+   \centering
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_nthbest_cind10.pdf}%
+   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Maytas}
+   \label{figure5-18}
+\end{figure}
 
 \subsection{Resultados sobre la función Maytas}
 
@@ -177,44 +197,26 @@ En las pruebas de valores promedio (Figuras 5.16, 5.17 y 5.18), destaca los buen
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_nthbest_cind2.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=2$ - Función Maytas}
-   \label{figure5-16}
-\end{figure}
-
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/maytas_nthbest_cind6.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=6$ - Función Maytas}
-   \label{figure5-17}
-\end{figure}
-
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/maytas_nthbest_cind10.pdf}%
-   \caption{Valor promedio de los $n$-ésimos mejores individuos para $n=10$ - Función Maytas}
-   \label{figure5-18}
-\end{figure}
-
-\begin{figure}
-   \centering
-    \includegraphics{./Figures/maytas_bestevol_cind2.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_bestevol_cind2.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=2$ - Función Maytas}
    \label{figure5-19}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_bestevol_cind4.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_bestevol_cind4.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=4$ - Función Maytas}
    \label{figure5-20}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics{./Figures/maytas_bestevol_cind10.pdf}%
+    \includegraphics[scale=0.9,keepaspectratio=true]{./Figures/maytas_bestevol_cind10.pdf}%
    \caption{Evolución de los valores de los mejores individuos para $n=10$ - Función Maytas}
    \label{figure5-21}
 \end{figure}
+
+Finalmente, en las pruebas de convergencia (Figuras 5.19, 5.20 y 5.21) se evidencia una contraposición de resultados separada por el particionamiento del espacio de búsqueda. A pesar que los algoritmos que implementan espacios particionados de búsqueda obtienen una convergencia más rápida, al final evidencian una menor cercanía al mínimo deseado. En todo caso, el algoritmo que ofrece el mejor desempeño promedio para ambos casos son tanto el algoritmo base \ac{QIEA}$\mathbb{R}$ como U\ac{QIEA}$\mathbb{R}$-pCO debido a figurar por encima del promedio tanto en rapidez de convergencia como en producción de datos cercanos al mínimo.
+
 
 

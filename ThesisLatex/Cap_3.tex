@@ -4,9 +4,9 @@ En este capítulo se examinará de forma más profunda las dos áreas de inspiración
 
 \section{Computación Cuántica}
 
-La computación cuántica es un paradigma de computación que surge en contraposición a la computación clásica, la cual basa su existencia en transistores. En la computación cuántica, se aplican a la computación los principios presentes en la física cuántica, tales como la superposición de estados, entrelazamiento, entre otras \cite{hey1999quantum}. 
+La computación cuántica es un paradigma de computación que surge en contraposición a la computación clásica, con un funcionamiento basado en transistores. En la computación cuántica, se aplican a la computación los principios presentes en la física cuántica, tales como la superposición de estados, entrelazamiento, entre otras \cite{hey1999quantum}. 
 
-La potencia disponible en la computación clásica está ligada directamente al tamaño de los transistores que componen sus chips. Actualmente, el tamaño de dichos transistores ya está aproximándose a la escala de nanómetros, lo cual limita el aumento de ciclos por reloj para los procesadores, motivo por el cual el foco en la computación clásica ha cambiado para concentrarse en campos como la paralelización \cite{censor1997parallel}.
+La potencia disponible en la computación clásica está ligada directamente al tamaño de los transistores que componen sus chips. Actualmente, el tamaño de dichos transistores ya se encuentra próximo a la escala de nanómetros, lo cual limita el aumento de ciclos por reloj para los procesadores, motivo por el cual el foco en la computación clásica ha cambiado para concentrarse en campos como la paralelización \cite{censor1997parallel}.
 
 Es aquí donde la computación cuántica muestra sus posibilidades. A diferencia del paradigma tradicional donde la unidad básica es el bit, en la computación cuántica la unidad básica es el \textit{qubit}. La diferencia entre el bit tradicional y el qubit es que mientras el primero sólo puede almacenar un único valor (ya sea este 0 o 1), el segundo puede contener 0, 1 o una superposición de ambos valores, fenómeno al que se llama \textit{superposición de estados}. Es esta superposición de estados la que permite asumir una cantidad simultánea de valores a la vez, y por lo tanto desarrollar una cantidad fantástica de operaciones simultáneas en vez de la única que permite la computación clásica \cite{nielsen2010quantum}.
 
@@ -255,8 +255,30 @@ donde $u_{ij}$ es el límite superior y $l_{ij}$ el límite inferior del intervalo
 
 Cada individuo cuántico $q_i$ perteneciente a una población cuántica $\text{Q}_0$ poseería entonces $n$ genes cuántico $q_{ij}$, cada cual representado de dos formas posibles: ya sea por los valores $l_{ij},u_{ij}$ o por el centro $\mu_{ij}=\cfrac{l_{ij}+u_{ij}}{2}$ mas el ancho de pulso $\sigma_{ij}=u_{ij}-l_{ij}$. Ambas representaciones son equivalentes, por lo que un individuo cuántico $q_i=\{q_{i1},q_{i2}\}$ con pulsos de ancho $2$ y centros posicionados en $-0.5$ y $0.5$ sería representado por $q_i=\{\mu_{i1}=-0.5,\mu_{i2}=0.5,\sigma_{i1}=2,\sigma_{i2}=2\}$. 
 
+Al realizar la observación de los individuos clásicos a partir de los individuos cuánticos, por lo general en cada iteración se hace una observación de únicamente uno por cada cual por iteración. Esta regla no es fija, por lo que se pueden realizar más observaciones por cada individuo cuántico, manteniendo especial cuidado en no mostrar sesgo por algún $q_i$ en especial para que la generación por individuo cuántico permanezca equitativa. De tal manera, para un valor $m$ que equivale al tamaño de población de individuos cuánticos, el total de individuos generados por iteración debería ser de $m_c \leq km$ donde $k \in \mathbb{N}$ y $m_c \leq m$.
+
+Como se trata de un algoritmo evolutivo después de todo, es posible implementar operadores tales como recombinación, mutación, etc. La recombinación se da a nivel generaciones de individuos clásicos, donde un individuo objetivo puede surgir a partir de la combinación de características de un individuo almacenado con uno recién generado. Asimismo, se puede implementar operadores de mutación, aunque por el efecto \textit{exploring} que presenta la propia generación de los individuos clásicos mediante la observación, este no se considera necesario \cite{da2007algoritmos}.
+
+En el momento de la selección de la nueva población clásica $X_t$, también se debe seleccionar la estrategia ideal para reemplazar $X_{t-1}$ por $X_t$, donde se puede considerar las siguientes opciones:
+\begin{itemize}
+ \item Estrategia extintiva: reemplazar completamente $X_{t-1}$ por $X_t$.
+ \item Elitismo: similar a la estrategia extintiva, pero manteniendo el mejor elemento en $X_{t-1}$.
+ \item \textit{Steady state}: reemplazar los $k$ mejores elementos en $X_t$ por los k peores en $X_{t-1}$.
+ \item Estrategia$(\mu +\lambda)$-EE: reemplazar los $\lambda$ elementos de $X_{t-1}$ por los $\lambda$ mejores elementos de la unión $X_{t-1} \cup X_t$.
+\end{itemize}
+
+Para realizar la actualización de la población cuántica tras obtener la población clásica $X_t$, hay dos posibilidades que se pueden tomar en consideración: actualizar el espacio de búsqueda mediante la modificación del ancho de los pulsos, y modificar la posición del centro de los pulsos para ajustarlos a los individuos de la población clásica. Con esto se busca detectar las regiones más promisorias de $\mathbb{X}$.
+
+Al ajustar el ancho de los pulsos, se puede emplear decaimiento exponencial o lineal para la alteración de los mismos, o también utilizar la ``regla del 1/5'', donde se aumenta la anchura por $\sigma$ si menos de 1/5 o 20\% de la población $X_t$ ofrece mejor evaluación que $X_{t-1}$, y se aumenta en caso contrario. Cabe mencionar que $\sigma \in \langle0,1\rangle$. 
+
+De forma similar, al momento de actualizar los centros de los pulsos, se puede escoger mediante aleatoriamente, elitistamente o mediante un criterio proporcional cuáles individuos clásicos serán utilizados para actualizar los pulsos de la población cuántica $Q_t =\{q_i\}^n_{i=1}$, pero necesariamente tienen que escogerse $n$ individuos clásicos. Se puede utilizar la siguiente combinación convexa para definir el impacto en la población cuántica:
+
+\begin{equation}
+ \mu_{ij}(t+1)=\mu_{ij}(t)+\lambda(\mu_{ij}(t)-x_{ij}(t)), \lambda \in [0,1]
+\end{equation}
+
 
 \section{Consideraciones Finales}
 
-Según se ha visto, el algoritmo \ac{QIEA} original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir un nuevo mecanismo de recombinación (\textit{crossover}) en un entorno concurrente de ejecución con más de una población cuántica generadora.
+Según se ha visto, el algoritmo \ac{QIEA}-$\mathbb{B}$ original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir tanto un aislamiento en el entorno de evolución de los individuos cuánticos, así como un nuevo mecanismo de recombinación que trabaje a nivel de individuos cuánticos.
 

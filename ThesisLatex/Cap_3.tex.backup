@@ -4,9 +4,9 @@ En este capítulo se examinará de forma más profunda las dos áreas de inspiración
 
 \section{Computación Cuántica}
 
-La computación cuántica es un paradigma de computación que surge en contraposición a la computación clásica, la cual basa su existencia en transistores. En la computación cuántica, se aplican a la computación los principios presentes en la física cuántica, tales como la superposición de estados, entrelazamiento, entre otras \cite{hey1999quantum}. 
+La computación cuántica es un paradigma de computación que surge en contraposición a la computación clásica, con un funcionamiento basado en transistores. En la computación cuántica, se aplican a la computación los principios presentes en la física cuántica, tales como la superposición de estados, entrelazamiento, entre otras \cite{hey1999quantum}. 
 
-La potencia disponible en la computación clásica está ligada directamente al tamaño de los transistores que componen sus chips. Actualmente, el tamaño de dichos transistores ya está aproximándose a la escala de nanómetros, lo cual limita el aumento de ciclos por reloj para los procesadores, motivo por el cual el foco en la computación clásica ha cambiado para concentrarse en campos como la paralelización \cite{censor1997parallel}.
+La potencia disponible en la computación clásica está ligada directamente al tamaño de los transistores que componen sus chips. Actualmente, el tamaño de dichos transistores ya se encuentra próximo a la escala de nanómetros, lo cual limita el aumento de ciclos por reloj para los procesadores, motivo por el cual el foco en la computación clásica ha cambiado para concentrarse en campos como la paralelización \cite{censor1997parallel}.
 
 Es aquí donde la computación cuántica muestra sus posibilidades. A diferencia del paradigma tradicional donde la unidad básica es el bit, en la computación cuántica la unidad básica es el \textit{qubit}. La diferencia entre el bit tradicional y el qubit es que mientras el primero sólo puede almacenar un único valor (ya sea este 0 o 1), el segundo puede contener 0, 1 o una superposición de ambos valores, fenómeno al que se llama \textit{superposición de estados}. Es esta superposición de estados la que permite asumir una cantidad simultánea de valores a la vez, y por lo tanto desarrollar una cantidad fantástica de operaciones simultáneas en vez de la única que permite la computación clásica \cite{nielsen2010quantum}.
 
@@ -59,10 +59,10 @@ INITIALIZE \textit{population} with random candidate solutions;
  \centering
  \includegraphics[scale=0.8,keepaspectratio=true]{./Figure1.png}
  \caption{Proceso de un algoritmo evolutivo. \cite{eiben2003introduction}} 
- \label{figure1}
+ \label{figure3-1}
 \end{figure}
 
-Debido a que todas las variedades de algoritmos evolutivos siguen los lineamientos formulados tanto en el algoritmo estándar como en la Figura 3.1, las diferencias entre ellas se reducen a detalles técnicos, como la forma de representar las soluciones. Lo ideal es utilizar la representación de datos más adecuada según la naturaleza del problema a resolver. Si bien son varios los paradigmas desarrollados a partir de la computación evolutiva, son tres los más importantes: Estrategias de Evolución, Programación Evolutiva y Algoritmos Genéticos, las cuales evolucionan soluciones para problemas parametrizados. A ellas se les sumaría un cuarto paradigma: Programación Genética, el cual evoluciona los programas computacionales en sí con el fin de solucionar problemas computacionales \cite{kicinger2005evolutionary}.
+Debido a que todas las variedades de algoritmos evolutivos siguen los lineamientos formulados tanto en el algoritmo estándar como en la Figura 3.1, las diferencias entre ellas se reducen a detalles técnicos, como la forma de representar las soluciones. Lo ideal es utilizar la representación de datos más adecuada según la naturaleza del problema a resolver. Si bien son varios los paradigmas desarrollados a partir de la computación evolutiva, son tres los más importantes: Estrategias de Evolución, Programación Evolutiva y Algoritmos Genéticos, las cuales evolucionan soluciones para problemas parametrizados. A ellas se les sumaría un cuarto paradigma: Programación Genética, el cual evoluciona los programas computacionales en sí con el fin de solucionar problemas computacionales \cite{kicinger2005evolutionary}.adsfasdfads
 
 Es necesario mencionar algunos conceptos propios de los algoritmos evolutivos, entre los cuales se encuentra al {\bf individuo} que es una solución propuesta al problema; la {\bf población} que es el conjunto de individuos a evaluar y evolucionar; la {\bf generación} que es una iteración del algoritmo en el que se evalúa la aptitud de los individuos de la población para posteriormente obtener una población nueva tras realizar cambios aplicando operadores tales como \textit{mutación} o \textit{recombinación}; el {\bf fenotipo} que son los rasgos observables de cada individuo; y el {\bf genotipo} que es la codificación genética factible de convertirse en un individuo.
 
@@ -90,9 +90,9 @@ Por supuesto, los algoritmos evolutivos también presentan algunos inconvenientes
 \end{itemize}
 
 
-\section{Algoritmo Evolutivo de Inspiración Cuántica}
+\section{Algoritmos Evolutivos de Inspiración Cuántica}
 
-Los algoritmos evolutivos de inspiración cuántica buscan aprovechar los paradigmas de la física cuántica para mejorar su rendimiento al resolver problemas. Para la formulación de un algoritmo de inspiración cuántica se debe cumplir con los siguientes requerimientos:
+Los algoritmos evolutivos de inspiración cuántica buscan aprovechar los paradigmas de la física cuántica para mejorar su rendimiento al resolver problemas. El algoritmo \ac{QIEA} original fue descrito originalmente en \cite{han2000genetic} y posteriormente analizado \cite{han2001analysis}. Como se puede ver en el capítulo anterior, han surgido buen número de variaciones y aplicaciones, todos basados en el original descrito a continuación. Para la formulación de un algoritmo de inspiración cuántica se debe cumplir con los siguientes requerimientos:
 
 \begin{itemize}
  \item Tener una representación numérica o un método para convertir en representación numérica.
@@ -104,9 +104,6 @@ Los algoritmos evolutivos de inspiración cuántica buscan aprovechar los paradigm
  \item Los cálculos deben ser independientes en cada universo.
  \item Debe haber alguna interacción entre universos, y ésta debe, al menos permitir hallar la solución, o ayudar a que cada sub-problema en cada universo sea capaz de encontrarla. 
 \end{itemize}
-
-
-El algoritmo evolutivo de inspiración cuántica original fue descrito originalmente en \cite{han2000genetic} y posteriormente analizado \cite{han2001analysis}. Como se puede ver en el capítulo anterior, han surgido buen número de variaciones y aplicaciones, todos basados en el original descrito a continuación.
 
 \ac{QIEA} emplea una representación denominada Q-bit -la cual equivale al qubit que puede representar ya sea a uno de los valores $\{0,1\}$ o a la superposición de ambos-, el cual está definida por dos valores $[\alpha,\beta]$
 
@@ -156,19 +153,20 @@ donde $\Delta\theta_i, i=0,1,...,m$ es el ángulo de rotación de cada Q-bit. La m
 
 sin perder la característica $\textbar\alpha'_k\textbar^2 + \textbar\beta'_k\textbar^2 = 1$.
 
-En la figura \ref{figure2} se puede apreciar cómo las modificaciones en el operador Q-gate permiten que el las probabilidades $\alpha$ y $\beta$ varíen sin perjudicar la condición elemental expresada en la ecuación 3.2.
+En la figura \ref{figure3-2} se puede apreciar cómo las modificaciones en el operador Q-gate permiten que el las probabilidades $\alpha$ y $\beta$ varíen sin perjudicar la condición elemental expresada en la ecuación 3.2.
 
 \begin{figure}
  \centering
  \includegraphics[scale=0.7,keepaspectratio=true]{./Figure2.png}
  % Figure2.png: 446x471 pixel, 96dpi, 11.80x12.46 cm, bb=0 0 334 353
  \caption{Rotación del ángulo al momento de la aplicación del operador Q-gate}
- \label{figure2}
+ \label{figure3-2}
 \end{figure}
 
 \begin{algorithmic}
 \begin{algorithm}[ht]
-\caption{Pseudocódigo para el algoritmo evolutivo de inspiración cuántica}
+\caption{Pseudocódigo para el \ac{QIEA}-$\mathbb{B}$}
+ \label{table3-1}
 INITIALIZE $t \leftarrow 0$;
 \State INITIALIZE ${\bf Q}_t$;
 \State MAKE ${\bf P}_t$ by observing the states of ${\bf Q}_t$;
@@ -188,9 +186,9 @@ INITIALIZE $t \leftarrow 0$;
 \end{algorithmic}
 
 
-\section{Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb{R}$}
+\section{Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb{R}$ (\ac{QIEA}-$\mathbb{R}$}
 
-La propuesta original de un algoritmo evolutivo de inspiración cuántica para $\mathbb{R}$ busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base \cite{da2007algoritmos}. La inspiración de este modelo está en el uso de funciones de onda.
+La propuesta original de un \ac{QIEA} para $\mathbb{R}$ busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base \cite{da2007algoritmos}. La inspiración de este modelo está en el uso de funciones de onda.
 
 Se calcula el momento de un fotón a partir de su masa al moverse a la velocidad de la luz $m=hv/c^2$ derivada de la ecuación de equivalencia entre masa y energía $E=mc^2$.
 
@@ -218,7 +216,7 @@ El concepto de función de onda relaciona probabilísticamente una onda con la loc
 
 \begin{algorithmic}
 \begin{algorithm}[ht]
-\caption{Pseudocódigo para el algoritmo evolutivo de inspiración cuántica en $\mathbb{R}$}
+\caption{Pseudocódigo para \ac{QIEA}-$\mathbb{R}$}
 INITIALIZE $t \leftarrow 0$;
 \State INITIALIZE ${\bf Q}_t$ with $m$ individuals of $n$ genes;
 \While {$t \leq T$}
@@ -244,7 +242,7 @@ Por lo cual, un individuo cuántico puede ser representado de esta manera:
  q_i=\{q_{i1}=p_{i1}(x),q_{i2}=p_{i2}(x),...,q_{in}=p_{in}(x)\}
 \end{equation}
 
-Se puede utilizar una distribución uniforme $\text{U}_{ij}(x) \in [l_{uj},u_{ij}\rangle$ como \ac{PDF} al definirla como:
+Se puede utilizar una distribución uniforme $\text{U}_{ij}(x) \in [l_{ij},u_{ij}\rangle$ como \ac{PDF} al definirla como:
 
 \begin{equation}
  p_{ij}(x)=\begin{cases}
@@ -253,11 +251,28 @@ Se puede utilizar una distribución uniforme $\text{U}_{ij}(x) \in [l_{uj},u_{ij}
         \end{cases}
 \end{equation}
 
-donde $u_{ij}$ es el límite superior y $l_{ij}$ el límite inferior del intervalo para el gen cuántico $q_{ij}$ al colapsar su superposición de estados al ser observado.
+donde $u_{ij}$ es el límite superior y $l_{ij}$ el límite inferior del intervalo para el gen cuántico $q_{ij}$ al colapsar su superposición de estados al ser observado. La definición $\text{U}_{ij}(x)$ respeta la normalización requerida para la \ac{PDF} y es fácilmente implementable con una función que genere número aleatorios escalada al intervalo $[l_{ij},u_{ij}\rangle$ tal como $\text{U}_{ij}(x)=l_{ij}+(u_{ij}-l_{ij})\text{U}(x)$ donde $\text{U}(x)$ es un generador de números aleatorios reales en $[0,1\rangle$.
+
+Cada individuo cuántico $q_i$ perteneciente a una población cuántica $\text{Q}_0$ poseería entonces $n$ genes cuántico $q_{ij}$, cada cual representado de dos formas posibles: ya sea por los valores $l_{ij},u_{ij}$ o por el centro $\mu_{ij}=\cfrac{l_{ij}+u_{ij}}{2}$ mas el ancho de pulso $\sigma_{ij}=u_{ij}-l_{ij}$. Ambas representaciones son equivalentes, por lo que un individuo cuántico $q_i=\{q_{i1},q_{i2}\}$ con pulsos de ancho $2$ y centros posicionados en $-0.5$ y $0.5$ sería representado por $q_i=\{\mu_{i1}=-0.5,\mu_{i2}=0.5,\sigma_{i1}=2,\sigma_{i2}=2\}$. 
 
 
+Al realizar la observación de los individuos clásicos a partir de los individuos cuánticos, por lo general en cada iteración se hace una observación de únicamente uno por cada cual por iteración. Esta regla no es fija, por lo que se pueden realizar más observaciones por cada individuo cuántico, manteniendo especial cuidado en no mostrar sesgo por algún $q_i$ en especial para que la generación por individuo cuántico permanezca equitativa. De tal manera, para un valor $m$ que equivale al tamaño de población de individuos cuánticos, el total de individuos generados por iteración debería ser de $m_c \leq km$ donde $k \in \mathbb{N}$ y $m_c \leq m$.
+
+Como se trata de un algoritmo evolutivo después de todo, es posible implementar operadores tales como recombinación, mutación, etc. La recombinación se da a nivel generaciones de individuos clásicos, donde un individuo objetivo puede surgir a partir de la combinación de características de un individuo almacenado con uno recién generado. Asimismo, se puede implementar operadores de mutación, aunque por el efecto \textit{exploring} que presenta la propia generación de los individuos clásicos mediante la observación, este no se considera necesario \cite{da2007algoritmos}.
+
+En el momento de la selección de la nueva población clásica $X_t$, también se debe seleccionar la estrategia ideal para reemplazar $X_{t-1}$ por $X_t$, donde se puede considerar las siguientes opciones:
+\begin{itemize}
+ \item Estrategia extintiva: reemplazar completamente $X_{t-1}$ por $X_t$.
+ \item Elitismo: similar a la estrategia extintiva, pero manteniendo el mejor elemento en $X_{t-1}$.
+ \item \textit{Steady state}: reemplazar los $k$ mejores elementos en $X_t$ por los k peores en $X_{t-1}$.
+ \item Estrategia$(\mu +\lambda)$-EE: reemplazar los $\lambda$ elementos de $X_{t-1}$ por los $\lambda$ mejores elementos de la unión $X_{t-1} \cup X_t$.
+\end{itemize}
+
+Para realizar la actualización de la población cuántica tras obtener la población clásica $X_t$, hay dos posibilidades que se pueden tomar en consideración: actualizar el espacio de búsqueda mediante la modificación del ancho de los pulsos, y modificar la posición del centro de los pulsos para ajustarlos a los individuos de la población clásica. Con esto se busca detectar las regiones más promisorias de $\mathbb{X}$.
+
+Al ajustar el ancho de los pulsos, se puede emplear decaimiento exponencial o lineal para la alteración de los mismos, o también utilizar la ``regla del 1/5'', donde se aumenta la anchura por $\sigma$ si menos de 1/5 o 20\% de la población $X_t$ ofrece mejor evaluación que $X_{t-1}$, y se aumenta en caso contrario. Cabe mencionar que $\sigma \in \langle0,1\rangle$
 
 \section{Consideraciones Finales}
 
-Según se ha visto, el algoritmo evolutivo de inspiración cuántica original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir un nuevo mecanismo de recombinación (\textit{crossover}) en un entorno concurrente de ejecución con más de una población cuántica generadora.
+Según se ha visto, el algoritmo \ac{QIEA}-$\mathbb{B}$ original es sencillo y de implementación relativamente rápida, mientras que el algoritmo para $\mathbb{R}$ sube ligeramente el listón en términos de inspiración pero añadiendo nuevas capacidades a las posibilidades de la inspiración cuántica. Se tomará este algoritmo como punto de partida para la propuesta que se desarrolla en el siguiente capítulo, el cual busca introducir tanto un aislamiento en el entorno de evolución de los individuos cuánticos, así como un nuevo mecanismo de recombinación que trabaje a nivel de individuos cuánticos.
 

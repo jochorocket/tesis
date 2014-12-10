@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=Resumen.tex
+lastDocument=Cap_5.tex
 masterDocument=
 name=ThesisLatex
 pkg_extIsRegExp=false
@@ -132,10 +132,10 @@ order=0
 
 [item:Cap_1.tex]
 archive=true
-column=632
+column=598
 encoding=ISO-8859-15
 highlight=LaTeX
-line=35
+line=22
 mode=LaTeX
 open=true
 order=3
@@ -152,30 +152,30 @@ order=4
 
 [item:Cap_3.tex]
 archive=true
-column=89
+column=0
 encoding=ISO-8859-15
 highlight=LaTeX
-line=236
+line=276
 mode=LaTeX
 open=true
 order=5
 
 [item:Cap_4.tex]
 archive=true
-column=0
+column=211
 encoding=ISO-8859-15
 highlight=LaTeX
-line=36
+line=35
 mode=LaTeX
 open=true
 order=6
 
 [item:Cap_5.tex]
 archive=true
-column=188
+column=421
 encoding=ISO-8859-15
 highlight=LaTeX
-line=98
+line=75
 mode=LaTeX
 open=true
 order=7
@@ -232,7 +232,7 @@ order=1
 
 [item:conclusiones.tex]
 archive=true
-column=310
+column=311
 encoding=ISO-8859-15
 highlight=LaTeX
 line=6
@@ -279,10 +279,10 @@ JumpList=
 ViMarks=.,457,12,[,457,12,],457,12
 
 [view-settings,view=0,item:Cap_1.tex]
-CursorColumn=632
-CursorLine=35
+CursorColumn=598
+CursorLine=22
 JumpList=
-ViMarks=.,35,631,[,35,625,],35,631
+ViMarks=.,22,585,[,22,585,],22,597
 
 [view-settings,view=0,item:Cap_2.tex]
 CursorColumn=168
@@ -291,22 +291,22 @@ JumpList=
 ViMarks=.,4,167,[,4,167,],4,167
 
 [view-settings,view=0,item:Cap_3.tex]
-CursorColumn=89
-CursorLine=236
+CursorColumn=0
+CursorLine=276
 JumpList=
-ViMarks=.,167,49,[,167,49,],167,49
+ViMarks=.,276,75,[,276,72,],276,75
 
 [view-settings,view=0,item:Cap_4.tex]
-CursorColumn=0
-CursorLine=36
+CursorColumn=211
+CursorLine=35
 JumpList=
-ViMarks=.,22,421,[,22,421,],22,421
+ViMarks=.,35,198,[,35,198,],35,210
 
 [view-settings,view=0,item:Cap_5.tex]
-CursorColumn=188
-CursorLine=98
+CursorColumn=421
+CursorLine=75
 JumpList=
-ViMarks=.,94,0,[,88,0,],94,11
+ViMarks=.,75,420,[,75,411,],75,420
 
 [view-settings,view=0,item:Resumen.tex]
 CursorColumn=0
@@ -327,7 +327,7 @@ JumpList=
 ViMarks=.,8,56,[,8,56,],8,56
 
 [view-settings,view=0,item:conclusiones.tex]
-CursorColumn=310
+CursorColumn=311
 CursorLine=6
 JumpList=
-ViMarks=.,6,310,[,6,310,],6,310
+ViMarks=.,6,298,[,6,298,],6,310
