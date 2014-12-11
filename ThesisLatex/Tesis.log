@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  10 DEC 2014 02:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.1)  10 DEC 2014 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,9 +1253,6 @@ Overfull \hbox (5.6284pt too wide) in paragraph at lines 3--4
  []
 
 
-Underfull \vbox (badness 3118) has occurred while \output is active []
-
-
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 
@@ -1296,7 +1293,7 @@ LaTeX Info: Redefining \% on input line 4.
 Here is how much of TeX's memory you used:
  20994 strings out of 493304
  472335 string characters out of 6139871
- 636495 words of memory out of 5000000
+ 636496 words of memory out of 5000000
  23893 multiletter control sequences out of 15000+600000
  40749 words of font info for 85 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1314,7 +1311,7 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on Tesis.pdf (48 pages, 1439101 bytes).
+Output written on Tesis.pdf (48 pages, 1440693 bytes).
 PDF statistics:
  712 PDF objects out of 1000 (max. 8388607)
  496 compressed objects within 5 object streams

@@ -25,12 +25,12 @@ Mode=LaTeX
 
 [item:slides.tex]
 archive=true
-column=0
+column=65
 encoding=ISO-8859-15
 highlight=LaTeX
-line=11
+line=12
 mode=LaTeX
-open=false
+open=true
 order=0
 
 [item:slidesthesis.kilepr]
@@ -44,7 +44,7 @@ open=false
 order=-1
 
 [view-settings,view=0,item:slides.tex]
-CursorColumn=0
-CursorLine=11
+CursorColumn=65
+CursorLine=12
 JumpList=
-ViMarks=
+ViMarks=.,12,65,[,12,65,],12,65

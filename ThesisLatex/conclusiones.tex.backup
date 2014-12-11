@@ -1,16 +1,18 @@
 \chapter{Conclusiones y Trabajos Futuros}\label{chap:conclusiones}
 
-Las conclusiones de la tesis son una parte muy importante y tiene las siguientes partes.
+El presente trabajo ha propuesto distintas modificaciones al algoritmo original \ac{QIEA}$\mathbb{R}$ con la expectativa por obtener resultados mejores en términos de tiempo de convergencia y calidad de datos generados. En términos generales, los únicos algoritmos que han registrado resultados medianamente consistentes y competitivos en términos de rapidez de convergencia así como de calidad de datos a lo largo de todas las pruebas son las variantes que implementan el operador de recombinación en espacios particionados. Esto es: \ac{QIEA}$\mathbb{R}$-pCO y U\ac{QIEA}$\mathbb{R}$-pCO. Ambos han logrado obtener resultados mejores que los algoritmos originales (\ac{QIEA}$\mathbb{R}$ y \ac{QIEA}$\mathbb{R}$-p), en casos donde el número de individuos clásicos generados por individuo cuántico por iteración es más bajo. Cuando el número de individuos clásicos aumenta, los algoritmos originales terminan comportandose de una manera más eficiente. Por lo tanto, se puede concluir que el operador de cruzamiento propuesto es una alternativa válida que reduce la necesidad de generar y una cantidad alta de individuos clásicos.
 
-En primer lugar debes escribir las conclusiones generales de tu trabajo. evita escribirlas en forma de viñetas. Simplemente utiliza texto continuo.
+Por otro lado, los algoritmos que implementan la segregación en los campos de operación de cada individuo clásico no manifiestan una diferencia sustancial que permita distinguirlos de sus contrapartes no segregadas. En los casos en los que un algoritmo con espacios de búsqueda segregados por individuo cuántico destaca -U\ac{QIEA}$\mathbb{R}$-pCO es un buen ejemplo de este caso-, parece ser más influencia del propio operador de cruzamiento que de la segregación propiamente dicha.
+
+Los demás algoritmos propuestos obtuvieron resultados más irregulares y menos óptimos, por lo que se desaconseja su consideración a futuro. Cabe destacar que los algoritmos con peores resultados en general fueron los que implementaban el particionamiento del espacio de búsqueda sin el operador de recombinación.
 
 \section{Problemas encontrados}
-La segunda  parte de ests capítulo corresponde a los problemas encontrados. esta seccion es muy importante para que los siguientes estudiantes que hagan algo en esta línea no cometan los mismos errores y tu tesis sea un buen peldaño para avanzar más rápido.
+Un problema que 
 
 \section{Recomendaciones}
 En esta sección el tesista debe reflejar que la tesis ha permitido adquirir nuevos conocimientos que podrían servir para guiar otros trabajos en el futuro.
 
 \section{Trabajos futuros}
-En base a los puntos anteriores es recomendable que tu tesis también sugiera trabajos futuros. Esta sección es esecialmente útil para otras ideas de tesis.
+Se vislumbra como posibilidad como complemento para el actual trabajo la ejecución de pruebas s
 
 Todo este capítulo no debe ser más de unas 4 páginas.
