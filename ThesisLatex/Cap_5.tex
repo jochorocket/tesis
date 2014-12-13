@@ -33,22 +33,25 @@ Estas condiciones se explican por la tendencia que presentan tanto el algoritmo 
 
 \begin{figure}
    \centering
-    \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/arckley.pdf}%
-   \caption{$f(x,y)=-20e^{-0.2\sqrt{0.5(x^2+y^2)}}-e^{0.5(cos(2\pi x)+cos(2\pi y)}+e+20$}
+    %\includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/arckley.pdf}%
+    \includegraphics[scale=0.45,keepaspectratio=true]{./Figures/Functions/arckley2.pdf}%
+   \caption{Función Arckley: $f(x,y)=-20e^{-0.2\sqrt{0.5(x^2+y^2)}}-e^{0.5(cos(2\pi x)+cos(2\pi y)}+e+20$}
    \label{figure5-1}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/booth.pdf}%
-   \caption{$f(x,y)=(x+2y-7)^2+(2x+y-5)^2$}
+    %\includegraphics[scale=0.45,keepaspectratio=true]{./Figures/Functions/booth.pdf}%
+    \includegraphics[scale=0.45,keepaspectratio=true]{./Figures/Functions/booth2.pdf}%
+   \caption{Función Booth: $f(x,y)=(x+2y-7)^2+(2x+y-5)^2$}
    \label{figure5-2}
 \end{figure}
 
 \begin{figure}
    \centering
-    \includegraphics[scale=0.8,keepaspectratio=true]{./Figures/Functions/maytas.pdf}%
-   \caption{$f(x,y)=0.26(x^2+y^2)-0.48xy$}
+    %\includegraphics[scale=0.45,keepaspectratio=true]{./Figures/Functions/maytas.pdf}%
+    \includegraphics[scale=0.45,keepaspectratio=true]{./Figures/Functions/maytas2.pdf}%
+   \caption{Función Maytas: $f(x,y)=0.26(x^2+y^2)-0.48xy$}
    \label{figure5-3}
 \end{figure}
 
@@ -57,18 +60,18 @@ Estas condiciones se explican por la tendencia que presentan tanto el algoritmo 
 Las pruebas fueron ejecutadas en un ordenador Acer Aspire 4552 con procesador AMD Phenom\textsuperscript{TM} II N830 Triple-Core Processor y 6 GB RAM DDR3. Todos los algoritmos ya indicados fueron evaluados bajo las siguientes condiciones:
 
 \begin{itemize}
- \item Un espacio de búsqueda $p$ delimitado por $l$ y $u$ el cual puede ser único o presentarse particionado. 
+ \item Un espacio de búsqueda $p$ delimitado por $l_p$ y $u_p$ los cuales son los límites del espacio de búsqueda para cada función el cual puede ser único o presentarse particionado. 
  \item Un número de particiones $m$ donde $2\leq m\leq10$.
  \item Una población cuántica $Q_t$ donde $Q_t = \{q_1 ,... , q_m\}$ en el que cada $q_i$ representa a un individuo cuántico y donde $m$ se corresponde con el número de particiones del espacio de búsqueda. En caso que el espacio de búsqueda no esté particionado, $m$ presenta los mismos límites que el número de particiones.
  \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
 \end{itemize}
 
-Los algoritmos que implementan el operador de recombinación para los individuos clásicos, además, poseen un limitante en el número de iteración tope en las que éste ocurre, y el cual está denotado por $m-1$, lo que significa que a partir de la iteración número $m$ dicho operador deja de funcionar. Este tope es incluido debido a la sobreexpansión de los propios espacios de búsqueda cuando el operador es ejecutado más de unas pocas veces sobre un mismo individuo cuántico.
+Los algoritmos que implementan el operador de recombinación para los individuos clásicos, además, poseen un tope en el número de iteración en las que éste ocurre, y el cual está denotado por $m-1$, lo que significa que a partir de la iteración número $m$ dicho operador deja de funcionar. Este tope es incluido debido a la sobreexpansión de los propios espacios de búsqueda cuando el operador es ejecutado más de unas pocas veces sobre un mismo individuo cuántico.
 
-Las características inherentes al algoritmo mencionadas en la Sección 3.3 seleccionadas para ejecutar en las pruebas son:
+Las características inherentes al algoritmo base -mencionadas en la Sección 3.3- seleccionadas para ejecutar en las pruebas son:
 
 \begin{itemize}
- \item Estrategia$(\mu +\lambda)$-EE para la selección de la nueva población clásica.
+ \item Estrategia$(\mu +\lambda)$-EE para la selección de la nueva población clásica. Se toma $\lambda=0.3$.
  \item Actualización del ancho de los pulsos mediante la regla de 1/5, con $\sigma=0.03$.
  \item Actualización del centro de los pulsos usando la fórmula $ \mu_{ij}(t+1)=\mu_{ij}(t)+\lambda(\mu_{ij}(t)-x_{ij}(t))$ y tomando $\lambda=0.04$
 \end{itemize}
@@ -79,7 +82,7 @@ Finalmente, es pertinente indicar que la condición de parada para cada una de la
 
 \section{Resultados}
 
-Para un mejor análisis de los resultados, corresponde explicar los dos tipos de gráficos incluidos a continuación. El primer tipo incluye un promedio ponderado de los $2m$-ésimos mejores valores \textit{fitness} para un valor $n$ de individuos clásicos generados por individuo cuántico por iteración. De esta manera es posible evaluar cuál algoritmo es el que está produciendo mejores valores en promedio y cuál ejerce mayor presión evolutiva sobre los mejores individuos almacenados.
+Para un mejor análisis de los resultados, corresponde explicar los dos tipos de gráficos incluidos a continuación. El primer tipo incluye un promedio ponderado de los $2n$-ésimos mejores valores \textit{fitness} para un valor $n$ de individuos clásicos generados por individuo cuántico por iteración. De esta manera es posible evaluar cuál algoritmo es el que está produciendo mejores valores en promedio y cuál ejerce mayor presión evolutiva sobre los mejores individuos almacenados.
 
 El segundo, por el contrario, muestra la evolución del mejor valor \textit{fitness} por generación para cada algoritmo, el cual se ejecuta a lo largo de las iteraciones del programa (determinado en 100 iteraciones por ejecución, como ya fue indicado en la sección anterior). Acá se busca identificar la velocidad de convergencia de los datos hacia el óptimo deseado.
 

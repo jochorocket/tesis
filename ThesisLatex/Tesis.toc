@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.2}Planteamiento del Problema}{2}
 \contentsline {section}{\numberline {1.3}Objetivos}{3}
 \contentsline {subsection}{\numberline {1.3.1}Objetivos Específicos}{3}
-\contentsline {section}{\numberline {1.4}Organización de la tesis}{3}
+\contentsline {section}{\numberline {1.4}Organización de la tesis}{4}
 \contentsline {chapter}{\numberline {2}Estado del Arte}{5}
 \contentsline {section}{\numberline {2.1}Variantes y modificaciones del \ac {QIEA}}{5}
 \contentsline {section}{\numberline {2.2}Aplicaciones de los Algoritmos Evolutivos de Inspiración Cuántica}{6}
@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {3.4}Algoritmo Evolutivo de Inspiración Cuántica - $\mathbb {R}$ (\ac {QIEA}-$\mathbb {R}$}{13}
 \contentsline {section}{\numberline {3.5}Consideraciones Finales}{16}
 \contentsline {chapter}{\numberline {4}Propuesta}{17}
-\contentsline {section}{\numberline {4.1}Segregación del campo operativo de los individuos cuánticos en universos}{17}
+\contentsline {section}{\numberline {4.1}Segregación del espacio de operación de los individuos cuánticos en universos}{17}
 \contentsline {section}{\numberline {4.2}Operador de recombinación para los individuos cuánticos}{18}
 \contentsline {section}{\numberline {4.3}Detalle y nomenclatura de los algoritmos a evaluar}{18}
 \contentsline {chapter}{\numberline {5}Pruebas y Resultados}{20}

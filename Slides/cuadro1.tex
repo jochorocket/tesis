@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[spanish,mexico]{babel}
+\usepackage{tabularx}
+
+\begin{document}
+\pagestyle{empty}
+
+% Preamble:
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{ |X|X|X|X| }
+\hline
+Algoritmo                    & Espacio de \newline búsqueda \newline particionado & Campo de acción \newline de individuos \newline  cuánticos segregado \newline en universos & Operador de \newline recombinación para \newline individuos \newline cuánticos \\ \hline
+\ac{QIEA}$\mathbb{R}$      & No                               & No                                                             & No                                                \\
+U\ac{QIEA}$\mathbb{R}$     & No                               & Si                                                             & No                                                \\
+\ac{QIEA}$\mathbb{R}$-CO   & No                               & No                                                             & Si                                                \\
+U\ac{QIEA}$\mathbb{R}$-CO  & No                               & Si                                                             & Si                                                \\
+\ac{QIEA}$\mathbb{R}$-p    & Si                               & No                                                             & No                                                \\
+U\ac{QIEA}$\mathbb{R}$-p   & Si                               & Si                                                             & No                                                \\
+\ac{QIEA}$\mathbb{R}$-pCO  & Si                               & No                                                             & Si                                                \\
+U\ac{QIEA}$\mathbb{R}$-pCO & Si                               & Si                                                             & Si                                                \\ \hline
+\end{tabularx}
+\caption{Descripción de los algoritmos a evaluar}
+ \label{table4-1}
+\end{table}
+\end{document}

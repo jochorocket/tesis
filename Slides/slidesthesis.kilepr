@@ -25,10 +25,10 @@ Mode=LaTeX
 
 [item:slides.tex]
 archive=true
-column=65
+column=202
 encoding=ISO-8859-15
 highlight=LaTeX
-line=12
+line=505
 mode=LaTeX
 open=true
 order=0
@@ -44,7 +44,7 @@ open=false
 order=-1
 
 [view-settings,view=0,item:slides.tex]
-CursorColumn=65
-CursorLine=12
+CursorColumn=202
+CursorLine=505
 JumpList=
-ViMarks=.,12,65,[,12,65,],12,65
+ViMarks=.,505,201,[,505,201,],505,201
