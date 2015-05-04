@@ -27,150 +27,26 @@
 \end{frame}
 
 \begin{frame}
- \frametitle{Computación Cuántica}
+ \frametitle{Algoritmos Evolutivos de Inspiración Cuántica para $\mathbb{R}$}
 \begin{itemize}
- \item Campo de investigación con mucho futuro, posibilidades completamente inimaginables para el paradigma tradicional en potencia y velocidad.
- \item Inexistencia de ordenadores cuánticos utilizables a día de hoy.
- \item Dificultad en el desarrollo de nuevos algoritmos.
-\end{itemize}
-\end{frame}
-
-\begin{frame}
- \frametitle{Computación de Inspiración Cuántica}
-\begin{itemize}
- \item Busca aprovechar algunas de los elementos propios de la Computación Cuántica a algoritmos de computación tradicional.
- \item Incorpora conceptos tales como: \textit{qubits}, interferencia y superposición de estados, entre otros.
-\end{itemize}
-\end{frame}
-% 
-% \begin{frame}
-%  \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}  
-% Emplean una representación denominada Q-bit -la cual equivale al qubit que puede representar a uno los valores $\{0,1\}$ o a la superposición de ambos-, el cual está definida por un par de número $[\alpha,\beta]$ tal que:
-% 
-% \[
-%   \begin{bmatrix}
-%     \alpha \\        
-%     \beta \\      
-%   \end{bmatrix}
-% \]
-% 
-% donde $\arrowvert\alpha\arrowvert^2 + \arrowvert\beta\arrowvert^2 = 1 $, y que hacen referencia a las posibilidades de que el Q-bit colapse a uno de los dos valores posibles al momento de ser observado.
-% \end{frame}
-% 
-% \begin{frame}
-%  \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
-% Se puede definir un vector de $m$ Q-bits de esta forma:
-% 
-% \[
-%   \begin{bmatrix}
-%     \alpha_1 & \alpha_2 & ... & \alpha_m \\        
-%     \beta_1 & \beta_2 & ... &  \beta_m \\      
-%     \beta_1 & \beta_2 & ... &  \beta_m \\      
-%   \end{bmatrix}
-% \]
-% 
-% donde $\arrowvert\alpha_i\arrowvert^2 + \arrowvert\beta_i\arrowvert^2 = 1 $ para cada $i = 0, 1, ..., m$.
-% \end{frame}
-% 
-% 
-% \begin{frame}
-%  \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
-% Para modificar los Q-bits se emplea un operador denominado Q-gate, el cual se encarga de rotar el ángulo y hacerlo inclinarse hacia un valor $\{0,1\}$, de tal manera que asegure el cumplimiento de la ecuación 3.2:
-% 
-% \[
-% U(\Delta\theta_i)=
-%   \begin{bmatrix}
-%     \cos(\Delta\theta_i) & -\sin(\Delta\theta_i) \\        
-%     \sin(\Delta\theta_i) & \cos(\Delta\theta_i) \\      
-%   \end{bmatrix}
-% \]
-% 
-% donde $\Delta\theta_i, i=0,1,...,m$ es el ángulo de rotación de cada Q-bit. La magnitud de este valor tiene efecto en la convergencia, pero de ser muy alto se corre el riesgo de diverger o de converger prematuramente hacia un óptimo local.
-% \end{frame}
-% 
-% \begin{frame}
-%  \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
-%  \[
-%    \begin{bmatrix}
-%     \alpha'_i \\        
-%     \beta'_i \\      
-%   \end{bmatrix}=
-% U(\Delta\theta_i)
-%    \begin{bmatrix}
-%     \alpha_i \\        
-%     \beta_i \\      
-%   \end{bmatrix}
-% \]
-% \end{frame}
-% 
-% \begin{frame}
-%  \frametitle{Algoritmos Evolutivos de Inspiración Cuántica}
-% La estructura del algoritmo es la siguiente:
-%  \centering
-%  \includegraphics[scale=0.6,keepaspectratio=true]{./Figure3.png}
-%  % Figure2.png: 446x471 pixel, 96dpi, 11.80x12.46 cm, bb=0 0 334 353
-% \end{frame}
-
-
-
-\begin{frame}
- \frametitle{Algoritmos Evolutivos de Inspiración Cuántica en $\mathbb{R}$}
-\begin{itemize}
- \item Busca generar un conjunto de estados observables contínuos y no discretos como el algoritmo base. 
- \item La inspiración de este modelo está en el uso de funciones de onda.
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}
- \frametitle{Algoritmos Evolutivos de Inspiración Cuántica en $\mathbb{R}$}
-\begin{itemize}
- \item Los individuos cuánticos son reemplazados: pasan a ser funciones aleatorias de probabilidad $\mathbb{U}_{ij} \in [l_{uj},u_{ij}\rangle$ donde $l_{uj},u_{ij}$ marcan los límites superiores e inferiores del intervalo que representa al espacio de búsqueda, respectivamente.
+ \item El individuo cuántico $\mathbb{U}_{ij}$ es representado por el centro  $\mu_{ij} = {l_{uj}+u_{ij}}/2$ mas el ancho del pulso $\sigma_{ij} = u_{ij} - l_{uj}$.
+ \item El algoritmo evoluciona mejorando los individuos cuánticos mediante la modificación de $\mu_{ij}$ y $\sigma_{ij}$ a partir de los mejores individuos clásicos generados en cada iteración.
 \end{itemize} 
-\end{frame}
-
-
-\begin{frame}
- \frametitle{Algoritmos Evolutivos de Inspiración Cuántica en $\mathbb{R}$}
-\begin{itemize}
- \item $\mathbb{U}_{ij}$ puede ser representado por el centro  $\mu_{ij} = {l_{uj}+u_{ij}}/2$ mas el ancho del pulso $\sigma_{ij} = u_{ij} - l_{uj}$.
- \item El algoritmo evoluciona mejorando los individuos cuánticos mediante la restricción de $\mu_{ij}$ y $\sigma_{ij}$ a las áreas que retornen mejores valores de aptitud, a partir de los mejores individuos clásicos generados en cada iteración.
-\end{itemize} 
-\end{frame}
-
-
-\begin{frame}
- \frametitle{Problema}
-\begin{itemize}
- \item Búsqueda de un mayor control de la localidad/globalidad en la actualización de individuos cuánticos.
- \item De existir alguna separación del campo de búsqueda en universos, permitir la existencia de alguna interacción entre los mismos, la cual ha de permitir hallar la solución o ayudar a que los sub-problemas al interior de cada universo puedan ser resueltos.
-\end{itemize}
 \end{frame}
 
 \begin{frame}
  \frametitle{Problema}
 \begin{itemize}
- \item El algoritmo original permite dividir el espacio de búsqueda, mas no genera una verdadera segregación pues la generación y evaluación de los individuos clásicos se sigue dando en un mismo espacio compartido.
+ \item El algoritmo original permite particionar el espacio de búsqueda, mas no genera una verdadera segregación pues la generación y evaluación de los individuos clásicos se sigue dando en un mismo espacio compartido.
  \item Los individuos cuánticos sólo son actualizados: cualquier operador (recombinación, mutación, etc.) se lleva a cabo a nivel de individuos clásicos únicamente.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
- \frametitle{Objetivos}
+ \frametitle{Propuesta: Búsqueda de mayor control en la localidad/globalidad en la evolución}
 \begin{itemize}
- \item Estudiar el algoritmo QIEA-$\mathbb{R}$, comprender sus características y evaluar posibles escenarios de mejora con respecto al grado de globalidad/localidad de sus elementos.
- \item Incrementar el grado de control tanto de la globalidad como de la localidad en la actualización de individuos cuánticos mediante el aislamiento de los individuos cuánticos en universos separados, así como mediante la introducción de un operador de recombinación para la mejora de los espacios de búsqueda de cada individuo cuántico.
- \item Medición del desempeño tanto del algoritmo original como de las propuestas evaluadas mediante la realización de pruebas en funciones \textit{benchmark}.
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}
- \frametitle{Propuesta}
-\begin{itemize}
- \item Segregación del espacio compartido para la evaluación y generación de los individuos clásicos en universos.
+ \item Segregación del espacio evolutivo de cada individuo cuántico en universos.
  \item Generar interacción entre los universos mediante un operador de recombinación que opere a nivel de individuos cuánticos.
- \item Se crean derivaciones de QIEA-$\mathbb{R}$ combinando estas dos características, además del propio particionamiento del espacio de búsqueda.
 \end{itemize}
 \end{frame}
 
@@ -178,13 +54,6 @@
  \frametitle{Operador de recombinación}
 \begin{itemize}
  \item Evaluación de los individuos cuánticos de acuerdo a la calidad de individuos clásicos generados (promedio ponderado del valor obtenido tras evaluar mediante la función \textit{fitness} correspondiente).
-\end{itemize}
-\end{frame}
-
-\begin{frame}
- \frametitle{Operador de recombinación}
-\begin{itemize}
- \item El espacio de búsqueda del individuo cuántico de peor evaluación (el de promedio de \textit{fitness} lejano al óptimo al que se busca converger) es incrementado al unírsele el espacio de búsqueda del individuo cuántico con la mejor evaluación.
  \item Operación en las $k$ primeras iteraciones debido a la relativamente rápida degradación del espacio de búsqueda tras una rápida convergencia. El valor de $k$ tiende a ser bajo.
 \end{itemize}
 \end{frame}
@@ -198,23 +67,14 @@
 \begin{frame}
  \frametitle{Escenarios de prueba}
  \centering
- \includegraphics[scale=0.4,keepaspectratio=true]{./Cuadro2.png}  
-\end{frame}
-
-\begin{frame}
- \frametitle{Escenarios de prueba}
-Todas las funciones poseen en común el evaluar dos variables y cumplen las siguientes condiciones:
-\begin{itemize}
- \item Espacios de búsqueda reducidos.
- \item Mínimos cuya vecindad representen un porcentaje reducido del total del conjunto de soluciones en el dominio de búsqueda.
- \item Evitar la tendencia a valores mínimos por debajo del mínimo identificado dentro del dominio de búsqueda.
-\end{itemize}
+ \includegraphics[scale=0.4,keepaspectratio=true]{./Cuadro2.png}   
 \end{frame}
 
 \begin{frame}
  \frametitle{Función Arckley}
- \centering
- \includegraphics[scale=0.5,keepaspectratio=true]{../ThesisLatex/Figures/Functions/arckley2.pdf}  
+ \includegraphics[scale=0.17,keepaspectratio=true]{../ThesisLatex/Figures/Functions/arckley2.pdf}  
+ \includegraphics[scale=0.17,keepaspectratio=true]{../ThesisLatex/Figures/Functions/booth2.pdf}  
+ \includegraphics[scale=0.17,keepaspectratio=true]{../ThesisLatex/Figures/Functions/maytas2.pdf}  
 \end{frame}
 
 \begin{frame}
@@ -228,51 +88,50 @@ Todas las funciones poseen en común el evaluar dos variables y cumplen las sigui
  \centering
  \includegraphics[scale=0.5,keepaspectratio=true]{../ThesisLatex/Figures/Functions/maytas2.pdf}  
 \end{frame}
-
-\begin{frame}
- \frametitle{Condiciones para las pruebas}
-Las pruebas fueron ejecutadas en un ordenador Acer Aspire 4552 con procesador AMD Phenom\textsuperscript{TM} II N830 Triple-Core Processor y 6 GB RAM DDR3.
-\begin{itemize}
- \item Un espacio de búsqueda $p$ delimitado por $l_p$ y $u_p$ los cuales son los límites del espacio de búsqueda para cada función el cual puede ser único o presentarse particionado.
- \item Un número de particiones $m$ donde $2\leq m\leq10$.
-\end{itemize}
-\end{frame}
-
-\begin{frame}
- \frametitle{Condiciones para las pruebas}
-\begin{itemize}
- \item Una población cuántica $Q_t$ donde $Q_t = \{q_1 ,... , q_m\}$ en el que cada $q_i$ representa a un individuo cuántico y donde $m$ se corresponde con el número de particiones del espacio de búsqueda. En caso que el espacio de búsqueda no esté particionado, $m$ presenta los mismos límites que el número de particiones.
- \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}
- \frametitle{Condiciones para las pruebas}
-\begin{itemize}
- \item Una población cuántica $Q_t$ donde $Q_t = \{q_1 ,... , q_m\}$ en el que cada $q_i$ representa a un individuo cuántico y donde $m$ se corresponde con el número de particiones del espacio de búsqueda. En caso que el espacio de búsqueda no esté particionado, $m$ presenta los mismos límites que el número de particiones.
- \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
- \item $k = m-1$ donde $k$ es la máxima iteración donde se ejecuta el operador de recombinación.
-\end{itemize}
-\end{frame}
-
-\begin{frame}
- \frametitle{Condiciones para las pruebas}
-Las características inherentes al algoritmo base seleccionadas para ejecutar en las pruebas son:
-\begin{itemize}
- \item Estrategia$(\mu +\lambda)$-EE para la selección de la nueva población clásica: reemplazar los $\lambda$ elementos de $X_{t-1}$ por los $\lambda$ mejores elementos de la unión $X_{t-1} \cup X_t$.  Se toma $\lambda=0.3$.
- \item Actualización del ancho de los pulsos mediante la regla de 1/5, con $\sigma=0.03$.
- \item Actualización del centro de los pulsos usando la fórmula $ \mu_{ij}(t+1)=\mu_{ij}(t)+\lambda(\mu_{ij}(t)-x_{ij}(t))$ y tomando $\lambda=0.04$
-\end{itemize}
-\end{frame}
-
-\begin{frame}
- \frametitle{Condiciones para las pruebas}
-\begin{itemize}
- \item Condición de parada: número de iteraciones, el cual está fijado en 100 debido a que tras diversas evaluaciones, se comprobó que la evolución a partir del mismo es prácticamente nula debido a la rápida convergencia inherente al algoritmo. 
- \item Cada algoritmo fue ejecutado un total de 50 veces para cada combinación de condiciones.
-\end{itemize}
-\end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Condiciones para las pruebas}
+% Las pruebas fueron ejecutadas en un ordenador Acer Aspire 4552 con procesador AMD Phenom\textsuperscript{TM} II N830 Triple-Core Processor y 6 GB RAM DDR3.
+% \begin{itemize}
+%  \item Un espacio de búsqueda $p$ delimitado por $l_p$ y $u_p$ los cuales son los límites del espacio de búsqueda para cada función el cual puede ser único o presentarse particionado.
+%  \item Un número de particiones $m$ donde $2\leq m\leq10$.
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Condiciones para las pruebas}
+% \begin{itemize}
+%  \item Una población cuántica $Q_t$ donde $Q_t = \{q_1 ,... , q_m\}$ en el que cada $q_i$ representa a un individuo cuántico y donde $m$ se corresponde con el número de particiones del espacio de búsqueda. En caso que el espacio de búsqueda no esté particionado, $m$ presenta los mismos límites que el número de particiones.
+%  \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Condiciones para las pruebas}
+% \begin{itemize}
+%  \item Una población cuántica $Q_t$ donde $Q_t = \{q_1 ,... , q_m\}$ en el que cada $q_i$ representa a un individuo cuántico y donde $m$ se corresponde con el número de particiones del espacio de búsqueda. En caso que el espacio de búsqueda no esté particionado, $m$ presenta los mismos límites que el número de particiones.
+%  \item Por cada generación, una población clásica $C_{ij}$ donde $C_{ij} = \{c_{i1} ,... , c_{in}\}$ donde cada $c_{ij}$ representa a un individuo clásico generado por el individuo $q_i$, y donde $1\leq j\leq 10$
+%  \item $k = m-1$ donde $k$ es la máxima iteración donde se ejecuta el operador de recombinación.
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Condiciones para las pruebas}
+% Las características inherentes al algoritmo base seleccionadas para ejecutar en las pruebas son:
+% \begin{itemize}
+%  \item Estrategia$(\mu +\lambda)$-EE para la selección de la nueva población clásica: reemplazar los $\lambda$ elementos de $X_{t-1}$ por los $\lambda$ mejores elementos de la unión $X_{t-1} \cup X_t$.  Se toma $\lambda=0.3$.
+%  \item Actualización del ancho de los pulsos mediante la regla de 1/5, con $\sigma=0.03$.
+%  \item Actualización del centro de los pulsos usando la fórmula $ \mu_{ij}(t+1)=\mu_{ij}(t)+\lambda(\mu_{ij}(t)-x_{ij}(t))$ y tomando $\lambda=0.04$
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Condiciones para las pruebas}
+% \begin{itemize}
+%  \item Condición de parada: número de iteraciones, el cual está fijado en 100 debido a que tras diversas evaluaciones, se comprobó que la evolución a partir del mismo es prácticamente nula debido a la rápida convergencia inherente al algoritmo. 
+%  \item Cada algoritmo fue ejecutado un total de 50 veces para cada combinación de condiciones.
+% \end{itemize}
+% \end{frame}
 
 
 \begin{frame}
@@ -494,8 +353,8 @@ Las características inherentes al algoritmo base seleccionadas para ejecutar en 
 \begin{frame}
  \frametitle{Resultados sobre la función Maytas}
 \begin{itemize}
- \item Se evidencia una contraposición de resultados separada por el particionamiento del espacio de búsqueda. A pesar que los algoritmos que implementan espacios particionados de búsqueda obtienen una convergencia más rápida, al final evidencian una menor cercanía al mínimo deseado. 
- \item En todo caso, el algoritmo que ofrece el mejor desempeño promedio para ambos casos son tanto el algoritmo base QIEA$\mathbb{R}$ como UQIEA$\mathbb{R}$-pCO debido a figurar por encima del promedio tanto en rapidez de convergencia como en producción de datos cercanos al mínimo.
+ \item A pesar que los algoritmos que implementan espacios particionados de búsqueda obtienen una convergencia más rápida, al final convergen menos hacia el mínimo. 
+ \item Mejor desempeño promedio: QIEA$\mathbb{R}$ y UQIEA$\mathbb{R}$-pCO debido a figurar por encima del promedio tanto en rapidez de convergencia como en producción de datos cercanos al mínimo.
 \end{itemize}
 \end{frame}
 
@@ -503,12 +362,42 @@ Las características inherentes al algoritmo base seleccionadas para ejecutar en 
 \begin{frame}
  \frametitle{Conclusiones}
 \begin{itemize}
- \item En términos generales, los únicos algoritmos que han registrado resultados medianamente consistentes y competitivos en términos de rapidez de convergencia así como de calidad de datos a lo largo de todas las pruebas son las variantes que implementan el operador de recombinación en espacios particionados. Esto es: \ac{QIEA}$\mathbb{R}$-pCO y U\ac{QIEA}$\mathbb{R}$-pCO. 
- \item Ambos han logrado obtener resultados mejores que los algoritmos originales (\ac{QIEA}$\mathbb{R}$ y \ac{QIEA}$\mathbb{R}$-p), en casos donde el número de individuos clásicos generados por individuo cuántico por iteración es más bajo. Cuando el número de individuos clásicos aumenta, los algoritmos originales terminan comportandose de una manera más eficiente. 
- \item Por lo tanto, se puede concluir que el operador de cruzamiento propuesto es una alternativa válida que reduce la necesidad de generar una cantidad alta de individuos clásicos.
+ \item Resultados medianamente consistentes y competitivos: únicamente las variantes que implementan el operador de recombinación en espacios particionados (QIEA$\mathbb{R}$-pCO y UQIEA$\mathbb{R}$-pCO), logrando obtener resultados mejores que los algoritmos originales cuando el número de individuos clásicos generados por individuo cuántico por iteración es más bajo.
+ \item Por lo tanto, se puede concluir que el operador de recombinación propuesto es una alternativa válida que reduce la necesidad de generar una cantidad alta de individuos clásicos.
 \end{itemize}
 \end{frame}
 
 
+\begin{frame}
+ \frametitle{Conclusiones}
+\begin{itemize}
+ \item Por otro lado, los algoritmos que implementan la segregación en los campos de operación de cada individuo clásico no manifiestan una diferencia sustancial que permita distinguirlos de sus contrapartes no segregadas. 
+ \item En los casos en los que un algoritmo con espacios de búsqueda segregados por individuo cuántico destaca -UQIEA$\mathbb{R}$-pCO es un buen ejemplo de este caso-, parece ser más influencia del propio operador de recombinación que de la segregación propiamente dicha.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Conclusiones}
+\begin{itemize}
+ \item Los demás algoritmos propuestos obtuvieron resultados más irregulares y menos óptimos, por lo que se desaconseja su consideración a futuro. Cabe destacar que los algoritmos con peores resultados en general fueron los que implementaban el particionamiento del espacio de búsqueda sin el operador de recombinación.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Problemas}
+\begin{itemize}
+ \item La propia tendencia del algoritmo a sobreincrementar rápidamente sus espacios de búsqueda tras un espacio de tiempo en el que no se hallan mejores soluciones.
+ \item Las propuestas no se han podido evaluar para problemas con espacios de búsqueda mayores a los escogidos en el presente trabajo.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Problemas}
+\begin{itemize}
+ \item Las pruebas en funciones con mínimos ubicados cercanos en los extremos de los espacios de búsqueda también han representado un reto que no se pudo asumir, debido a la inexistencia de una metodología apropiada para la delimitación de la expansión en el espacio de búsqueda del algoritmo original.
+ \item El comportamiento del algoritmo lo impulsa a buscar más mínimos fuera de dichos límites, por lo que terminarían tendiendo hacia un mínimo no contemplado al interior del espacio de búsqueda.
+\end{itemize}
+\end{frame}
 
 \end{document}
