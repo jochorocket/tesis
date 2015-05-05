@@ -14,3 +14,4 @@ Comandos útiles para GIT:
 -git add . (para añadir los archivos actualizados)
 -git commit -m "Mensaje del commit correspondiente" (para consolidar todas las actualizaciones en el repositorio, incluyendo un util mensaje)
 -git push origin master (para subir todo al GitHub,luego hay que meter el nombre de usuario y contraseña)
+
